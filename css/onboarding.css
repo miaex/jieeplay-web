@@ -1,0 +1,47 @@
+.onb-step .btn {
+	width: 100%;
+	max-width: 340px;
+}
+
+.text-input {
+	width: 100%;
+	max-width: 340px;
+	min-height: 54px;
+	padding: 0 20px;
+	border-radius: var(--radius-sm);
+	border: 2px solid rgba(231, 146, 146, 0.5);
+	background: #fff;
+	color: var(--color-text);
+	font-size: 17px;
+	text-align: center;
+}
+.text-input:focus {
+	outline: none;
+	border-color: var(--color-rose);
+}
+
+.hint-text {
+	opacity: 0.75;
+	font-size: 14px;
+	max-width: 320px;
+}
+
+.progress-track {
+	width: 100%;
+	max-width: 340px;
+	height: 18px;
+	border-radius: 9px;
+	background: rgba(240, 219, 212, 0.7);
+	overflow: hidden;
+}
+.progress-track.thin {
+	height: 10px;
+	max-width: none;
+}
+.progress-fill {
+	height: 100%;
+	width: 0%;
+	background: var(--color-rose);
+	border-radius: 9px;
+	transition: width 0.2s ease;
+}

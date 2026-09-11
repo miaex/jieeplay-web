@@ -1,0 +1,102 @@
+{
+	"onboarding_language_title": "Welcome ✨",
+	"onboarding_language_subtitle": "Before we start, I need to know which language to speak to you in.",
+	"onboarding_language_option_fr": "🇫🇷 Français",
+	"onboarding_language_option_en": "🇬🇧 English",
+
+	"onboarding_gender_title": "One quick thing before we continue…",
+	"onboarding_gender_subtitle": "How should I refer to you?",
+	"onboarding_gender_option_female": "Woman",
+	"onboarding_gender_option_male": "Man",
+
+	"onboarding_name_title": "So, what should I call you?",
+	"onboarding_name_hint": "Little tip: using the nickname Tonton Jiee usually calls you might make a few surprises even more personal. 😉",
+	"onboarding_name_placeholder": "Your name or nickname",
+	"onboarding_name_button_continue": "CONTINUE",
+
+	"home_welcome_body": "Hi {player_name}, so happy to see you again! ✨\n\nThis is your game.\n\nTonton Jiee made it just for you.\n\nThere will be words to uncover, a few traps, choices to make…\n\nand a few surprises you probably won't see coming. 😌",
+	"home_welcome_question_female": "Ready?",
+	"home_welcome_question_male": "Ready?",
+	"menu_greeting": "Great to see you again, {player_name}!",
+	"home_welcome_button_start": "START",
+
+	"menu_continue": "✨ CONTINUE",
+	"menu_journey": "📖 MY JOURNEY",
+	"menu_rewards": "🎁 MY REWARDS",
+	"menu_journey_short": "Journey",
+	"menu_rewards_short": "Rewards",
+	"nav_home_short": "Home",
+	"nav_settings_short": "Settings",
+	"home_secret_title": "Secret message 💌",
+	"home_secret_subtitle": "Chapter {chapter} · {level}/10 until your next surprise",
+	"home_progress_label": "Chapter {chapter} · level {level} of 10",
+	"menu_settings": "⚙️ SETTINGS",
+
+	"level_choose_category_title": "Choose your theme ✨",
+	"level_back_to_home": "BACK",
+	"level_clear": "CLEAR",
+	"level_validate": "SUBMIT",
+	"level_success_message": "There you go. 😌",
+	"level_failure_message": "Nope. 😏 But you weren't far off.",
+
+	"reward_title": "Chapter {chapter} complete ✨",
+	"reward_continue": "CONTINUE",
+
+	"secret_title": "✨ Secret Reward ✨",
+	"secret_subtitle": "Collect 10 fragments to reveal your message",
+	"secret_lot_label": "SET {current}/{total}",
+	"secret_choose_title": "Pick a card",
+	"secret_choose_desc": "All 10 cards in this set hide the same fragment of your message. Follow your intuition!",
+	"secret_select_label": "Select 1 card out of 10",
+	"secret_tip": "💡 Every choice is a good one. What matters is the one that speaks to you. 💜",
+	"secret_fragment_label": "Fragment {current}/{total}",
+	"secret_continue": "CONTINUE",
+	"secret_final_title": "💌 Your full message",
+	"secret_assembling": "✨ Putting your message together... ✨",
+	"secret_fragment_unlocked": "FRAGMENT UNLOCKED",
+	"secret_fragment_obtained": "Fragment obtained ✨",
+	"reward_variant_count_affectionate": "2",
+	"reward_message_affectionate_0": "{player_name},\n\nyou just finished this chapter…\n\nand I hope you already know one thing:\n\nyou're probably far more capable than you give yourself credit for.\n\nKeep going. There's more waiting for you. ❤️",
+	"reward_message_affectionate_1": "{player_name}, there's something I've wanted to tell you since this chapter began:\n\nI'm proud of you.\n\nNot just for the words you found — for the way you keep showing up. ❤️",
+
+	"reward_variant_count_admiring": "2",
+	"reward_message_admiring_0": "{player_name}, what I just witnessed is someone who doesn't give up.\n\nTen words, ten small wins.\n\nYou're stronger than you think — and I'll never tire of reminding you. ✨",
+	"reward_message_admiring_1": "Honestly, {player_name}? Impressive.\n\nNot everyone moves forward with this kind of determination.\n\nKeep it up, you amaze me. ✨",
+
+	"reward_variant_count_playful": "2",
+	"reward_message_playful_0": "{player_name},\n\n10 words solved, and I have to say I'm pretty impressed. 😏\n\nYou're getting dangerously good at this little game…\n\nLet's see if you can keep it up next chapter? 😌",
+	"reward_message_playful_1": "So {player_name}, collecting wins now, are we? 😏\n\nI'll admit I didn't expect you to move this fast.\n\nSee you next chapter?",
+
+	"reward_variant_count_comforting": "2",
+	"reward_message_comforting_0": "{player_name}, in case no one told you today:\n\nyou're doing your best, and that's more than enough.\n\nTake this chapter as a small, gentle break — just for you.",
+	"reward_message_comforting_1": "Sometimes we just need the reminder, {player_name}:\n\nyou matter.\n\nWhatever kind of day you had, this little moment was yours. I hope it did you good.",
+
+	"reward_variant_count_mysterious": "2",
+	"reward_message_mysterious_0": "{player_name}, what you just found is only a fragment of what's coming.\n\nI'm keeping the rest for later…\n\nbut know that I took my time preparing it. 🔮",
+	"reward_message_mysterious_1": "There's still so much I haven't told you, {player_name}.\n\nThis chapter was just a glimpse.\n\nThe next one might say a little more… maybe.",
+
+	"reward_variant_count_warm": "2",
+	"reward_message_warm_0": "{player_name}, there's something comforting about seeing you come back, chapter after chapter.\n\nLike a gentle little habit.\n\nThank you for being here.",
+	"reward_message_warm_1": "{player_name}, this little ritual between you and this game means more to me than you'd think.\n\nThank you for giving it a piece of your day.",
+
+	"journey_title": "📖 My Journey",
+	"journey_stats": "Chapter {chapter}, level {level} of 10\n\nWords solved: {successes}\nMistakes: {failures}\n\nChapters unlocked: {rewards_count}",
+
+	"rewards_title": "🎁 My Rewards",
+	"rewards_empty": "No rewards unlocked yet.\n\nFinish a full chapter (10 levels) to unlock one.",
+	"rewards_entry": "✨ Chapter {chapter} unlocked",
+
+	"settings_title": "⚙️ Settings",
+	"settings_sound": "Sound",
+	"settings_music": "Music",
+	"settings_vibration": "Vibration",
+	"settings_reset": "Reset progress",
+	"settings_howto": "❓ How to play",
+
+	"howto_title": "❓ How to Play",
+	"howto_step_1": "1. Pick a theme from the categories shown. Every level starts with this choice.",
+	"howto_step_2": "2. A hint appears, with scrambled letters at the bottom. Tap the letters in order to spell out the word.",
+	"howto_step_3": "3. Placed a letter wrong? Tap it directly in its slot to remove just that one — nothing else moves. The next letter you tap will land in that spot.",
+	"howto_step_4": "4. Some letters are already placed for you, in gold: a small boost on longer words.",
+	"howto_step_5": "5. Stuck? The lightbulb 💡 at the bottom reveals one extra letter, once per level. Finish 10 levels to unlock a surprise… but that's all we'll say. 😌"
+}

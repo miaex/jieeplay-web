@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#f6f4f2">
+<title>JieePlay</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon.png">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/onboarding.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/game.css">
+<link rel="stylesheet" href="css/reward.css">
+<link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+<div id="app">
+
+	<!-- ÉCRAN DE CHARGEMENT -->
+	<div id="view-boot" class="view active">
+		<div class="center-col">
+			<div id="boot-logo" class="jieeplay-logo"></div>
+			<div class="progress-track">
+				<div id="boot-progress-fill" class="progress-fill"></div>
+			</div>
+			<p id="boot-percent" class="subtitle">0%</p>
+		</div>
+	</div>
+
+	<!-- ONBOARDING -->
+	<div id="view-onboarding" class="view">
+		<div id="onboarding-logo" class="jieeplay-logo"></div>
+
+		<div id="step-language" class="onb-step center-col">
+			<h1 class="title-lg" data-t="onboarding_language_title"></h1>
+			<p class="subtitle" data-t="onboarding_language_subtitle"></p>
+			<button class="btn" id="btn-lang-fr">🇫🇷 Français</button>
+			<button class="btn" id="btn-lang-en">🇬🇧 English</button>
+		</div>
+
+		<div id="step-gender" class="onb-step center-col hidden">
+			<h1 class="title-lg" data-t="onboarding_gender_title"></h1>
+			<p class="subtitle" data-t="onboarding_gender_subtitle"></p>
+			<button class="btn" id="btn-gender-female" data-t="onboarding_gender_option_female"></button>
+			<button class="btn" id="btn-gender-male" data-t="onboarding_gender_option_male"></button>
+		</div>
+
+		<div id="step-name" class="onb-step center-col hidden">
+			<h1 class="title-lg" data-t="onboarding_name_title"></h1>
+			<input type="text" id="input-player-name" class="text-input" data-t-placeholder="onboarding_name_placeholder">
+			<p class="subtitle hint-text" data-t="onboarding_name_hint"></p>
+			<button class="btn" id="btn-name-continue" data-t="onboarding_name_button_continue" disabled></button>
+		</div>
+	</div>
+
+	<!-- ACCUEIL -->
+	<div id="view-home" class="view">
+		<div id="home-logo" class="jieeplay-logo"></div>
+
+		<div id="home-welcome" class="center-col hidden">
+			<p id="home-welcome-body" class="subtitle"></p>
+			<p id="home-welcome-question" class="title-lg"></p>
+			<button class="btn" id="btn-welcome-start"></button>
+		</div>
+
+		<div id="home-menu" class="screen-scroll hidden">
+			<div class="home-menu-inner">
+				<p id="home-greeting" class="title-lg" style="text-align:center;"></p>
+
+				<div class="card secret-card" id="secret-card">
+					<div class="secret-card-row">
+						<div class="envelope-icon">💌</div>
+						<div class="secret-card-text">
+							<p id="secret-title" class="secret-title"></p>
+							<p id="secret-subtitle" class="secret-subtitle"></p>
+							<div class="progress-track thin"><div id="secret-progress-fill" class="progress-fill"></div></div>
+						</div>
+					</div>
+				</div>
+
+				<button class="btn btn-continue" id="btn-continue"></button>
+
+				<div class="home-icon-row">
+					<button class="icon-btn" id="btn-journey">
+						<span class="icon-btn-emoji">📖</span>
+						<span class="icon-btn-label" data-t="menu_journey_short"></span>
+					</button>
+					<button class="icon-btn" id="btn-rewards">
+						<span class="icon-btn-emoji">🎁</span>
+						<span class="icon-btn-label" data-t="menu_rewards_short"></span>
+					</button>
+					<button class="icon-btn" id="btn-settings">
+						<span class="icon-btn-emoji">⚙️</span>
+						<span class="icon-btn-label" data-t="nav_settings_short"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Les écrans Jeu, Récompense, Paramètres, Parcours arrivent à l'étape suivante -->
+	<div id="view-game" class="view"></div>
+	<div id="view-reward" class="view"></div>
+	<div id="view-settings" class="view"></div>
+	<div id="view-journey" class="view"></div>
+
+</div>
+
+<script src="js/utils.js"></script>
+<script src="js/state.js"></script>
+<script src="js/save.js"></script>
+<script src="js/localization.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/logo.js"></script>
+<script src="js/onboarding.js"></script>
+<script src="js/home.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
