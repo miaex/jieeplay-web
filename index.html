@@ -101,8 +101,44 @@
 	</div>
 
 	<!-- Les écrans Jeu, Récompense, Paramètres, Parcours arrivent à l'étape suivante -->
-	<div id="view-game" class="view"></div>
-	<div id="view-reward" class="view"></div>
+	<div id="view-game" class="view">
+		<div id="game-logo" class="jieeplay-logo"></div>
+
+		<div id="game-board" class="game-board">
+			<div class="card hint-card">
+				<div class="hint-row">
+					<p id="hint-text" class="hint-text-content"></p>
+				</div>
+			</div>
+
+			<div id="answer-row" class="tile-row"></div>
+			<div id="tiles-row" class="tile-row"></div>
+
+			<p id="game-feedback" class="feedback-text"></p>
+
+			<div class="game-btn-row">
+				<button class="btn btn-secondary" id="btn-clear"></button>
+				<button class="btn" id="btn-validate" disabled></button>
+			</div>
+		</div>
+
+		<button id="btn-hint" class="hint-fab">💡</button>
+
+		<div id="category-overlay" class="category-overlay">
+			<div class="category-overlay-inner">
+				<h2 class="title-lg" id="category-title"></h2>
+				<div id="category-grid" class="category-grid"></div>
+				<button class="btn btn-secondary" id="btn-category-back"></button>
+			</div>
+		</div>
+	</div>
+	<div id="view-reward" class="view">
+		<div class="center-col">
+			<p class="title-lg">✨</p>
+			<p class="subtitle">Le système des 100 cartes arrive à la prochaine étape !</p>
+			<button class="btn" id="btn-reward-placeholder-back">Retour à l'accueil</button>
+		</div>
+	</div>
 	<div id="view-settings" class="view"></div>
 	<div id="view-journey" class="view"></div>
 
@@ -116,6 +152,7 @@
 <script src="js/logo.js"></script>
 <script src="js/onboarding.js"></script>
 <script src="js/home.js"></script>
+<script src="js/game.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

@@ -21,7 +21,8 @@ const App = {
 		});
 
 		if (viewName === "home") Home.show();
-		// game / reward / settings / journey seront branchés à l'étape suivante.
+		if (viewName === "game") Game.show();
+		// reward / settings / journey seront branchés aux prochaines étapes.
 	},
 
 	async boot() {
@@ -47,6 +48,12 @@ const App = {
 		SaveManager.load();
 		Onboarding.init();
 		Home.init();
+		Game.init();
+
+		document.getElementById("btn-reward-placeholder-back").addEventListener("click", () => {
+			Audio_.playClick();
+			App.goTo("home");
+		});
 
 		await new Promise((r) => setTimeout(r, 250));
 
