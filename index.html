@@ -135,10 +135,60 @@
 		</div>
 	</div>
 	<div id="view-reward" class="view">
-		<div class="center-col">
-			<p class="title-lg">✨</p>
-			<p class="subtitle">Le système des 100 cartes arrive à la prochaine étape !</p>
-			<button class="btn" id="btn-reward-placeholder-back">Retour à l'accueil</button>
+		<div class="reward-bg-decor"></div>
+		<div class="screen-scroll">
+			<div class="reward-inner">
+
+				<!-- ZONE A — EN-TÊTE -->
+				<div class="reward-header">
+					<h1 id="reward-title" class="reward-title"></h1>
+					<p id="reward-subtitle" class="reward-subtitle"></p>
+				</div>
+
+				<!-- FLUX DES LOTS (zones B, C, D, E) -->
+				<div id="reward-flow">
+					<!-- ZONE B — PROGRESSION -->
+					<div id="reward-progress-dots" class="reward-progress-dots"></div>
+
+					<!-- ZONE C — INSTRUCTION -->
+					<div class="reward-lot-capsule"><span id="reward-lot-label"></span></div>
+					<h2 id="reward-choose-title" class="reward-choose-title"></h2>
+					<p id="reward-choose-desc" class="reward-choose-desc"></p>
+
+					<!-- ZONE D — GRILLE DES CARTES -->
+					<div id="reward-grid-wrap">
+						<div id="reward-grid" class="reward-grid"></div>
+					</div>
+
+					<!-- ZONE E — INDICATION INFÉRIEURE -->
+					<div id="reward-bottom-note" class="reward-bottom-note">
+						<p id="reward-select-label" class="reward-select-label"></p>
+						<div class="reward-tip-bubble">
+							<span class="reward-tip-heart">💗</span>
+							<p id="reward-tip-text" class="reward-tip-text"></p>
+						</div>
+					</div>
+
+					<!-- Résultat après sélection -->
+					<div id="reward-result" class="reward-result hidden">
+						<p id="reward-result-label" class="reward-result-label"></p>
+						<button class="btn" id="btn-reward-continue"></button>
+					</div>
+				</div>
+
+				<!-- MESSAGE FINAL -->
+				<div id="reward-final" class="reward-final hidden">
+					<div id="reward-assembling" class="reward-assembling hidden">
+						<p id="reward-assembling-text"></p>
+					</div>
+					<div id="reward-final-content" class="reward-final-content hidden">
+						<p id="reward-final-title" class="reward-final-title"></p>
+						<div id="reward-final-message" class="reward-final-message"></div>
+						<button class="btn" id="btn-reward-final-continue"></button>
+					</div>
+				</div>
+
+			</div>
 		</div>
 	</div>
 	<div id="view-settings" class="view"></div>
@@ -156,6 +206,7 @@
 <script src="js/onboarding.js"></script>
 <script src="js/home.js"></script>
 <script src="js/game.js"></script>
+<script src="js/reward.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

@@ -48,7 +48,7 @@ const SaveManager = {
 		State.profile = { language, gender: "", playerName: "", onboardingDone: false, welcomeSeen: false };
 		State.progress = {
 			currentChapter: 1, currentLevel: 1, unlockedRewards: [],
-			rewardActive: false, rewardCompleted: false, rewardTone: "", rewardFragments: [],
+			rewardActive: false, rewardCompleted: false, rewardTone: "", rewardGroup: 1, rewardFragments: [],
 		};
 		State.statistics = { successes: 0, failures: 0 };
 		State.categoryChoiceHistory = [];

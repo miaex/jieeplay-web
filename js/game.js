@@ -305,9 +305,12 @@ const Game = {
 				State.progress.currentLevel = 1;
 				State.progress.rewardActive = true;
 				State.progress.rewardCompleted = false;
+				State.progress.rewardGroup = 1;
 				State.progress.rewardFragments = [];
+				const toneOrder = ["affectionate", "admiring", "playful", "comforting", "mysterious", "warm"];
+				State.progress.rewardTone = toneOrder[(completedChapter - 1) % toneOrder.length];
 				SaveManager.save();
-				App.goTo("reward");
+				Nav.push("reward");
 			} else {
 				State.progress.currentLevel = newLevel;
 				SaveManager.save();

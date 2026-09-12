@@ -22,7 +22,8 @@ const App = {
 
 		if (viewName === "home") Home.show();
 		if (viewName === "game") Game.show();
-		// reward / settings / journey seront branchés aux prochaines étapes.
+		if (viewName === "reward") Reward.show();
+		// settings / journey seront branchés aux prochaines étapes.
 	},
 
 	async boot() {
@@ -50,18 +51,18 @@ const App = {
 		Onboarding.init();
 		Home.init();
 		Game.init();
-
-		document.getElementById("btn-reward-placeholder-back").addEventListener("click", () => {
-			Audio_.playClick();
-			Nav.back();
-		});
+		Reward.init();
 
 		Audio_.preloadMusic();
 
 		await new Promise((r) => setTimeout(r, 250));
 
 		if (SaveManager.hasSave() && State.profile.onboardingDone) {
-			Nav.replace("home");
+			if (State.progress.rewardActive) {
+				Nav.replace("reward");
+			} else {
+				Nav.replace("home");
+			}
 		} else {
 			this.goTo("onboarding");
 			renderLogo(document.getElementById("onboarding-logo"));

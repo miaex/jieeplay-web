@@ -24,6 +24,7 @@ const State = {
 		rewardActive: false,
 		rewardCompleted: false,
 		rewardTone: "",
+		rewardGroup: 1,
 		rewardFragments: [],
 	},
 
