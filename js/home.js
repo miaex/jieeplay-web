@@ -5,19 +5,19 @@ const Home = {
 		document.getElementById("btn-welcome-start").addEventListener("click", () => this.onStartPressed());
 		document.getElementById("btn-continue").addEventListener("click", () => {
 			Audio_.playClick();
-			App.goTo("game");
+			Nav.push("game-category");
 		});
 		document.getElementById("btn-journey").addEventListener("click", () => {
 			Audio_.playClick();
-			App.goTo("journey");
+			Nav.push("journey");
 		});
 		document.getElementById("btn-rewards").addEventListener("click", () => {
 			Audio_.playClick();
-			App.goTo("rewards");
+			Nav.push("rewards-list");
 		});
 		document.getElementById("btn-settings").addEventListener("click", () => {
 			Audio_.playClick();
-			App.goTo("settings");
+			Nav.push("settings");
 		});
 	},
 

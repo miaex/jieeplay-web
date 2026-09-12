@@ -13,6 +13,25 @@
 	max-width: 480px;
 	margin: 0 auto;
 	width: 100%;
+	position: relative;
+}
+
+.board-back-btn {
+	position: absolute;
+	top: calc(var(--safe-top) + 4px);
+	left: 4px;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	background: var(--color-cream);
+	border: 1px solid var(--color-border);
+	box-shadow: var(--shadow-soft);
+	font-size: 30px;
+	color: var(--color-mauve-dark);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 15;
 }
 
 .hint-card {
@@ -143,12 +162,14 @@
 	inset: 0;
 	background: rgba(246, 244, 242, 0.98);
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 	z-index: 10;
 	opacity: 1;
 	transition: opacity 0.25s ease;
-	padding-top: var(--safe-top);
+	padding-top: calc(var(--safe-top) + 20px);
+	padding-bottom: 30px;
 }
 .category-overlay.hidden-overlay {
 	opacity: 0;

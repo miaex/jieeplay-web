@@ -46,19 +46,22 @@ const App = {
 
 		Audio_.init();
 		SaveManager.load();
+		Nav.init();
 		Onboarding.init();
 		Home.init();
 		Game.init();
 
 		document.getElementById("btn-reward-placeholder-back").addEventListener("click", () => {
 			Audio_.playClick();
-			App.goTo("home");
+			Nav.back();
 		});
+
+		Audio_.preloadMusic();
 
 		await new Promise((r) => setTimeout(r, 250));
 
 		if (SaveManager.hasSave() && State.profile.onboardingDone) {
-			this.goTo("home");
+			Nav.replace("home");
 		} else {
 			this.goTo("onboarding");
 			renderLogo(document.getElementById("onboarding-logo"));
@@ -67,17 +70,9 @@ const App = {
 	},
 };
 
-// Beaucoup de navigateurs mobiles bloquent l'autoplay audio tant qu'aucun
-// geste utilisateur n'a eu lieu : on retente la musique au premier clic.
-document.addEventListener(
-	"click",
-	() => {
-		if (Audio_.musicEl && Audio_.musicEl.paused && Audio_.currentMusicKey) {
-			Audio_.musicEl.play().catch(() => {});
-		}
-	},
-	{ once: false }
-);
+// Beaucoup de navigateurs mobiles bloquent l'audio tant qu'aucun geste
+// utilisateur n'a eu lieu : on relance l'AudioContext au premier clic.
+document.addEventListener("click", () => Audio_.resumeIfNeeded(), { once: false });
 
 window.addEventListener("DOMContentLoaded", () => {
 	App.boot();

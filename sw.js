@@ -1,9 +1,9 @@
 // Service worker JieePlay
 // Stratégie : cache-first pour tout le contenu de l'app (§4, §26 du cahier
-// des charges). Le numéro de CACHE_NAME doit être incrémenté à chaque
-// mise à jour du contenu pour forcer le rafraîchissement du cache.
+// des charges). Incrémenter CACHE_NAME à chaque mise à jour du contenu
+// pour forcer le rafraîchissement du cache chez les joueurs.
 
-const CACHE_NAME = "jieeplay-v1";
+const CACHE_NAME = "jieeplay-v2";
 
 const ASSETS_TO_CACHE = [
 	"./",
@@ -16,6 +16,7 @@ const ASSETS_TO_CACHE = [
 	"./css/reward.css",
 	"./css/settings.css",
 	"./js/app.js",
+	"./js/nav.js",
 	"./js/state.js",
 	"./js/save.js",
 	"./js/localization.js",
@@ -24,8 +25,6 @@ const ASSETS_TO_CACHE = [
 	"./js/onboarding.js",
 	"./js/home.js",
 	"./js/game.js",
-	"./js/rewards.js",
-	"./js/settings.js",
 	"./js/utils.js",
 	"./data/translations-fr.json",
 	"./data/translations-en.json",
@@ -45,7 +44,19 @@ const ASSETS_TO_CACHE = [
 
 self.addEventListener("install", (event) => {
 	event.waitUntil(
-		caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS_TO_CACHE))
+		caches.open(CACHE_NAME).then(async (cache) => {
+			// Mise en cache résiliente : un fichier manquant ou en erreur ne doit
+			// jamais empêcher la mise en cache de TOUS les autres (contrairement à
+			// cache.addAll(), qui échoue intégralement au moindre fichier en échec).
+			const results = await Promise.allSettled(
+				ASSETS_TO_CACHE.map((url) => cache.add(url))
+			);
+			results.forEach((r, i) => {
+				if (r.status === "rejected") {
+					console.warn("SW: échec de mise en cache pour", ASSETS_TO_CACHE[i], r.reason);
+				}
+			});
+		})
 	);
 	self.skipWaiting();
 });
@@ -64,17 +75,30 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
+	// Requêtes de NAVIGATION (chargement de la page elle-même) : toujours
+	// retomber sur l'app en cache si hors ligne, peu importe l'URL exacte
+	// demandée — c'est ce qui garantit que l'app s'ouvre sans connexion.
+	if (event.request.mode === "navigate") {
+		event.respondWith(
+			fetch(event.request).catch(
+				() => caches.match("./index.html").then((r) => r || caches.match("./"))
+			)
+		);
+		return;
+	}
+
 	event.respondWith(
 		caches.match(event.request).then((cached) => {
 			if (cached) return cached;
-			return fetch(event.request).then((response) => {
-				// Met en cache les nouvelles ressources récupérées avec succès.
-				if (response && response.status === 200) {
-					const clone = response.clone();
-					caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
-				}
-				return response;
-			}).catch(() => cached);
+			return fetch(event.request)
+				.then((response) => {
+					if (response && response.status === 200) {
+						const clone = response.clone();
+						caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+					}
+					return response;
+				})
+				.catch(() => cached);
 		})
 	);
 });

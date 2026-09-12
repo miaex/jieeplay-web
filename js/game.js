@@ -21,7 +21,11 @@ const Game = {
 		document.getElementById("btn-hint").addEventListener("click", () => this.onHintPressed());
 		document.getElementById("btn-category-back").addEventListener("click", () => {
 			Audio_.playClick();
-			App.goTo("home");
+			Nav.back();
+		});
+		document.getElementById("btn-board-back").addEventListener("click", () => {
+			Audio_.playClick();
+			Nav.back();
 		});
 	},
 
