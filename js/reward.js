@@ -1,23 +1,22 @@
 // reward.js — équivalent Reward.gd : écran "Récompense secrète",
-// système des 100 cartes (10 lots de 10, illusion du choix jamais
-// expliquée au joueur — cf. spécification fournie).
+// système des 50 cartes (10 lots de 5 cartes façon cartes à jouer).
 //
-// Logique des 100 cartes (§25-26 de la spec) :
-//   - 10 groupes de 10 cartes chacun.
-//   - Les 10 cartes d'un même groupe révèlent TOUJOURS le même fragment.
-//   - Seule leur apparence (variant + couleur) change.
-//   - On ne génère jamais 100 écrans : chaque carte n'est qu'une petite
-//     structure { variant, palette }, générée à la volée pour le groupe
-//     courant.
+// Logique (cf. spécification) :
+//   - 10 groupes, un par fragment du message final.
+//   - Chaque groupe affiche 5 cartes générées à la volée (jamais 50
+//     écrans codés en dur) : { variant, palette }.
+//   - Les 5 cartes d'un même groupe révèlent TOUJOURS le même fragment,
+//     mais rien dans l'interface ne le laisse jamais deviner : chaque
+//     lot a une apparence entièrement différente, et une seule carte
+//     est jamais montrée retournée à la fois. Le joueur doit croire
+//     que son choix a façonné le message qu'il reçoit.
 
 const REWARD_CARD_VARIANTS = [
 	"stars", "flower", "moon", "leaves", "heart",
 	"waves", "sun", "clouds", "diamond", "mystery",
 ];
 
-const REWARD_PALETTES = [
-	"rose", "corail", "creme", "blanc", "mauve", "bordeaux", "or",
-];
+const REWARD_PALETTES = ["wine", "plum", "amber", "rosewood", "ivory"];
 
 const REWARD_SYMBOLS = {
 	stars: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M24 6 L27 21 L42 24 L27 27 L24 42 L21 27 L6 24 L21 21 Z"/><circle cx="36" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="10" cy="34" r="1.3" fill="currentColor" stroke="none"/></svg>',
@@ -31,6 +30,15 @@ const REWARD_SYMBOLS = {
 	diamond: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M24 6 L38 20 L24 42 L10 20 Z"/><path d="M10 20 L38 20"/><path d="M17 20 L24 6 L31 20"/></svg>',
 	mystery: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M24 24c6 0 10-4 10-9s-4-8-8-8-7 3-7 7 3 6 6 6 5-2 5-5-2-4-4-4"/><circle cx="24" cy="24" r="17" opacity="0.4" stroke-width="1" stroke-dasharray="2 4"/></svg>',
 };
+
+// Géométrie de l'éventail — 5 positions fixes, en arc.
+const REWARD_FAN_LAYOUT = [
+	{ rot: -18, tx: -92, ty: 22 },
+	{ rot: -9, tx: -46, ty: 8 },
+	{ rot: 0, tx: 0, ty: 0 },
+	{ rot: 9, tx: 46, ty: 8 },
+	{ rot: 18, tx: 92, ty: 22 },
+];
 
 const Reward = {
 	selecting: false,
@@ -52,6 +60,8 @@ const Reward = {
 		document.getElementById("reward-final-title").textContent = Loc.t("secret_final_title");
 		document.getElementById("btn-reward-final-continue").textContent = Loc.t("reward_continue");
 
+		this.resetStage();
+
 		if (State.progress.rewardCompleted) {
 			this.renderFinal(false);
 		} else {
@@ -59,9 +69,15 @@ const Reward = {
 		}
 	},
 
-	// -----------------------------------------------------------------
-	// PROGRESSION (ZONE B)
-	// -----------------------------------------------------------------
+	resetStage() {
+		document.getElementById("reward-stage").classList.add("hidden");
+		document.getElementById("reward-stage").classList.remove("visible");
+		document.getElementById("reward-stage-backdrop").classList.add("hidden");
+		document.getElementById("reward-stage-backdrop").classList.remove("visible");
+		document.getElementById("reward-stage-result").classList.add("hidden");
+		document.getElementById("reward-stage-result").classList.remove("visible");
+		document.getElementById("reward-stage-card").classList.remove("flipped");
+	},
 
 	renderProgressDots() {
 		const track = document.getElementById("reward-progress-dots");
@@ -81,72 +97,100 @@ const Reward = {
 	renderGroup() {
 		document.getElementById("reward-final").classList.add("hidden");
 		document.getElementById("reward-flow").classList.remove("hidden");
-		document.getElementById("reward-result").classList.add("hidden");
-		document.getElementById("reward-grid-wrap").classList.remove("hidden");
 		document.getElementById("reward-bottom-note").classList.remove("hidden");
+		this.resetStage();
 		this.selecting = false;
 
 		const group = State.progress.rewardGroup;
 		document.getElementById("reward-lot-label").textContent = Loc.t("secret_lot_label", { current: group, total: 10 });
 		this.renderProgressDots();
-		this.buildGrid();
+		this.buildFan();
 	},
 
-	/** Construit dynamiquement les 10 cartes du lot courant. Les 10
-	 * variantes visuelles sont mélangées à chaque lot, mais quelle que
-	 * soit la carte choisie, le fragment révélé est toujours le même
-	 * (celui du groupe courant) — l'illusion du choix n'est jamais
-	 * expliquée au joueur. */
-	buildGrid() {
-		const grid = document.getElementById("reward-grid");
-		grid.innerHTML = "";
+	/** Construit les 5 cartes du lot courant, en éventail. Peu importe
+	 * la carte choisie, le fragment révélé est toujours celui du groupe
+	 * courant — l'illusion du choix n'est jamais explicitée. */
+	buildFan() {
+		const fan = document.getElementById("reward-fan");
+		fan.innerHTML = "";
+		fan.classList.remove("locked", "reward-fan--dim", "reward-fan--blurred");
 
-		const variants = shuffleArray(REWARD_CARD_VARIANTS);
+		const variants = shuffleArray(REWARD_CARD_VARIANTS).slice(0, 5);
+		const palettes = shuffleArray(REWARD_PALETTES);
 
-		variants.forEach((variant, i) => {
-			const palette = REWARD_PALETTES[i % REWARD_PALETTES.length];
+		REWARD_FAN_LAYOUT.forEach((pos, i) => {
+			const variant = variants[i];
+			const palette = palettes[i];
+			const distanceFromCenter = Math.abs(i - 2);
+
 			const card = document.createElement("div");
-			card.className = `reward-card palette-${palette}`;
+			card.className = `reward-fan-card palette-${palette}`;
+			card.style.setProperty("--rot", `${pos.rot}deg`);
+			card.style.setProperty("--tx", `${pos.tx}px`);
+			card.style.setProperty("--ty", `${pos.ty}px`);
+			card.style.zIndex = 10 - distanceFromCenter * 2;
+			card.style.animationDelay = `${i * 0.06}s`;
 			card.innerHTML = `
 				<div class="reward-card-inner">
 					<div class="reward-card-face reward-card-back">
+						<span class="reward-corner-mark reward-corner-tl">${REWARD_SYMBOLS[variant]}</span>
+						<span class="reward-corner-mark reward-corner-br">${REWARD_SYMBOLS[variant]}</span>
 						<div class="reward-card-symbol">${REWARD_SYMBOLS[variant]}</div>
-						<span class="reward-card-number">${String(i + 1).padStart(2, "0")}</span>
-					</div>
-					<div class="reward-card-face reward-card-front">
-						<span class="reward-card-front-label"></span>
-						<p class="reward-card-front-text"></p>
 					</div>
 				</div>`;
-			card.addEventListener("click", () => this.onCardSelected(card));
-			grid.appendChild(card);
+			card.addEventListener("click", () => this.onCardSelected(card, variant, palette));
+			fan.appendChild(card);
 		});
 	},
 
 	// -----------------------------------------------------------------
-	// SÉLECTION D'UNE CARTE
+	// SÉLECTION D'UNE CARTE → SCÈNE DE RÉVÉLATION EN GRAND PLAN
 	// -----------------------------------------------------------------
 
-	onCardSelected(cardEl) {
+	onCardSelected(cardEl, variant, palette) {
 		if (this.selecting) return;
 		this.selecting = true;
 		Audio_.playClick();
 
-		const grid = document.getElementById("reward-grid");
-		Array.from(grid.children).forEach((c) => {
-			c.classList.add("locked");
-			if (c !== cardEl) c.classList.add("dimmed");
-		});
+		const fan = document.getElementById("reward-fan");
+		fan.classList.add("locked", "reward-fan--dim");
 		cardEl.classList.add("chosen");
 
 		setTimeout(() => {
-			cardEl.classList.add("flipped");
-			Audio_.playReward();
-			this.revealFragment(cardEl);
-		}, 200);
+			fan.classList.add("reward-fan--blurred");
+			this.presentStage(variant, palette);
+		}, 220);
 	},
 
-	revealFragment(cardEl) {
+	presentStage(variant, palette) {
+		const backdrop = document.getElementById("reward-stage-backdrop");
+		const stage = document.getElementById("reward-stage");
+		const stageCard = document.getElementById("reward-stage-card");
+
+		stageCard.className = `reward-stage-card palette-${palette}`;
+		stageCard.querySelectorAll(".reward-card-symbol").forEach((n) => (n.innerHTML = REWARD_SYMBOLS[variant]));
+		stageCard.querySelectorAll(".reward-card-back .reward-corner-mark").forEach((n) => (n.innerHTML = REWARD_SYMBOLS[variant]));
+		stageCard.querySelectorAll(".reward-card-front .reward-corner-mark").forEach((n) => (n.innerHTML = REWARD_SYMBOLS[variant]));
+		stageCard.querySelector(".reward-card-front-text").classList.remove("show");
+		stageCard.querySelector(".reward-card-front-text").textContent = "";
+		stageCard.querySelector(".reward-card-front-label").textContent = Loc.t("secret_fragment_unlocked");
+
+		backdrop.classList.remove("hidden");
+		stage.classList.remove("hidden");
+		Audio_.playReward();
+
+		requestAnimationFrame(() => {
+			backdrop.classList.add("visible");
+			stage.classList.add("visible");
+		});
+
+		setTimeout(() => {
+			stageCard.classList.add("flipped");
+			this.revealFragment(stageCard);
+		}, 650);
+	},
+
+	revealFragment(stageCard) {
 		const group = State.progress.rewardGroup;
 		const lang = State.profile.language || "fr";
 		const tone = State.progress.rewardTone;
@@ -154,17 +198,16 @@ const Reward = {
 		const rawFragment = entry ? entry.fragments[group - 1] : "";
 		const fragmentText = rawFragment.replaceAll("{player_name}", State.profile.playerName);
 
-		// Le retournement dure ~550ms (voir CSS) : on laisse la face avant
-		// apparaître avant d'afficher le texte du fragment.
+		// Le retournement dure ~600ms (voir CSS) : le texte n'apparaît
+		// qu'une fois la face avant bien visible.
 		setTimeout(() => {
-			cardEl.querySelector(".reward-card-front-label").textContent = Loc.t("secret_fragment_unlocked");
-			const textEl = cardEl.querySelector(".reward-card-front-text");
+			const textEl = stageCard.querySelector(".reward-card-front-text");
 			textEl.textContent = fragmentText;
 			requestAnimationFrame(() => textEl.classList.add("show"));
 
-			// Sauvegarde immédiate : si l'app est fermée juste après ce point,
-			// le fragment n'est jamais perdu et le prochain lancement affiche
-			// directement le lot suivant (§30 de la spec).
+			// Sauvegarde immédiate : si l'app est fermée juste après ce
+			// point, le fragment n'est jamais perdu et le prochain
+			// lancement affiche directement le lot suivant.
 			State.progress.rewardFragments.push(fragmentText);
 			State.progress.rewardGroup = group + 1;
 			if (State.progress.rewardGroup > 10) {
@@ -172,17 +215,13 @@ const Reward = {
 			}
 			SaveManager.save();
 
-			this.showResultFooter();
-		}, 350);
-	},
-
-	showResultFooter() {
-		document.getElementById("reward-grid-wrap").classList.add("hidden");
-		document.getElementById("reward-bottom-note").classList.add("hidden");
-		document.getElementById("reward-result").classList.remove("hidden");
-		document.getElementById("reward-result-label").textContent = Loc.t("secret_fragment_obtained");
-		document.getElementById("btn-reward-continue").textContent = Loc.t("secret_continue");
-		this.renderProgressDots();
+			this.renderProgressDots();
+			document.getElementById("reward-result-label").textContent = Loc.t("secret_fragment_obtained");
+			document.getElementById("btn-reward-continue").textContent = Loc.t("secret_continue");
+			const resultEl = document.getElementById("reward-stage-result");
+			resultEl.classList.remove("hidden");
+			requestAnimationFrame(() => resultEl.classList.add("visible"));
+		}, 420);
 	},
 
 	onContinuePressed() {
@@ -199,6 +238,7 @@ const Reward = {
 	// -----------------------------------------------------------------
 
 	renderFinal(withAssembling) {
+		this.resetStage();
 		document.getElementById("reward-flow").classList.add("hidden");
 		document.getElementById("reward-final").classList.remove("hidden");
 

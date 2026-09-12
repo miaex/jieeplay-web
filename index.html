@@ -136,6 +136,32 @@
 	</div>
 	<div id="view-reward" class="view">
 		<div class="reward-bg-decor"></div>
+
+		<!-- SCÈNE DE RÉVÉLATION — carte choisie en grand, au premier plan -->
+		<div id="reward-stage-backdrop" class="reward-stage-backdrop hidden"></div>
+		<div id="reward-stage" class="reward-stage hidden">
+			<div id="reward-stage-card" class="reward-stage-card">
+				<div class="reward-card-inner">
+					<div class="reward-card-face reward-card-back">
+						<span class="reward-corner-mark reward-corner-tl"></span>
+						<span class="reward-corner-mark reward-corner-br"></span>
+						<div class="reward-card-symbol"></div>
+					</div>
+					<div class="reward-card-face reward-card-front">
+						<span class="reward-corner-mark reward-corner-tl"></span>
+						<span class="reward-corner-mark reward-corner-br"></span>
+						<span class="reward-card-front-label"></span>
+						<div class="reward-card-front-divider"></div>
+						<p class="reward-card-front-text"></p>
+					</div>
+				</div>
+			</div>
+			<div id="reward-stage-result" class="reward-stage-result hidden">
+				<p id="reward-result-label" class="reward-result-label"></p>
+				<button class="btn" id="btn-reward-continue"></button>
+			</div>
+		</div>
+
 		<div class="screen-scroll">
 			<div class="reward-inner">
 
@@ -155,9 +181,9 @@
 					<h2 id="reward-choose-title" class="reward-choose-title"></h2>
 					<p id="reward-choose-desc" class="reward-choose-desc"></p>
 
-					<!-- ZONE D — GRILLE DES CARTES -->
-					<div id="reward-grid-wrap">
-						<div id="reward-grid" class="reward-grid"></div>
+					<!-- ZONE D — ÉVENTAIL DE CARTES -->
+					<div id="reward-fan-wrap">
+						<div id="reward-fan" class="reward-fan"></div>
 					</div>
 
 					<!-- ZONE E — INDICATION INFÉRIEURE -->
@@ -167,12 +193,6 @@
 							<span class="reward-tip-heart">💗</span>
 							<p id="reward-tip-text" class="reward-tip-text"></p>
 						</div>
-					</div>
-
-					<!-- Résultat après sélection -->
-					<div id="reward-result" class="reward-result hidden">
-						<p id="reward-result-label" class="reward-result-label"></p>
-						<button class="btn" id="btn-reward-continue"></button>
 					</div>
 				</div>
 

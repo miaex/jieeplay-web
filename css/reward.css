@@ -1,17 +1,18 @@
-/* reward.css — écran "Récompense secrète", système des 100 cartes */
+/* reward.css — écran "Récompense secrète", système des 50 cartes
+ * (10 lots de 5) — design "carte à jouer" avec éventail + scène de
+ * révélation en grand plan. */
 
 #view-reward {
 	position: relative;
 	background: linear-gradient(
 		to bottom,
-		#faeaea 0%,
+		#f7e3e3 0%,
 		#fdf8f4 45%,
-		#f3e9ef 100%
+		#efe3ea 100%
 	);
 	overflow: hidden;
 }
 
-/* Décor discret : petites étincelles en arrière-plan, jamais devant les cartes */
 .reward-bg-decor {
 	position: absolute;
 	inset: 0;
@@ -25,12 +26,7 @@
 		radial-gradient(circle, rgba(255,255,255,0.6) 0 1.5px, transparent 2.5px),
 		radial-gradient(circle, rgba(217,158,89,0.35) 0 1.5px, transparent 2.5px);
 	background-repeat: no-repeat;
-	background-position:
-		18% 10%,
-		82% 8%,
-		62% 88%,
-		10% 78%,
-		90% 55%;
+	background-position: 18% 10%, 82% 8%, 62% 88%, 10% 78%, 90% 55%;
 }
 
 .reward-inner {
@@ -38,7 +34,7 @@
 	z-index: 1;
 	max-width: 460px;
 	margin: 0 auto;
-	padding: 4px 32px 30px;
+	padding: 4px 28px 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -51,7 +47,7 @@
 	align-items: center;
 	gap: 11px;
 	text-align: center;
-	margin-bottom: 18px;
+	margin-bottom: 16px;
 }
 .reward-title {
 	font-size: 28px;
@@ -67,12 +63,12 @@
 	max-width: 300px;
 }
 
-/* ZONE B — PROGRESSION (10 pastilles discrètes) */
+/* ZONE B — PROGRESSION */
 .reward-progress-dots {
 	display: flex;
 	justify-content: center;
 	gap: 9px;
-	margin-bottom: 16px;
+	margin-bottom: 14px;
 }
 .reward-dot {
 	width: 11px;
@@ -101,66 +97,80 @@
 	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 0.5px;
-	margin-bottom: 18px;
+	margin-bottom: 16px;
 }
-
 .reward-choose-title {
-	font-size: 24px;
+	font-size: 23px;
 	font-weight: 700;
 	color: #6e2f42;
 	text-align: center;
 	margin-bottom: 7px;
 }
 .reward-choose-desc {
-	font-size: 15px;
+	font-size: 14.5px;
 	color: #8a5566;
 	text-align: center;
 	line-height: 1.4;
-	max-width: 320px;
-	margin-bottom: 22px;
+	max-width: 300px;
+	margin-bottom: 20px;
 }
 
-/* ZONE D — GRILLE DES CARTES : 3 / 3 / 3 / 1 centrée */
-#reward-grid-wrap {
+/* =================================================================
+   ZONE D — ÉVENTAIL DE CARTES (5 cartes façon cartes à jouer)
+   ================================================================= */
+
+#reward-fan-wrap {
 	width: 100%;
+	display: flex;
+	justify-content: center;
 }
-.reward-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 14px;
-	width: 100%;
-}
-.reward-grid .reward-card:nth-child(10) {
-	grid-column: 2;
-}
-
-.reward-card {
-	aspect-ratio: 1.2 / 1;
-	perspective: 900px;
-	cursor: pointer;
-}
-.reward-card.locked {
-	pointer-events: none;
-}
-.reward-card.dimmed {
-	opacity: 0.32;
-	filter: saturate(0.5);
-	transition: opacity 0.25s ease, filter 0.25s ease;
-}
-.reward-card.chosen {
-	transform: translateY(-5px) scale(1.045);
-	z-index: 5;
-	transition: transform 0.2s ease;
-}
-
-.reward-card-inner {
+.reward-fan {
 	position: relative;
 	width: 100%;
-	height: 100%;
-	transform-style: preserve-3d;
-	transition: transform 0.55s cubic-bezier(0.4, 0.15, 0.2, 1);
+	max-width: 380px;
+	height: 208px;
 }
-.reward-card.flipped .reward-card-inner {
+.reward-fan.locked .reward-fan-card {
+	pointer-events: none;
+}
+
+.reward-fan-card {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 104px;
+	aspect-ratio: 0.68;
+	transform-origin: bottom center;
+	transition: transform 0.25s ease, filter 0.4s ease, opacity 0.4s ease;
+	cursor: pointer;
+	perspective: 900px;
+}
+.reward-fan-card.chosen {
+	transform: translate(calc(-50% + var(--tx, 0px)), calc(var(--ty, 0px) - 14px))
+		rotate(var(--rot, 0deg)) scale(1.08) !important;
+	z-index: 20 !important;
+}
+.reward-fan--dim .reward-fan-card:not(.chosen) {
+	opacity: 0.5;
+}
+.reward-fan--blurred {
+	filter: blur(7px) saturate(0.7);
+	opacity: 0.55;
+	transition: filter 0.45s ease, opacity 0.45s ease;
+}
+
+.reward-fan-card .reward-card-inner {
+	width: 100%;
+	height: 100%;
+}
+
+/* --- Carte : structure commune (éventail + scène agrandie) --- */
+.reward-card-inner {
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.6s cubic-bezier(0.4, 0.1, 0.2, 1);
+}
+.reward-stage-card.flipped .reward-card-inner {
 	transform: rotateY(180deg);
 }
 
@@ -169,86 +179,128 @@
 	inset: 0;
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
-	border-radius: 20px;
-	border: 1px solid rgba(255, 255, 255, 0.55);
-	box-shadow: 0 6px 16px rgba(122, 59, 74, 0.14);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.reward-card.chosen .reward-card-back {
-	box-shadow: 0 0 0 3px var(--color-gold), 0 10px 20px rgba(122, 59, 74, 0.22);
-}
-
-.reward-card-back {
-	padding: 6px;
-}
-.reward-card-symbol {
-	width: 42%;
-	height: 42%;
+	border-radius: 16px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-shadow: 0 8px 20px rgba(60, 20, 30, 0.28), 0 2px 4px rgba(60, 20, 30, 0.18);
+	overflow: hidden;
 }
-.reward-card-symbol svg {
-	width: 100%;
-	height: 100%;
-}
-.reward-card-number {
-	position: absolute;
-	bottom: 7px;
-	right: 9px;
-	font-size: 9px;
-	letter-spacing: 0.5px;
-	opacity: 0.45;
-}
-
 .reward-card-front {
 	transform: rotateY(180deg);
-	padding: 12px 10px;
+	flex-direction: column;
+	padding: 16px 14px;
 	text-align: center;
-	gap: 6px;
+	gap: 8px;
 }
+
+/* Cadre ornemental double-liseré doré/bordeaux + texture filigrane */
+.reward-card-face::before {
+	content: "";
+	position: absolute;
+	inset: 6px;
+	border-radius: 11px;
+	border: 1px solid var(--card-accent, rgba(217,176,108,0.55));
+	box-shadow: inset 0 0 0 3px var(--card-accent-soft, rgba(217,176,108,0.18));
+	pointer-events: none;
+}
+.reward-card-face::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: repeating-linear-gradient(
+		135deg,
+		var(--card-ink, #f2e2c8) 0px,
+		var(--card-ink, #f2e2c8) 1px,
+		transparent 1px,
+		transparent 13px
+	);
+	opacity: 0.06;
+	pointer-events: none;
+}
+
+.reward-card-symbol {
+	position: relative;
+	z-index: 1;
+	width: 46%;
+	height: 46%;
+	color: var(--card-ink, #f2e2c8);
+	filter: drop-shadow(0 1px 2px rgba(0,0,0,0.25));
+}
+.reward-card-symbol svg { width: 100%; height: 100%; }
+
+.reward-corner-mark {
+	position: absolute;
+	z-index: 1;
+	width: 15px;
+	height: 15px;
+	color: var(--card-ink, #f2e2c8);
+	opacity: 0.85;
+}
+.reward-corner-tl { top: 10px; left: 10px; }
+.reward-corner-br { bottom: 10px; right: 10px; transform: rotate(180deg); }
+.reward-corner-mark svg { width: 100%; height: 100%; }
+
 .reward-card-front-label {
-	font-size: 9.5px;
+	position: relative;
+	z-index: 1;
+	font-size: 10px;
 	font-weight: 700;
-	letter-spacing: 0.8px;
-	opacity: 0.6;
+	letter-spacing: 1px;
+	color: var(--card-ink, #f2e2c8);
+	opacity: 0.85;
+	text-transform: uppercase;
+}
+.reward-card-front-divider {
+	position: relative;
+	z-index: 1;
+	width: 34px;
+	height: 1px;
+	background: var(--card-accent, rgba(217,176,108,0.7));
 }
 .reward-card-front-text {
-	font-size: 12.5px;
-	line-height: 1.35;
-	font-weight: 600;
+	position: relative;
+	z-index: 1;
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 1.45;
+	color: var(--card-ink, #f2e2c8);
 	opacity: 0;
-	transition: opacity 0.4s ease;
+	transition: opacity 0.5s ease;
 }
-.reward-card-front-text.show {
-	opacity: 1;
+.reward-card-front-text.show { opacity: 1; }
+
+/* --- Palettes "cartes de caractère" (tons profonds façon jeu de cartes) --- */
+.palette-wine {
+	--card-bg-a: #6e1f33; --card-bg-b: #3c1120;
+	--card-ink: #f2dfc8; --card-accent: #d9b06c; --card-accent-soft: rgba(217,176,108,0.22);
+}
+.palette-plum {
+	--card-bg-a: #4a2b52; --card-bg-b: #2a1630;
+	--card-ink: #f0e4f0; --card-accent: #d9b06c; --card-accent-soft: rgba(217,176,108,0.22);
+}
+.palette-amber {
+	--card-bg-a: #8a5a1f; --card-bg-b: #55340f;
+	--card-ink: #fff3da; --card-accent: #f4e2b8; --card-accent-soft: rgba(244,226,184,0.22);
+}
+.palette-rosewood {
+	--card-bg-a: #7a3b4a; --card-bg-b: #46101c;
+	--card-ink: #f6e3e2; --card-accent: #d9b06c; --card-accent-soft: rgba(217,176,108,0.22);
+}
+.palette-ivory {
+	--card-bg-a: #faf1de; --card-bg-b: #eed9ac;
+	--card-ink: #6e2f2f; --card-accent: #a8703f; --card-accent-soft: rgba(168,112,63,0.18);
+}
+.reward-card-face {
+	background: radial-gradient(120% 140% at 30% 15%, var(--card-bg-a, #6e1f33), var(--card-bg-b, #3c1120));
 }
 
-/* Palette des cartes — même langage graphique, motif central seul varie */
-.palette-rose        { --card-bg: #f3d9d6; --card-ink: #7a3b4a; }
-.palette-corail       { --card-bg: #f2c2b3; --card-ink: #7a3b4a; }
-.palette-creme        { --card-bg: #fdf1e2; --card-ink: #8a5a3a; }
-.palette-blanc        { --card-bg: #fbf7f2; --card-ink: #795a73; }
-.palette-mauve        { --card-bg: #e9dfec; --card-ink: #6e4a6b; }
-.palette-bordeaux     { --card-bg: #7a3b4a; --card-ink: #f6e3e2; }
-.palette-or           { --card-bg: #e9c78c; --card-ink: #6e4a2c; }
-
-.reward-card .reward-card-back,
-.reward-card .reward-card-front {
-	background: var(--card-bg);
-	color: var(--card-ink);
-}
-
-/* Animation d'apparition des nouvelles cartes du lot */
-.reward-grid .reward-card {
-	animation: reward-card-in 0.35s ease both;
-}
-@keyframes reward-card-in {
-	from { opacity: 0; transform: translateY(10px); }
-	to { opacity: 1; transform: translateY(0); }
+/* Animation d'entrée de l'éventail */
+.reward-fan-card { animation: reward-fan-in 0.4s ease both; }
+@keyframes reward-fan-in {
+	from { opacity: 0; transform: translate(calc(-50% + var(--tx,0px)), calc(var(--ty,0px) + 20px)) rotate(var(--rot,0deg)) scale(0.9); }
+	to   { opacity: 1; transform: translate(calc(-50% + var(--tx,0px)), var(--ty,0px)) rotate(var(--rot,0deg)) scale(1); }
 }
 
 /* ZONE E — INDICATION INFÉRIEURE */
@@ -257,7 +309,7 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 12px;
-	margin-top: 22px;
+	margin-top: 14px;
 	text-align: center;
 }
 .reward-select-label {
@@ -272,33 +324,86 @@
 	border-radius: 999px;
 	background: rgba(255, 251, 248, 0.7);
 	border: 1px solid rgba(122, 59, 74, 0.1);
-	max-width: 320px;
+	max-width: 300px;
 }
-.reward-tip-heart {
-	font-size: 15px;
-	flex-shrink: 0;
+.reward-tip-heart { font-size: 15px; flex-shrink: 0; }
+.reward-tip-text { font-size: 13px; color: #8a5566; line-height: 1.35; text-align: left; }
+
+/* =================================================================
+   SCÈNE DE RÉVÉLATION — carte choisie au premier plan, fond flouté
+   ================================================================= */
+
+.reward-stage-backdrop {
+	position: fixed;
+	inset: 0;
+	z-index: 30;
+	background: radial-gradient(circle at 50% 42%, rgba(40, 12, 20, 0.05), rgba(40, 12, 20, 0.45) 75%);
+	opacity: 0;
+	transition: opacity 0.4s ease;
+	pointer-events: none;
 }
-.reward-tip-text {
-	font-size: 13px;
-	color: #8a5566;
-	line-height: 1.35;
-	text-align: left;
+.reward-stage-backdrop.visible { opacity: 1; }
+
+.reward-stage {
+	position: fixed;
+	inset: 0;
+	z-index: 31;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 22px;
+	padding: 20px;
+	pointer-events: none;
 }
 
-/* Résultat après sélection */
-.reward-result {
+.reward-stage-card {
+	position: relative;
+	width: min(66vw, 250px);
+	aspect-ratio: 0.68;
+	perspective: 1200px;
+	opacity: 0;
+	transform: scale(0.7) translateY(10px);
+	transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.3, 0.4, 0.2, 1.1);
+}
+.reward-stage.visible .reward-stage-card {
+	opacity: 1;
+	transform: scale(1) translateY(0);
+}
+.reward-stage-card .reward-card-face {
+	border-radius: 20px;
+	box-shadow: 0 20px 44px rgba(40, 12, 20, 0.4), 0 4px 10px rgba(40, 12, 20, 0.25);
+}
+.reward-stage-card .reward-card-symbol { width: 42%; height: 42%; }
+.reward-stage-card .reward-corner-mark { width: 20px; height: 20px; }
+.reward-stage-card .reward-corner-tl { top: 16px; left: 16px; }
+.reward-stage-card .reward-corner-br { bottom: 16px; right: 16px; }
+.reward-stage-card .reward-card-front { padding: 26px 22px; gap: 12px; }
+.reward-stage-card .reward-card-front-label { font-size: 11px; }
+.reward-stage-card .reward-card-front-text { font-size: 16.5px; line-height: 1.55; }
+
+.reward-stage-result {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 16px;
-	margin-top: 24px;
+	opacity: 0;
+	transform: translateY(6px);
+	transition: opacity 0.4s ease, transform 0.4s ease;
+	pointer-events: none;
+}
+.reward-stage-result.visible {
+	opacity: 1;
+	transform: translateY(0);
+	pointer-events: auto;
 }
 .reward-result-label {
 	font-size: 16px;
 	font-weight: 700;
-	color: #6e2f42;
+	color: #fff;
+	text-shadow: 0 2px 8px rgba(0,0,0,0.35);
 }
-.reward-result .btn {
+.reward-stage-result .btn {
 	min-height: 50px;
 	padding: 10px 34px;
 }
@@ -345,6 +450,4 @@
 	white-space: pre-wrap;
 	max-width: 340px;
 }
-.reward-final-content .btn {
-	margin-top: 6px;
-}
+.reward-final-content .btn { margin-top: 6px; }
