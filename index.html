@@ -28,6 +28,10 @@
 				<div id="boot-progress-fill" class="progress-fill"></div>
 			</div>
 			<p id="boot-percent" class="subtitle">0%</p>
+			<div id="boot-error" class="boot-error hidden">
+				<p id="boot-error-text" class="subtitle"></p>
+				<button class="btn" id="btn-boot-retry"></button>
+			</div>
 		</div>
 	</div>
 
@@ -69,28 +73,53 @@
 
 		<div id="home-menu" class="screen-scroll hidden">
 			<div class="home-menu-inner">
-				<p id="home-greeting" class="title-lg" style="text-align:center;"></p>
 
-				<div class="card secret-card" id="secret-card">
-					<div class="secret-card-row">
-						<div class="envelope-icon">💌</div>
-						<div class="secret-card-text">
-							<p id="secret-title" class="secret-title"></p>
-							<p id="secret-subtitle" class="secret-subtitle"></p>
-							<div class="progress-track thin"><div id="secret-progress-fill" class="progress-fill"></div></div>
+				<!-- EN-TÊTE -->
+				<div class="home-header home-anim" style="--home-anim-delay:0ms">
+					<div class="home-header-left">
+						<div id="home-avatar" class="home-avatar"></div>
+						<div class="home-header-text">
+							<p id="home-greeting" class="home-greeting"></p>
+							<p id="home-subtitle-line" class="home-subtitle-line"></p>
 						</div>
 					</div>
+					<button id="btn-home-envelope" class="home-envelope hidden">
+						<span class="home-envelope-icon">💌</span>
+						<span class="home-envelope-dot"></span>
+					</button>
 				</div>
 
-				<button class="btn btn-continue" id="btn-continue"></button>
+				<div id="home-logo-mini" class="jieeplay-logo home-logo-mini home-anim" style="--home-anim-delay:40ms"></div>
 
-				<div class="home-icon-row">
+				<!-- CARTE PRINCIPALE -->
+				<div id="home-main-card" class="home-main-card home-anim" style="--home-anim-delay:80ms">
+					<div class="home-main-card-decor">✦</div>
+					<p id="home-main-label" class="home-main-label"></p>
+					<p id="home-main-title" class="home-main-title"></p>
+					<p id="home-main-progress-text" class="home-main-progress-text"></p>
+					<div id="home-main-progress-track" class="progress-track thin">
+						<div id="home-main-progress-fill" class="progress-fill"></div>
+					</div>
+					<p id="home-main-hint" class="home-main-hint"></p>
+					<button class="btn home-main-cta" id="btn-continue"></button>
+				</div>
+
+				<!-- CARTE DU JOUR -->
+				<button id="home-daily-card" class="home-daily-card home-anim" style="--home-anim-delay:140ms">
+					<p id="home-daily-title" class="home-daily-title"></p>
+					<p id="home-daily-text" class="home-daily-text"></p>
+					<span id="home-daily-cta" class="home-daily-cta"></span>
+				</button>
+
+				<!-- RACCOURCIS -->
+				<div class="home-icon-row home-anim" style="--home-anim-delay:200ms">
 					<button class="icon-btn" id="btn-journey">
 						<span class="icon-btn-emoji">📖</span>
 						<span class="icon-btn-label" data-t="menu_journey_short"></span>
 					</button>
 					<button class="icon-btn" id="btn-rewards">
 						<span class="icon-btn-emoji">🎁</span>
+						<span id="home-rewards-badge" class="icon-btn-badge hidden"></span>
 						<span class="icon-btn-label" data-t="menu_rewards_short"></span>
 					</button>
 					<button class="icon-btn" id="btn-settings">
