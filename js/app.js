@@ -19,6 +19,7 @@ const App = {
 		this.views.forEach((v) => {
 			document.getElementById(`view-${v}`).classList.toggle("active", v === viewName);
 		});
+		BottomNav.refresh(viewName);
 
 		if (viewName === "home") Home.show();
 		if (viewName === "game") Game.show();
@@ -57,6 +58,7 @@ const App = {
 		Settings.init();
 		Journey.init();
 		RewardsList.init();
+		BottomNav.init();
 
 		Audio_.preloadMusic();
 

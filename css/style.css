@@ -20,6 +20,7 @@
 
 	--safe-top: env(safe-area-inset-top, 0px);
 	--safe-bottom: env(safe-area-inset-bottom, 0px);
+	--bottom-nav-height: 60px;
 }
 
 * {
@@ -54,7 +55,7 @@ html, body {
 	display: none;
 	flex-direction: column;
 	padding-top: calc(var(--safe-top) + 20px);
-	padding-bottom: calc(var(--safe-bottom) + 16px);
+	padding-bottom: calc(var(--safe-bottom) + var(--bottom-nav-height) + 10px);
 	opacity: 0;
 	transition: opacity 0.25s ease;
 }
@@ -62,6 +63,11 @@ html, body {
 .view.active {
 	display: flex;
 	opacity: 1;
+}
+
+/* Écrans sans navigation basse (mise en place, avant que l'app soit prête) */
+#view-boot, #view-onboarding {
+	padding-bottom: calc(var(--safe-bottom) + 16px);
 }
 
 .screen-scroll {

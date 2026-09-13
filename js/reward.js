@@ -82,6 +82,7 @@ const Reward = {
 		document.getElementById("reward-stage-result").classList.remove("visible");
 		document.getElementById("reward-stage-card").classList.remove("flipped");
 		document.getElementById("btn-reward-back").classList.remove("reward-back-hidden");
+		document.getElementById("bottom-nav").classList.remove("hidden");
 	},
 
 	renderProgressDots() {
@@ -169,6 +170,7 @@ const Reward = {
 
 	presentStage(variant, palette) {
 		document.getElementById("btn-reward-back").classList.add("reward-back-hidden");
+		document.getElementById("bottom-nav").classList.add("hidden");
 		const backdrop = document.getElementById("reward-stage-backdrop");
 		const stage = document.getElementById("reward-stage");
 		const stageCard = document.getElementById("reward-stage-card");

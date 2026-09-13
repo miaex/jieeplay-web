@@ -7,14 +7,7 @@ const Home = {
 	init() {
 		document.getElementById("btn-welcome-start").addEventListener("click", () => this.onStartPressed());
 
-		document.getElementById("btn-continue").addEventListener("click", () => {
-			Audio_.playClick();
-			if (State.progress.rewardActive) {
-				this.showPendingReward();
-			} else {
-				Nav.push("game-category");
-			}
-		});
+		document.getElementById("btn-continue").addEventListener("click", () => this.startOrContinue());
 
 		document.getElementById("btn-home-envelope").addEventListener("click", () => {
 			Audio_.playClick();
@@ -31,19 +24,18 @@ const Home = {
 			document.getElementById("pending-reward-overlay").classList.add("hidden");
 			Nav.push("reward");
 		});
+	},
 
-		document.getElementById("btn-journey").addEventListener("click", () => {
-			Audio_.playClick();
-			Nav.push("journey");
-		});
-		document.getElementById("btn-rewards").addEventListener("click", () => {
-			Audio_.playClick();
-			Nav.push("rewards-list");
-		});
-		document.getElementById("btn-settings").addEventListener("click", () => {
-			Audio_.playClick();
-			Nav.push("settings");
-		});
+	/** Action de la carte principale ET de l'onglet "Jouer" de la
+	 * navigation basse — un seul point de vérité. */
+	startOrContinue() {
+		Audio_.playClick();
+		if (State.progress.rewardActive) {
+			if (Nav.current !== "home") Nav.push("home");
+			this.showPendingReward();
+		} else {
+			Nav.push("game-category");
+		}
 	},
 
 	show() {
@@ -93,7 +85,6 @@ const Home = {
 		this.renderHeader();
 		this.renderMainCard();
 		this.renderDailyCard();
-		this.renderShortcuts();
 		this.replayEntranceAnimations();
 	},
 
@@ -168,17 +159,6 @@ const Home = {
 		document.getElementById("home-daily-cta").textContent = Loc.t("home_daily_cta");
 	},
 
-	renderShortcuts() {
-		const count = State.progress.unlockedRewards.length;
-		const badge = document.getElementById("home-rewards-badge");
-		if (count > 0) {
-			badge.textContent = count;
-			badge.classList.remove("hidden");
-		} else {
-			badge.classList.add("hidden");
-		}
-	},
-
 	/** Relance les animations d'entrée à chaque fois que l'accueil
 	 * redevient visible (pas seulement au premier chargement). */
 	replayEntranceAnimations() {
@@ -194,5 +174,6 @@ const Home = {
 		document.getElementById("pending-reward-text").textContent = Loc.t("home_pending_reward_text");
 		document.getElementById("btn-pending-reward-continue").textContent = Loc.t("home_pending_reward_button");
 		document.getElementById("pending-reward-overlay").classList.remove("hidden");
+		document.getElementById("bottom-nav").classList.add("hidden");
 	},
 };

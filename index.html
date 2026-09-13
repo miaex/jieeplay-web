@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="css/settings.css">
 <link rel="stylesheet" href="css/journey.css">
 <link rel="stylesheet" href="css/rewards-list.css">
+<link rel="stylesheet" href="css/bottom-nav.css">
 </head>
 <body>
 <div id="app">
@@ -110,23 +111,6 @@
 					<p id="home-daily-text" class="home-daily-text"></p>
 					<span id="home-daily-cta" class="home-daily-cta"></span>
 				</button>
-
-				<!-- RACCOURCIS -->
-				<div class="home-icon-row home-anim" style="--home-anim-delay:200ms">
-					<button class="icon-btn" id="btn-journey">
-						<span class="icon-btn-emoji">📖</span>
-						<span class="icon-btn-label" data-t="menu_journey_short"></span>
-					</button>
-					<button class="icon-btn" id="btn-rewards">
-						<span class="icon-btn-emoji">🎁</span>
-						<span id="home-rewards-badge" class="icon-btn-badge hidden"></span>
-						<span class="icon-btn-label" data-t="menu_rewards_short"></span>
-					</button>
-					<button class="icon-btn" id="btn-settings">
-						<span class="icon-btn-emoji">⚙️</span>
-						<span class="icon-btn-label" data-t="nav_settings_short"></span>
-					</button>
-				</div>
 			</div>
 		</div>
 		<div id="pending-reward-overlay" class="pending-reward-overlay hidden">
@@ -338,6 +322,8 @@
 		</div>
 	</div>
 
+	<nav id="bottom-nav" class="bottom-nav" aria-label="Navigation principale"></nav>
+
 </div>
 
 <script src="js/utils.js"></script>
@@ -354,6 +340,7 @@
 <script src="js/settings.js"></script>
 <script src="js/journey.js"></script>
 <script src="js/rewards-list.js"></script>
+<script src="js/bottom-nav.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

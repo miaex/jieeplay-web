@@ -139,7 +139,7 @@
 .hint-fab {
 	position: fixed;
 	right: 26px;
-	bottom: calc(var(--safe-bottom) + 26px);
+	bottom: calc(var(--safe-bottom) + var(--bottom-nav-height) + 26px);
 	width: 62px;
 	height: 62px;
 	border-radius: 50%;
@@ -214,7 +214,7 @@
 .hint-counter {
 	position: fixed;
 	right: 26px;
-	bottom: calc(var(--safe-bottom) + 92px);
+	bottom: calc(var(--safe-bottom) + var(--bottom-nav-height) + 92px);
 	min-width: 40px;
 	padding: 3px 9px;
 	border-radius: 999px;

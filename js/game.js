@@ -385,6 +385,7 @@ const Game = {
 
 	showWordReveal(word, message, onContinue) {
 		document.getElementById("game-board").classList.add("blurred");
+		document.getElementById("bottom-nav").classList.add("hidden");
 		document.getElementById("word-reveal-word").textContent = word;
 		document.getElementById("word-reveal-message").textContent = message;
 
@@ -404,6 +405,7 @@ const Game = {
 
 	hideWordReveal() {
 		document.getElementById("game-board").classList.remove("blurred");
+		document.getElementById("bottom-nav").classList.remove("hidden");
 		const overlay = document.getElementById("word-reveal-overlay");
 		overlay.classList.remove("visible");
 		overlay.classList.add("hidden");
