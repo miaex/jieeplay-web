@@ -26,6 +26,7 @@ const State = {
 		rewardTone: "",
 		rewardGroup: 1,
 		rewardFragments: [],
+		hintsUsedThisChapter: 0,
 	},
 
 	statistics: {

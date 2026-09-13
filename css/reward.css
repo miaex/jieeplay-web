@@ -359,8 +359,9 @@
 
 .reward-stage-card {
 	position: relative;
-	width: min(66vw, 250px);
-	aspect-ratio: 0.68;
+	width: min(76vw, 280px);
+	aspect-ratio: 0.6;
+	max-height: 68vh;
 	perspective: 1200px;
 	opacity: 0;
 	transform: scale(0.7) translateY(10px);
@@ -378,9 +379,16 @@
 .reward-stage-card .reward-corner-mark { width: 20px; height: 20px; }
 .reward-stage-card .reward-corner-tl { top: 16px; left: 16px; }
 .reward-stage-card .reward-corner-br { bottom: 16px; right: 16px; }
-.reward-stage-card .reward-card-front { padding: 26px 22px; gap: 12px; }
-.reward-stage-card .reward-card-front-label { font-size: 11px; }
-.reward-stage-card .reward-card-front-text { font-size: 16.5px; line-height: 1.55; }
+.reward-stage-card .reward-card-front {
+	padding: 30px 20px 22px;
+	gap: 10px;
+	justify-content: flex-start;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.reward-stage-card .reward-card-front-label { font-size: 11px; flex-shrink: 0; }
+.reward-stage-card .reward-card-front-divider { flex-shrink: 0; }
+.reward-stage-card .reward-card-front-text { font-size: 15.5px; line-height: 1.5; }
 
 .reward-stage-result {
 	display: flex;

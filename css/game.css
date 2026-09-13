@@ -209,3 +209,113 @@
 .category-btn .cat-emoji {
 	font-size: 26px;
 }
+
+/* Compteur d'indices — au-dessus de l'ampoule */
+.hint-counter {
+	position: fixed;
+	right: 26px;
+	bottom: calc(var(--safe-bottom) + 92px);
+	min-width: 40px;
+	padding: 3px 9px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.85);
+	border: 1px solid var(--color-border);
+	box-shadow: var(--shadow-soft);
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--color-mauve-dark);
+	text-align: center;
+	z-index: 20;
+}
+
+/* Plateau flouté pendant la révélation du mot */
+.game-board.blurred {
+	filter: blur(10px) brightness(0.97);
+	pointer-events: none;
+	transition: filter 0.35s ease;
+	user-select: none;
+}
+
+/* Scène de révélation du mot trouvé */
+.word-reveal-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 40;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(253, 248, 244, 0.42);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.35s ease;
+	overflow: hidden;
+}
+.word-reveal-overlay.visible {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.word-reveal-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 28px;
+	text-align: center;
+}
+
+.word-reveal-word {
+	font-size: clamp(30px, 9vw, 48px);
+	font-weight: 800;
+	letter-spacing: 2px;
+	color: var(--color-mauve-dark);
+	text-shadow: 0 4px 16px rgba(122, 59, 74, 0.25);
+	animation: word-reveal-pop 0.45s cubic-bezier(0.3, 0.6, 0.25, 1.2) both;
+}
+@keyframes word-reveal-pop {
+	from { opacity: 0; transform: scale(0.6); }
+	to { opacity: 1; transform: scale(1); }
+}
+
+.word-reveal-message {
+	margin-top: 18px;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1.45;
+	color: var(--color-text);
+	max-width: 320px;
+	opacity: 0;
+	animation: word-reveal-fade 0.4s ease 0.15s both;
+}
+@keyframes word-reveal-fade {
+	from { opacity: 0; transform: translateY(6px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+/* Confettis */
+.confetti-layer {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	overflow: hidden;
+	pointer-events: none;
+}
+.confetti-piece {
+	position: absolute;
+	top: -24px;
+	width: 8px;
+	height: 14px;
+	border-radius: 2px;
+	opacity: 0.95;
+	animation-name: confetti-fall;
+	animation-timing-function: cubic-bezier(0.3, 0.2, 0.7, 1);
+	animation-fill-mode: forwards;
+}
+@keyframes confetti-fall {
+	to {
+		transform: translateY(115vh) rotate(var(--confetti-rot, 360deg));
+		opacity: 0.5;
+	}
+}

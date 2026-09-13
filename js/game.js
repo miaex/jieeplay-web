@@ -38,7 +38,41 @@ const Game = {
 		document.getElementById("btn-category-back").textContent = Loc.t("level_back_to_home");
 		document.getElementById("category-title").textContent = Loc.t("level_choose_category_title");
 
+		this.refreshHintCounter();
 		this.showCategoryOverlay();
+	},
+
+	// -----------------------------------------------------------------
+	// INDICES — budget de 8 par chapitre
+	// -----------------------------------------------------------------
+
+	HINTS_PER_CHAPTER: 8,
+
+	refreshHintCounter() {
+		const used = State.progress.hintsUsedThisChapter || 0;
+		document.getElementById("hint-counter").textContent = Loc.t("level_hints_counter", { used, total: this.HINTS_PER_CHAPTER });
+	},
+
+	hintsExhausted() {
+		return (State.progress.hintsUsedThisChapter || 0) >= this.HINTS_PER_CHAPTER;
+	},
+
+	// -----------------------------------------------------------------
+	// MESSAGES DE TONTON JIEE — piochés au hasard, jamais deux fois
+	// consécutivement identiques quand on peut l'éviter.
+	// -----------------------------------------------------------------
+
+	lastMessage: "",
+
+	pickMessage(key) {
+		const lang = State.profile.language || "fr";
+		const table = (Loc.tables[lang] && Loc.tables[lang][key]) || (Loc.tables.fr && Loc.tables.fr[key]) || [];
+		if (!table.length) return "";
+		let candidates = table;
+		if (table.length > 1) candidates = table.filter((m) => m !== this.lastMessage);
+		const msg = pickRandom(candidates);
+		this.lastMessage = msg;
+		return msg.replaceAll("{player_name}", State.profile.playerName || "");
 	},
 
 	// -----------------------------------------------------------------
@@ -90,6 +124,16 @@ const Game = {
 			return;
 		}
 
+		// Filtrage par genre grammatical (uniquement pertinent en français,
+		// où certains mots sont des adjectifs genrés) : un mot sans genre
+		// précisé convient à tout le monde, un mot genré doit correspondre
+		// au genre du joueur.
+		const genderKey = State.profile.gender === "male" ? "m" : State.profile.gender === "female" ? "f" : null;
+		if (genderKey) {
+			const genderMatched = candidates.filter((w) => !w.gender || w.gender === genderKey);
+			if (genderMatched.length > 0) candidates = genderMatched;
+		}
+
 		const used = State.usedWordsByCategory[categoryId] || [];
 		let fresh = candidates.filter((w) => !used.includes(w.word));
 		if (fresh.length === 0) {
@@ -113,7 +157,8 @@ const Game = {
 		document.getElementById("game-feedback").textContent = "";
 		this.hintUsedThisLevel = false;
 		this.selectionLocked = false;
-		document.getElementById("btn-hint").disabled = false;
+		document.getElementById("btn-hint").disabled = this.hintsExhausted();
+		this.refreshHintCounter();
 
 		const wordLength = this.currentWord.length;
 		const lockCount = Math.min(wordLength <= 6 ? 1 : 2, Math.max(wordLength - 2, 0));
@@ -240,7 +285,7 @@ const Game = {
 	},
 
 	onHintPressed() {
-		if (this.hintUsedThisLevel) return;
+		if (this.hintUsedThisLevel || this.hintsExhausted()) return;
 		const k = this.slotFill.indexOf(-1);
 		if (k === -1) return;
 
@@ -256,7 +301,10 @@ const Game = {
 				this.animateSlotPop(targetPos);
 				this.updateValidateState();
 				this.hintUsedThisLevel = true;
-				document.getElementById("btn-hint").disabled = true;
+				State.progress.hintsUsedThisChapter = (State.progress.hintsUsedThisChapter || 0) + 1;
+				SaveManager.save();
+				this.refreshHintCounter();
+				document.getElementById("btn-hint").disabled = this.hintsExhausted();
 				Audio_.playClick();
 				break;
 			}
@@ -289,13 +337,19 @@ const Game = {
 	},
 
 	onSuccess() {
-		document.getElementById("game-feedback").textContent = Loc.t("level_success_message");
+		document.getElementById("game-feedback").textContent = "";
 		Audio_.playSuccess();
 		State.statistics.successes++;
 
 		const newLevel = State.progress.currentLevel + 1;
+		const wordFound = this.currentWord;
+		const message = this.pickMessage("level_success_messages");
+
+		this.showWordReveal(wordFound, message);
 
 		setTimeout(() => {
+			this.hideWordReveal();
+
 			if (newLevel > 10) {
 				const completedChapter = State.progress.currentChapter;
 				if (!State.progress.unlockedRewards.includes(completedChapter)) {
@@ -303,6 +357,7 @@ const Game = {
 				}
 				State.progress.currentChapter = completedChapter + 1;
 				State.progress.currentLevel = 1;
+				State.progress.hintsUsedThisChapter = 0;
 				State.progress.rewardActive = true;
 				State.progress.rewardCompleted = false;
 				State.progress.rewardGroup = 1;
@@ -316,11 +371,64 @@ const Game = {
 				SaveManager.save();
 				this.showCategoryOverlay();
 			}
-		}, 1100);
+		}, 2000);
+	},
+
+	// -----------------------------------------------------------------
+	// RÉVÉLATION DU MOT — plateau flouté au second plan, mot + pique de
+	// Tonton Jiee au premier plan, pluie de confettis.
+	// -----------------------------------------------------------------
+
+	showWordReveal(word, message) {
+		document.getElementById("game-board").classList.add("blurred");
+		document.getElementById("word-reveal-word").textContent = word;
+		document.getElementById("word-reveal-message").textContent = message;
+
+		const overlay = document.getElementById("word-reveal-overlay");
+		overlay.classList.remove("hidden");
+		requestAnimationFrame(() => overlay.classList.add("visible"));
+
+		this.spawnConfetti();
+	},
+
+	hideWordReveal() {
+		document.getElementById("game-board").classList.remove("blurred");
+		const overlay = document.getElementById("word-reveal-overlay");
+		overlay.classList.remove("visible");
+		overlay.classList.add("hidden");
+		document.getElementById("confetti-layer").innerHTML = "";
+	},
+
+	spawnConfetti() {
+		const layer = document.getElementById("confetti-layer");
+		layer.innerHTML = "";
+		const colors = ["#e79292", "#c98bb0", "#d9b06c", "#7a3b4a", "#f3d9d6", "#e6dcec"];
+		const pieceCount = 26;
+
+		for (let i = 0; i < pieceCount; i++) {
+			const piece = document.createElement("span");
+			piece.className = "confetti-piece";
+			const left = Math.random() * 100;
+			const duration = 1.6 + Math.random() * 1.1;
+			const delay = Math.random() * 0.3;
+			const rotation = 180 + Math.random() * 540;
+			const color = colors[Math.floor(Math.random() * colors.length)];
+			const size = 6 + Math.random() * 5;
+
+			piece.style.left = `${left}%`;
+			piece.style.width = `${size}px`;
+			piece.style.height = `${size * 1.6}px`;
+			piece.style.background = color;
+			piece.style.animationDuration = `${duration}s`;
+			piece.style.animationDelay = `${delay}s`;
+			piece.style.setProperty("--confetti-rot", `${rotation}deg`);
+
+			layer.appendChild(piece);
+		}
 	},
 
 	onFailure() {
-		document.getElementById("game-feedback").textContent = Loc.t("level_failure_message");
+		document.getElementById("game-feedback").textContent = this.pickMessage("level_failure_messages");
 		Audio_.playFailure();
 		State.statistics.failures++;
 
