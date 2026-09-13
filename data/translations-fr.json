@@ -143,6 +143,10 @@
 	"settings_music": "Musique",
 	"settings_vibration": "Vibrations",
 	"settings_reset": "Réinitialiser la progression",
+	"settings_reset_confirm": "Cette action remet ton chapitre, ton niveau et tes indices à zéro. Tes récompenses déjà débloquées le resteront. Continuer ?",
+	"settings_reset_cancel": "Annuler",
+	"settings_reset_confirm_button": "Oui, réinitialiser",
+	"howto_close": "Compris !",
 	"settings_howto": "❓ Comment jouer",
 
 	"howto_title": "❓ Comment jouer",
@@ -150,5 +154,5 @@
 	"howto_step_2": "2. Un indice s'affiche, avec des lettres mélangées en bas de l'écran. Touche les lettres dans l'ordre pour reconstituer le mot.",
 	"howto_step_3": "3. Une lettre mal placée ? Touche-la directement dans son emplacement pour la retirer — elle seule disparaît, le reste ne bouge pas. La prochaine lettre que tu poses ira à cette place.",
 	"howto_step_4": "4. Certaines lettres sont déjà placées pour toi, en doré : un petit coup de pouce sur les mots plus longs.",
-	"howto_step_5": "5. Bloquée ? L'ampoule 💡 en bas de l'écran révèle une lettre supplémentaire, une fois par niveau. Termine 10 niveaux pour débloquer une surprise… mais ça, on ne te dira rien de plus. 😌"
+	"howto_step_5": "5. Bloquée ? L'ampoule 💡 en bas de l'écran révèle une lettre supplémentaire. Tu as 8 indices par chapitre, à utiliser quand tu veux — même plusieurs sur le même mot. Termine 10 niveaux pour débloquer une surprise… mais ça, on ne te dira rien de plus. 😌"
 }

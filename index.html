@@ -14,6 +14,8 @@
 <link rel="stylesheet" href="css/game.css">
 <link rel="stylesheet" href="css/reward.css">
 <link rel="stylesheet" href="css/settings.css">
+<link rel="stylesheet" href="css/journey.css">
+<link rel="stylesheet" href="css/rewards-list.css">
 </head>
 <body>
 <div id="app">
@@ -229,8 +231,83 @@
 			</div>
 		</div>
 	</div>
-	<div id="view-settings" class="view"></div>
-	<div id="view-journey" class="view"></div>
+	<div id="view-settings" class="view">
+		<button id="btn-settings-back" class="board-back-btn">‹</button>
+		<div class="screen-scroll">
+			<div class="settings-inner">
+				<p id="settings-title" class="title-lg" style="text-align:center;"></p>
+
+				<div class="card settings-row">
+					<span id="settings-label-sound" class="settings-label"></span>
+					<button id="toggle-sound" class="toggle-switch"><span class="toggle-knob"></span></button>
+				</div>
+				<div class="card settings-row">
+					<span id="settings-label-music" class="settings-label"></span>
+					<button id="toggle-music" class="toggle-switch"><span class="toggle-knob"></span></button>
+				</div>
+				<div class="card settings-row">
+					<span id="settings-label-vibration" class="settings-label"></span>
+					<button id="toggle-vibration" class="toggle-switch"><span class="toggle-knob"></span></button>
+				</div>
+
+				<button class="btn btn-secondary" id="btn-settings-howto"></button>
+				<button class="btn settings-reset-btn" id="btn-settings-reset"></button>
+			</div>
+		</div>
+
+		<div id="howto-overlay" class="settings-modal-overlay hidden">
+			<div class="settings-modal-card">
+				<p id="howto-title" class="title-lg" style="text-align:center;"></p>
+				<div class="screen-scroll howto-steps-scroll">
+					<p id="howto-step-1" class="howto-step"></p>
+					<p id="howto-step-2" class="howto-step"></p>
+					<p id="howto-step-3" class="howto-step"></p>
+					<p id="howto-step-4" class="howto-step"></p>
+					<p id="howto-step-5" class="howto-step"></p>
+				</div>
+				<button class="btn" id="btn-howto-close"></button>
+			</div>
+		</div>
+
+		<div id="reset-confirm-overlay" class="settings-modal-overlay hidden">
+			<div class="settings-modal-card">
+				<p id="reset-confirm-text" class="subtitle" style="text-align:center;"></p>
+				<div class="reset-confirm-actions">
+					<button class="btn btn-secondary" id="btn-reset-cancel"></button>
+					<button class="btn reset-confirm-danger" id="btn-reset-confirm"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="view-journey" class="view">
+		<button id="btn-journey-back" class="board-back-btn">‹</button>
+		<div class="screen-scroll">
+			<div class="journey-inner">
+				<p id="journey-title" class="title-lg" style="text-align:center;"></p>
+
+				<div class="card journey-progress-card">
+					<p id="journey-progress-label" class="journey-progress-label"></p>
+					<div class="progress-track thin"><div id="journey-progress-fill" class="progress-fill"></div></div>
+				</div>
+
+				<div class="card journey-stats-card">
+					<p id="journey-stats-text" class="journey-stats-text"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="view-rewards" class="view">
+		<button id="btn-rewards-back" class="board-back-btn">‹</button>
+		<div class="screen-scroll">
+			<div class="rewards-list-inner">
+				<p id="rewards-list-title" class="title-lg" style="text-align:center;"></p>
+				<p id="rewards-list-empty" class="subtitle" style="text-align:center;"></p>
+				<div id="rewards-list-items" class="rewards-list-items"></div>
+			</div>
+		</div>
+	</div>
 
 </div>
 
@@ -245,6 +322,9 @@
 <script src="js/home.js"></script>
 <script src="js/game.js"></script>
 <script src="js/reward.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/journey.js"></script>
+<script src="js/rewards-list.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

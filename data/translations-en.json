@@ -137,6 +137,10 @@
 	"settings_music": "Music",
 	"settings_vibration": "Vibration",
 	"settings_reset": "Reset progress",
+	"settings_reset_confirm": "This resets your chapter, level, and hints back to zero. Rewards you've already unlocked stay unlocked. Continue?",
+	"settings_reset_cancel": "Cancel",
+	"settings_reset_confirm_button": "Yes, reset",
+	"howto_close": "Got it!",
 	"settings_howto": "❓ How to play",
 
 	"howto_title": "❓ How to Play",
@@ -144,5 +148,5 @@
 	"howto_step_2": "2. A hint appears, with scrambled letters at the bottom. Tap the letters in order to spell out the word.",
 	"howto_step_3": "3. Placed a letter wrong? Tap it directly in its slot to remove just that one — nothing else moves. The next letter you tap will land in that spot.",
 	"howto_step_4": "4. Some letters are already placed for you, in gold: a small boost on longer words.",
-	"howto_step_5": "5. Stuck? The lightbulb 💡 at the bottom reveals one extra letter, once per level. Finish 10 levels to unlock a surprise… but that's all we'll say. 😌"
+	"howto_step_5": "5. Stuck? The lightbulb 💡 at the bottom reveals one extra letter. You get 8 hints per chapter, usable anytime — even several on the same word. Finish 10 levels to unlock a surprise… but that's all we'll say. 😌"
 }

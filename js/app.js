@@ -13,7 +13,7 @@ function applyDataT(container) {
 }
 
 const App = {
-	views: ["boot", "onboarding", "home", "game", "reward", "settings", "journey"],
+	views: ["boot", "onboarding", "home", "game", "reward", "settings", "journey", "rewards"],
 
 	goTo(viewName) {
 		this.views.forEach((v) => {
@@ -23,7 +23,9 @@ const App = {
 		if (viewName === "home") Home.show();
 		if (viewName === "game") Game.show();
 		if (viewName === "reward") Reward.show();
-		// settings / journey seront branchés aux prochaines étapes.
+		if (viewName === "settings") Settings.show();
+		if (viewName === "journey") Journey.show();
+		if (viewName === "rewards") RewardsList.show();
 	},
 
 	async boot() {
@@ -52,6 +54,9 @@ const App = {
 		Home.init();
 		Game.init();
 		Reward.init();
+		Settings.init();
+		Journey.init();
+		RewardsList.init();
 
 		Audio_.preloadMusic();
 
