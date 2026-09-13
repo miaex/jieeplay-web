@@ -45,6 +45,10 @@ const Reward = {
 
 	init() {
 		document.getElementById("btn-reward-continue").addEventListener("click", () => this.onContinuePressed());
+		document.getElementById("btn-reward-back").addEventListener("click", () => {
+			Audio_.playClick();
+			Nav.replace("home");
+		});
 	},
 
 	show() {
@@ -77,6 +81,7 @@ const Reward = {
 		document.getElementById("reward-stage-result").classList.add("hidden");
 		document.getElementById("reward-stage-result").classList.remove("visible");
 		document.getElementById("reward-stage-card").classList.remove("flipped");
+		document.getElementById("btn-reward-back").classList.remove("reward-back-hidden");
 	},
 
 	renderProgressDots() {
@@ -163,6 +168,7 @@ const Reward = {
 	},
 
 	presentStage(variant, palette) {
+		document.getElementById("btn-reward-back").classList.add("reward-back-hidden");
 		const backdrop = document.getElementById("reward-stage-backdrop");
 		const stage = document.getElementById("reward-stage");
 		const stageCard = document.getElementById("reward-stage-card");

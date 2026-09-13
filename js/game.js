@@ -12,7 +12,6 @@ const Game = {
 	freePositions: [],
 	lockedPositions: {},
 	slotFill: [],
-	hintUsedThisLevel: false,
 	selectionLocked: false,
 
 	init() {
@@ -155,9 +154,7 @@ const Game = {
 	setupAnagram() {
 		document.getElementById("hint-text").textContent = this.currentHint;
 		document.getElementById("game-feedback").textContent = "";
-		this.hintUsedThisLevel = false;
 		this.selectionLocked = false;
-		document.getElementById("btn-hint").disabled = this.hintsExhausted();
 		this.refreshHintCounter();
 
 		const wordLength = this.currentWord.length;
@@ -186,6 +183,12 @@ const Game = {
 		this.rebuildTiles();
 		this.rebuildSlots();
 		document.getElementById("btn-validate").disabled = true;
+		this.refreshHintButtonState();
+	},
+
+	refreshHintButtonState() {
+		const noEmptySlot = this.slotFill.indexOf(-1) === -1;
+		document.getElementById("btn-hint").disabled = this.hintsExhausted() || noEmptySlot;
 	},
 
 	rebuildTiles() {
@@ -247,6 +250,7 @@ const Game = {
 		this.refreshSlots();
 		this.animateSlotPop(this.freePositions[targetK]);
 		this.updateValidateState();
+		this.refreshHintButtonState();
 		Audio_.playTile();
 	},
 
@@ -260,6 +264,7 @@ const Game = {
 		this.refreshTileStates();
 		this.refreshSlots();
 		this.updateValidateState();
+		this.refreshHintButtonState();
 	},
 
 	refreshTileStates() {
@@ -282,10 +287,11 @@ const Game = {
 		this.refreshSlots();
 		document.getElementById("btn-validate").disabled = true;
 		document.getElementById("game-feedback").textContent = "";
+		this.refreshHintButtonState();
 	},
 
 	onHintPressed() {
-		if (this.hintUsedThisLevel || this.hintsExhausted()) return;
+		if (this.hintsExhausted()) return;
 		const k = this.slotFill.indexOf(-1);
 		if (k === -1) return;
 
@@ -300,11 +306,10 @@ const Game = {
 				this.refreshSlots();
 				this.animateSlotPop(targetPos);
 				this.updateValidateState();
-				this.hintUsedThisLevel = true;
 				State.progress.hintsUsedThisChapter = (State.progress.hintsUsedThisChapter || 0) + 1;
 				SaveManager.save();
 				this.refreshHintCounter();
-				document.getElementById("btn-hint").disabled = this.hintsExhausted();
+				this.refreshHintButtonState();
 				Audio_.playClick();
 				break;
 			}
@@ -345,9 +350,7 @@ const Game = {
 		const wordFound = this.currentWord;
 		const message = this.pickMessage("level_success_messages");
 
-		this.showWordReveal(wordFound, message);
-
-		setTimeout(() => {
+		this.showWordReveal(wordFound, message, () => {
 			this.hideWordReveal();
 
 			if (newLevel > 10) {
@@ -371,18 +374,26 @@ const Game = {
 				SaveManager.save();
 				this.showCategoryOverlay();
 			}
-		}, 2000);
+		});
 	},
 
 	// -----------------------------------------------------------------
 	// RÉVÉLATION DU MOT — plateau flouté au second plan, mot + pique de
-	// Tonton Jiee au premier plan, pluie de confettis.
+	// Tonton Jiee au premier plan, pluie de confettis. Le joueur décide
+	// lui-même quand passer à la suite.
 	// -----------------------------------------------------------------
 
-	showWordReveal(word, message) {
+	showWordReveal(word, message, onContinue) {
 		document.getElementById("game-board").classList.add("blurred");
 		document.getElementById("word-reveal-word").textContent = word;
 		document.getElementById("word-reveal-message").textContent = message;
+
+		const continueBtn = document.getElementById("btn-word-reveal-continue");
+		continueBtn.textContent = Loc.t("level_word_reveal_continue");
+		continueBtn.onclick = () => {
+			Audio_.playClick();
+			onContinue();
+		};
 
 		const overlay = document.getElementById("word-reveal-overlay");
 		overlay.classList.remove("hidden");

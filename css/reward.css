@@ -459,3 +459,16 @@
 	max-width: 340px;
 }
 .reward-final-content .btn { margin-top: 6px; }
+
+/* Bouton retour de l'écran récompense */
+.reward-back-btn {
+	position: absolute;
+	top: calc(var(--safe-top) + 4px);
+	left: 4px;
+	z-index: 5;
+	transition: opacity 0.2s ease;
+}
+.reward-back-btn.reward-back-hidden {
+	opacity: 0;
+	pointer-events: none;
+}

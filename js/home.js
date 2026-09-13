@@ -5,7 +5,16 @@ const Home = {
 		document.getElementById("btn-welcome-start").addEventListener("click", () => this.onStartPressed());
 		document.getElementById("btn-continue").addEventListener("click", () => {
 			Audio_.playClick();
-			Nav.push("game-category");
+			if (State.progress.rewardActive) {
+				this.showPendingReward();
+			} else {
+				Nav.push("game-category");
+			}
+		});
+		document.getElementById("btn-pending-reward-continue").addEventListener("click", () => {
+			Audio_.playClick();
+			document.getElementById("pending-reward-overlay").classList.add("hidden");
+			Nav.push("reward");
 		});
 		document.getElementById("btn-journey").addEventListener("click", () => {
 			Audio_.playClick();
@@ -47,6 +56,7 @@ const Home = {
 	showMenu() {
 		document.getElementById("home-welcome").classList.add("hidden");
 		document.getElementById("home-menu").classList.remove("hidden");
+		document.getElementById("pending-reward-overlay").classList.add("hidden");
 
 		document.getElementById("home-greeting").textContent =
 			Loc.t("menu_greeting", { player_name: State.profile.playerName });
@@ -68,5 +78,11 @@ const Home = {
 		State.profile.welcomeSeen = true;
 		SaveManager.save();
 		this.showMenu();
+	},
+
+	showPendingReward() {
+		document.getElementById("pending-reward-text").textContent = Loc.t("home_pending_reward_text");
+		document.getElementById("btn-pending-reward-continue").textContent = Loc.t("home_pending_reward_button");
+		document.getElementById("pending-reward-overlay").classList.remove("hidden");
 	},
 };

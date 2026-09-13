@@ -30,6 +30,8 @@
 	"home_secret_title": "Secret message 💌",
 	"home_secret_subtitle": "Chapter {chapter} · {level}/10 until your next surprise",
 	"home_progress_label": "Chapter {chapter} · level {level} of 10",
+	"home_pending_reward_text": "Feels like I was in the middle of telling you something you haven't heard yet… 😊",
+	"home_pending_reward_button": "I'm listening",
 	"menu_settings": "⚙️ SETTINGS",
 
 	"level_choose_category_title": "Choose your theme ✨",
@@ -37,6 +39,7 @@
 	"level_clear": "CLEAR",
 	"level_validate": "SUBMIT",
 	"level_hints_counter": "{used}/{total}",
+	"level_word_reveal_continue": "CONTINUE",
 
 	"level_success_messages": [
 		"I knew you'd get it.",

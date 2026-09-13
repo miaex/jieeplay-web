@@ -98,6 +98,13 @@
 				</div>
 			</div>
 		</div>
+		<div id="pending-reward-overlay" class="pending-reward-overlay hidden">
+			<div class="pending-reward-card">
+				<p class="pending-reward-emoji">💌</p>
+				<p id="pending-reward-text" class="pending-reward-text"></p>
+				<button class="btn" id="btn-pending-reward-continue"></button>
+			</div>
+		</div>
 	</div>
 
 	<!-- Les écrans Jeu, Récompense, Paramètres, Parcours arrivent à l'étape suivante -->
@@ -129,6 +136,7 @@
 			<div class="word-reveal-content">
 				<p id="word-reveal-word" class="word-reveal-word"></p>
 				<p id="word-reveal-message" class="word-reveal-message"></p>
+				<button class="btn" id="btn-word-reveal-continue"></button>
 			</div>
 		</div>
 
@@ -145,6 +153,7 @@
 	</div>
 	<div id="view-reward" class="view">
 		<div class="reward-bg-decor"></div>
+		<button id="btn-reward-back" class="board-back-btn reward-back-btn">‹</button>
 
 		<!-- SCÈNE DE RÉVÉLATION — carte choisie en grand, au premier plan -->
 		<div id="reward-stage-backdrop" class="reward-stage-backdrop hidden"></div>

@@ -80,3 +80,46 @@
 	color: var(--color-text-soft);
 	font-weight: 600;
 }
+
+/* Reprise d'une récompense inachevée */
+.pending-reward-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 25;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(246, 244, 242, 0.96);
+	padding: 24px;
+	opacity: 1;
+	transition: opacity 0.25s ease;
+}
+.pending-reward-overlay.hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+.pending-reward-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 16px;
+	max-width: 320px;
+	padding: 30px 26px;
+	border-radius: 24px;
+	background: var(--color-cream);
+	border: 1px solid var(--color-border);
+	box-shadow: var(--shadow-soft);
+}
+.pending-reward-emoji {
+	font-size: 38px;
+}
+.pending-reward-text {
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1.45;
+	color: var(--color-text);
+}
+.pending-reward-card .btn {
+	width: 100%;
+}
