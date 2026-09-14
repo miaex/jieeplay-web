@@ -8,6 +8,9 @@
 	"onboarding_gender_subtitle": "Comment dois-je m'adresser à toi ?",
 	"onboarding_gender_option_female": "Femme",
 	"onboarding_gender_option_male": "Homme",
+	"onboarding_avatar_title": "Choisis ton nounours",
+	"onboarding_avatar_subtitle": "Il t'accompagnera partout dans JieePlay.",
+	"onboarding_avatar_button_continue": "CONTINUER",
 
 	"onboarding_name_title": "Et toi, comment dois-je t'appeler ?",
 	"onboarding_name_hint": "Petit conseil : choisir le surnom que Tonton Jiee utilise habituellement pour toi pourrait rendre certaines surprises encore plus personnelles. 😉",
@@ -32,11 +35,12 @@
 	"home_greeting_afternoon": "Bon après-midi, {player_name}",
 	"home_greeting_evening": "Bonsoir, {player_name}",
 	"home_subtitle_lines": [
-		"Ton aventure continue.",
-		"Quelque chose t'attend aujourd'hui.",
-		"Prêt(e) pour la suite ?",
-		"Ton prochain chapitre est là.",
-		"Un mot de plus, une surprise de plus."
+		"Alors, prêt(e) à te faire encore surprendre ?",
+		"J'espère que tu as bien dormi, les mots t'attendent.",
+		"Ton cerveau est chaud ? Parfait, on va vérifier ça.",
+		"Encore toi ? Je ne vais pas m'en plaindre 😏",
+		"Un mot de plus, et je recommence à te taquiner.",
+		"Alors, on vient chercher des compliments aujourd'hui ?"
 	],
 
 	"home_main_label": "TON AVENTURE",

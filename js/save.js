@@ -45,7 +45,7 @@ const SaveManager = {
 
 	resetProgress() {
 		const language = State.profile.language;
-		State.profile = { language, gender: "", playerName: "", onboardingDone: false, welcomeSeen: false };
+		State.profile = { language, gender: "", avatar: "", playerName: "", onboardingDone: false, welcomeSeen: false };
 		State.progress = {
 			currentChapter: 1, currentLevel: 1, unlockedRewards: [],
 			rewardActive: false, rewardCompleted: false, rewardTone: "", rewardGroup: 1, rewardFragments: [],

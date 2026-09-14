@@ -12,6 +12,7 @@ const State = {
 	profile: {
 		language: "",
 		gender: "",
+		avatar: "",
 		playerName: "",
 		onboardingDone: false,
 		welcomeSeen: false,

@@ -45,3 +45,41 @@
 	border-radius: 9px;
 	transition: width 0.2s ease;
 }
+
+/* Sélection de l'avatar (5 nounours obligatoires) */
+.avatar-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	justify-items: center;
+	max-width: 300px;
+	margin: 6px auto 4px;
+}
+.avatar-choice {
+	background: none;
+	border: none;
+	padding: 4px;
+	cursor: pointer;
+}
+.avatar-choice-circle {
+	display: block;
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: var(--shadow-soft);
+	border: 3px solid transparent;
+	transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.avatar-choice-circle svg {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.avatar-choice.selected .avatar-choice-circle {
+	border-color: var(--color-gold);
+	transform: scale(1.08);
+}
+.avatar-choice:active .avatar-choice-circle {
+	transform: scale(0.95);
+}

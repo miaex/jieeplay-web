@@ -8,6 +8,9 @@
 	"onboarding_gender_subtitle": "How should I refer to you?",
 	"onboarding_gender_option_female": "Woman",
 	"onboarding_gender_option_male": "Man",
+	"onboarding_avatar_title": "Pick your teddy bear",
+	"onboarding_avatar_subtitle": "It'll follow you everywhere in JieePlay.",
+	"onboarding_avatar_button_continue": "CONTINUE",
 
 	"onboarding_name_title": "So, what should I call you?",
 	"onboarding_name_hint": "Little tip: using the nickname Tonton Jiee usually calls you might make a few surprises even more personal. 😉",
@@ -32,11 +35,12 @@
 	"home_greeting_afternoon": "Good afternoon, {player_name}",
 	"home_greeting_evening": "Good evening, {player_name}",
 	"home_subtitle_lines": [
-		"Your adventure continues.",
-		"Something's waiting for you today.",
-		"Ready for what's next?",
-		"Your next chapter is right here.",
-		"One more word, one more surprise."
+		"So, ready to get surprised again?",
+		"Hope you slept well, the words are waiting.",
+		"Brain warmed up? Good, let's find out.",
+		"Back again? Not that I'm complaining 😏",
+		"One more word, and I start teasing you again.",
+		"Here for some compliments today, are we?"
 	],
 
 	"home_main_label": "YOUR ADVENTURE",

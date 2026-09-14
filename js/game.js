@@ -415,15 +415,18 @@ const Game = {
 	spawnConfetti() {
 		const layer = document.getElementById("confetti-layer");
 		layer.innerHTML = "";
+		Audio_.playConfetti();
+
 		const colors = ["#e79292", "#c98bb0", "#d9b06c", "#7a3b4a", "#f3d9d6", "#e6dcec"];
-		const pieceCount = 26;
+		const pieceCount = 34;
+		const starCount = 12;
 
 		for (let i = 0; i < pieceCount; i++) {
 			const piece = document.createElement("span");
 			piece.className = "confetti-piece";
 			const left = Math.random() * 100;
 			const duration = 1.6 + Math.random() * 1.1;
-			const delay = Math.random() * 0.3;
+			const delay = Math.random() * 0.35;
 			const rotation = 180 + Math.random() * 540;
 			const color = colors[Math.floor(Math.random() * colors.length)];
 			const size = 6 + Math.random() * 5;
@@ -437,6 +440,38 @@ const Game = {
 			piece.style.setProperty("--confetti-rot", `${rotation}deg`);
 
 			layer.appendChild(piece);
+		}
+
+		// Petites étoiles cristallines, en plus des confettis classiques
+		const starGlyphs = ["✦", "✧", "⋆"];
+		for (let i = 0; i < starCount; i++) {
+			const star = document.createElement("span");
+			star.className = "confetti-star";
+			const left = Math.random() * 100;
+			const fallDuration = 1.8 + Math.random() * 1.2;
+			const fallDelay = Math.random() * 0.5;
+			const rotation = 180 + Math.random() * 360;
+			const size = 12 + Math.random() * 10;
+			const isGold = Math.random() > 0.5;
+
+			star.style.left = `${left}%`;
+			star.style.animationDuration = `${fallDuration}s`;
+			star.style.animationDelay = `${fallDelay}s`;
+			star.style.setProperty("--confetti-rot", `${rotation}deg`);
+
+			const inner = document.createElement("span");
+			inner.className = "confetti-star-inner";
+			inner.textContent = starGlyphs[Math.floor(Math.random() * starGlyphs.length)];
+			inner.style.fontSize = `${size}px`;
+			inner.style.color = isGold ? "#d9b06c" : "#ffffff";
+			inner.style.textShadow = isGold
+				? "0 0 6px rgba(217,176,108,0.85)"
+				: "0 0 6px rgba(255,255,255,0.9)";
+			inner.style.animationDuration = `${0.5 + Math.random() * 0.4}s`;
+			inner.style.animationDelay = `${Math.random() * 0.3}s`;
+
+			star.appendChild(inner);
+			layer.appendChild(star);
 		}
 	},
 

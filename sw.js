@@ -3,7 +3,7 @@
 // des charges). Incrémenter CACHE_NAME à chaque mise à jour du contenu
 // pour forcer le rafraîchissement du cache chez les joueurs.
 
-const CACHE_NAME = "jieeplay-v9";
+const CACHE_NAME = "jieeplay-v10";
 
 const ASSETS_TO_CACHE = [
 	"./",
@@ -25,6 +25,7 @@ const ASSETS_TO_CACHE = [
 	"./js/localization.js",
 	"./js/audio.js",
 	"./js/logo.js",
+	"./js/avatars.js",
 	"./js/onboarding.js",
 	"./js/home.js",
 	"./js/game.js",
@@ -46,6 +47,7 @@ const ASSETS_TO_CACHE = [
 	"./assets/sounds/success.wav",
 	"./assets/sounds/failure.wav",
 	"./assets/sounds/reward.wav",
+	"./assets/sounds/confetti.wav",
 	"./assets/music/menu_music.ogg",
 	"./assets/music/reward_music.ogg",
 ];

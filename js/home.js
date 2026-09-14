@@ -90,7 +90,7 @@ const Home = {
 
 	renderHeader() {
 		const name = State.profile.playerName || "";
-		document.getElementById("home-avatar").textContent = name.charAt(0).toUpperCase() || "✨";
+		renderAvatar(document.getElementById("home-avatar"), State.profile.avatar);
 
 		const hour = new Date().getHours();
 		const timeKey = hour < 12 ? "home_greeting_morning" : hour < 18 ? "home_greeting_afternoon" : "home_greeting_evening";

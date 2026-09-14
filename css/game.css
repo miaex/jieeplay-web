@@ -326,3 +326,20 @@
 		opacity: 0.5;
 	}
 }
+
+.confetti-star {
+	position: absolute;
+	top: -24px;
+	line-height: 1;
+	pointer-events: none;
+	animation: confetti-fall linear forwards;
+	animation-timing-function: cubic-bezier(0.3, 0.2, 0.7, 1);
+}
+.confetti-star-inner {
+	display: inline-block;
+	animation: confetti-twinkle ease-in-out infinite;
+}
+@keyframes confetti-twinkle {
+	0%, 100% { opacity: 0.4; transform: scale(0.8); }
+	50% { opacity: 1; transform: scale(1.15); }
+}

@@ -23,6 +23,7 @@ const Audio_ = {
 			success: "assets/sounds/success.wav",
 			failure: "assets/sounds/failure.wav",
 			reward: "assets/sounds/reward.wav",
+			confetti: "assets/sounds/confetti.wav",
 		};
 		for (const key in sounds) {
 			const a = new Audio(sounds[key]);
@@ -62,6 +63,7 @@ const Audio_ = {
 	playClick() { this.play("click"); },
 	playSuccess() { this.play("success"); },
 	playReward() { this.play("reward"); },
+	playConfetti() { this.play("confetti"); },
 
 	playFailure() {
 		this.play("failure");
