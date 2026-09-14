@@ -365,8 +365,16 @@ const Game = {
 				State.progress.rewardCompleted = false;
 				State.progress.rewardGroup = 1;
 				State.progress.rewardFragments = [];
-				const toneOrder = ["affectionate", "admiring", "playful", "comforting", "mysterious", "warm"];
-				State.progress.rewardTone = toneOrder[(completedChapter - 1) % toneOrder.length];
+
+				const letter = RewardEngine.generateReward({
+					language: State.profile.language || "fr",
+					playerName: State.profile.playerName,
+					chapter: completedChapter,
+					history: State.progress.rewardHistory,
+				});
+				State.progress.rewardLetter = letter;
+				State.progress.rewardHistory.push(letter.meta);
+
 				SaveManager.save();
 				Nav.push("reward");
 			} else {

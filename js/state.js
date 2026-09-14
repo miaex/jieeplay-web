@@ -6,7 +6,7 @@ const State = {
 	// --- Données du jeu (lecture seule, chargées au démarrage) ---
 	categories: [],
 	words: [],
-	rewardMessages: [],
+	rewardEngineContent: null,
 
 	// --- Données du joueur (persistées) ---
 	profile: {
@@ -27,6 +27,8 @@ const State = {
 		rewardTone: "",
 		rewardGroup: 1,
 		rewardFragments: [],
+		rewardLetter: null,
+		rewardHistory: [],
 		hintsUsedThisChapter: 0,
 	},
 
@@ -47,7 +49,7 @@ const State = {
 	async loadGameData() {
 		this.categories = await fetchJSON("data/categories.json");
 		this.words = await fetchJSON("data/words.json");
-		this.rewardMessages = await fetchJSON("data/rewards.json");
+		this.rewardEngineContent = await fetchJSON("data/rewards/content.json");
 	},
 
 	registerCategoryChoice(categoryId) {

@@ -38,6 +38,7 @@ const App = {
 		const steps = [
 			() => Loc.load(),
 			() => State.loadGameData(),
+			() => RewardEngine.load(State.rewardEngineContent),
 		];
 
 		for (let i = 0; i < steps.length; i++) {

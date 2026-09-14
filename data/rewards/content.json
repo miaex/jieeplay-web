@@ -1,0 +1,639 @@
+{
+	"ideas": [
+		{
+			"id": "unnoticed_progress",
+			"family": "evolution",
+			"depth": 4,
+			"emotion": "pride",
+			"related_ideas": [
+				"small_choices",
+				"identity_shift"
+			],
+			"angles_fr": [
+				"Il y a des progrès qui ne font jamais de bruit — ils s'installent, tout simplement.",
+				"Tu as changé, doucement, sans annoncer ce changement à personne.",
+				"Personne n'a vu le chemin parcouru. Moi si."
+			],
+			"angles_en": [
+				"Some progress never makes noise — it just quietly settles in.",
+				"You've changed, slowly, without announcing it to anyone.",
+				"No one saw the distance you've covered. I did."
+			]
+		},
+		{
+			"id": "starting_over",
+			"family": "recommencement",
+			"depth": 3,
+			"emotion": "hope",
+			"related_ideas": [
+				"quiet_courage",
+				"future_unwritten"
+			],
+			"angles_fr": [
+				"Recommencer n'est pas revenir en arrière — c'est repartir avec ce qu'on a appris.",
+				"Chaque nouveau départ garde un peu de l'ancien en lui, et c'est très bien ainsi.",
+				"Il n'y a pas de honte à reprendre à zéro. Il y a du courage."
+			],
+			"angles_en": [
+				"Starting over isn't going backward — it's moving forward with what you've learned.",
+				"Every new beginning carries a little of the old one, and that's exactly as it should be.",
+				"There's no shame in starting from scratch. There's courage in it."
+			]
+		},
+		{
+			"id": "quiet_courage",
+			"family": "courage",
+			"depth": 4,
+			"emotion": "pride",
+			"related_ideas": [
+				"starting_over",
+				"self_trust"
+			],
+			"angles_fr": [
+				"Le courage ne crie pas toujours. Parfois, il se contente de continuer.",
+				"Tu n'as pas eu besoin d'être spectaculaire pour être courageux(se). Juste constant(e).",
+				"Certaines batailles ne se voient pas. Tu en as gagné une, et je le sais."
+			],
+			"angles_en": [
+				"Courage doesn't always shout. Sometimes it just keeps going.",
+				"You didn't need to be spectacular to be brave. Just steady.",
+				"Some battles are invisible. You won one, and I know it."
+			]
+		},
+		{
+			"id": "people_who_mattered",
+			"family": "relations",
+			"depth": 4,
+			"emotion": "tenderness",
+			"related_ideas": [
+				"gratitude_for_little"
+			],
+			"angles_fr": [
+				"Il y a des gens qui passent, et d'autres qui restent, même loin.",
+				"On ne remercie jamais assez les personnes qui nous ont vus avant qu'on se voie nous-mêmes.",
+				"Certaines présences ne se mesurent pas en temps passé ensemble."
+			],
+			"angles_en": [
+				"Some people pass through, and others stay, even from far away.",
+				"We never thank enough the people who saw us before we saw ourselves.",
+				"Some presences can't be measured in time spent together."
+			]
+		},
+		{
+			"id": "ordinary_memories",
+			"family": "souvenirs",
+			"depth": 3,
+			"emotion": "nostalgia",
+			"related_ideas": [
+				"present_moment",
+				"gratitude_for_little"
+			],
+			"angles_fr": [
+				"Ce sont rarement les grands événements qu'on garde. Ce sont les détails ordinaires.",
+				"Un jour banal d'aujourd'hui deviendra peut-être un souvenir précieux plus tard.",
+				"On ne sait jamais, sur le moment, quels instants vont durer."
+			],
+			"angles_en": [
+				"It's rarely the big events we keep. It's the ordinary details.",
+				"An unremarkable day today might become a precious memory later.",
+				"You never know, in the moment, which ones are going to last."
+			]
+		},
+		{
+			"id": "patience_with_self",
+			"family": "patience",
+			"depth": 3,
+			"emotion": "comfort",
+			"related_ideas": [
+				"self_trust"
+			],
+			"angles_fr": [
+				"Tu as le droit d'avancer à ton rythme, même quand ce rythme t'agace.",
+				"La patience envers soi-même est plus rare que la patience envers les autres.",
+				"Rien ne t'oblige à arriver vite. Juste à arriver vraiment."
+			],
+			"angles_en": [
+				"You're allowed to move at your own pace, even when that pace frustrates you.",
+				"Patience with yourself is rarer than patience with others.",
+				"Nothing requires you to arrive quickly. Just to actually arrive."
+			]
+		},
+		{
+			"id": "small_curiosity",
+			"family": "curiosite",
+			"depth": 2,
+			"emotion": "curiosity",
+			"related_ideas": [
+				"small_discoveries"
+			],
+			"angles_fr": [
+				"La curiosité n'a pas besoin d'un grand mystère pour s'allumer.",
+				"Tu poses encore des questions. C'est un bon signe.",
+				"Rester curieux(se), c'est refuser que le monde devienne trop familier."
+			],
+			"angles_en": [
+				"Curiosity doesn't need a great mystery to spark.",
+				"You're still asking questions. That's a good sign.",
+				"Staying curious means refusing to let the world become too familiar."
+			]
+		},
+		{
+			"id": "quiet_joy",
+			"family": "joie",
+			"depth": 2,
+			"emotion": "comfort",
+			"related_ideas": [
+				"gratitude_for_little",
+				"humor_as_shelter"
+			],
+			"angles_fr": [
+				"Il y a une joie discrète dans les journées qui se passent bien, sans éclat particulier.",
+				"Tu n'as pas besoin d'un grand événement pour avoir le droit d'être content(e).",
+				"Certains bonheurs n'annoncent jamais leur arrivée."
+			],
+			"angles_en": [
+				"There's a quiet joy in days that simply go well, without any fanfare.",
+				"You don't need a big event to be allowed to feel good.",
+				"Some happiness never announces its arrival."
+			]
+		},
+		{
+			"id": "self_trust",
+			"family": "confiance",
+			"depth": 4,
+			"emotion": "hope",
+			"related_ideas": [
+				"quiet_courage",
+				"patience_with_self"
+			],
+			"angles_fr": [
+				"La confiance en soi ne se décrète pas. Elle se construit, épreuve après épreuve.",
+				"Tu doutes encore, parfois. C'est normal. C'est même plutôt sain.",
+				"Il n'y a rien d'arrogant à commencer, doucement, à te croire capable."
+			],
+			"angles_en": [
+				"Self-confidence can't be declared. It's built, one small trial at a time.",
+				"You still doubt yourself sometimes. That's normal. It's even fairly healthy.",
+				"There's nothing arrogant about slowly starting to believe you're capable."
+			]
+		},
+		{
+			"id": "gratitude_for_little",
+			"family": "gratitude",
+			"depth": 3,
+			"emotion": "gratitude",
+			"related_ideas": [
+				"ordinary_memories",
+				"quiet_joy"
+			],
+			"angles_fr": [
+				"On oublie souvent de remercier les petites choses qui tiennent tout le reste debout.",
+				"Un café encore chaud, une chanson au bon moment — ça compte aussi.",
+				"La gratitude n'a pas besoin d'attendre un grand cadeau."
+			],
+			"angles_en": [
+				"We often forget to thank the small things that hold everything else together.",
+				"A coffee still warm, a song at the right moment — that counts too.",
+				"Gratitude doesn't need to wait for a big gift."
+			]
+		},
+		{
+			"id": "humor_as_shelter",
+			"family": "humour",
+			"depth": 2,
+			"emotion": "amusement",
+			"related_ideas": [
+				"quiet_joy"
+			],
+			"angles_fr": [
+				"Rire d'une mauvaise journée, ce n'est pas la fuir. C'est la rendre supportable.",
+				"Tu as ce talent rare de trouver drôle ce qui, chez d'autres, serait dramatique.",
+				"L'humour, parfois, est juste une autre façon d'être fort(e)."
+			],
+			"angles_en": [
+				"Laughing at a bad day isn't running from it. It's making it bearable.",
+				"You have that rare talent of finding funny what would be dramatic for someone else.",
+				"Sometimes humor is just another way of being strong."
+			]
+		},
+		{
+			"id": "future_unwritten",
+			"family": "avenir",
+			"depth": 4,
+			"emotion": "hope",
+			"related_ideas": [
+				"starting_over",
+				"present_moment"
+			],
+			"angles_fr": [
+				"Personne ne sait ce que demain contient. Toi non plus. Et c'est presque rassurant.",
+				"Tu n'as pas besoin d'un plan parfait pour avoir le droit d'avancer.",
+				"L'avenir n'attend pas qu'on soit prêt. Il arrive, c'est tout."
+			],
+			"angles_en": [
+				"No one knows what tomorrow holds. Neither do you. And that's almost reassuring.",
+				"You don't need a perfect plan to be allowed to move forward.",
+				"The future doesn't wait for you to be ready. It just arrives."
+			]
+		},
+		{
+			"id": "present_moment",
+			"family": "present",
+			"depth": 3,
+			"emotion": "reflection",
+			"related_ideas": [
+				"ordinary_memories",
+				"future_unwritten"
+			],
+			"angles_fr": [
+				"Pendant que tu te demandais si ça allait, ce moment précis était déjà en train de compter.",
+				"Le présent passe souvent inaperçu, trop occupé qu'on est à penser à autre chose.",
+				"Là, maintenant, pendant que tu lis ceci — c'est déjà un moment qui t'appartient."
+			],
+			"angles_en": [
+				"While you were wondering if things were okay, this exact moment was already counting.",
+				"The present often goes unnoticed, too busy are we thinking about something else.",
+				"Right now, while you're reading this — that's already a moment that belongs to you."
+			]
+		},
+		{
+			"id": "small_discoveries",
+			"family": "decouverte",
+			"depth": 2,
+			"emotion": "wonder",
+			"related_ideas": [
+				"small_curiosity",
+				"identity_shift"
+			],
+			"angles_fr": [
+				"Tu as encore découvert quelque chose aujourd'hui, même sans t'en rendre compte.",
+				"Chaque petit mot trouvé ici en cache un plus grand, quelque part en toi.",
+				"Il y a toujours un peu plus à apprendre, même sur soi-même."
+			],
+			"angles_en": [
+				"You discovered something again today, even without quite noticing it.",
+				"Every small word found here hides a bigger one, somewhere inside you.",
+				"There's always a little more to learn, even about yourself."
+			]
+		},
+		{
+			"id": "identity_shift",
+			"family": "identite",
+			"depth": 5,
+			"emotion": "reflection",
+			"related_ideas": [
+				"unnoticed_progress",
+				"small_discoveries"
+			],
+			"angles_fr": [
+				"Tu n'es plus tout à fait la même personne qu'il y a un an. Et c'est une bonne nouvelle.",
+				"On devient soi-même par petites couches, pas d'un seul coup.",
+				"Ce que tu es en train de devenir, tu ne le verras clairement que plus tard."
+			],
+			"angles_en": [
+				"You're not quite the same person you were a year ago. And that's good news.",
+				"We become ourselves in small layers, not all at once.",
+				"What you're becoming, you'll only see clearly later."
+			]
+		},
+		{
+			"id": "small_choices",
+			"family": "choix",
+			"depth": 3,
+			"emotion": "reflection",
+			"related_ideas": [
+				"unnoticed_progress"
+			],
+			"angles_fr": [
+				"Ce ne sont pas toujours les grandes décisions qui comptent le plus. Ce sont les petites, répétées.",
+				"Tu as fait des choix aujourd'hui sans même t'en apercevoir, et certains comptaient.",
+				"Chaque petit choix ajoute une phrase à une histoire que tu écris sans t'en rendre compte."
+			],
+			"angles_en": [
+				"It's not always the big decisions that matter most. It's the small ones, repeated.",
+				"You made choices today without even noticing, and some of them mattered.",
+				"Every small choice adds a sentence to a story you're writing without realizing it."
+			]
+		}
+	],
+	"metaphors": [
+		{
+			"id": "path",
+			"domain": "chemin",
+			"open_fr": "Il y a des chemins qu'on ne choisit pas vraiment — on les découvre en marchant.",
+			"dev_fr": "Le tien a eu des détours, des pauses, quelques faux départs. Il n'en est pas moins le tien.",
+			"turn_fr": "Et peut-être que ce n'est pas la destination qui compte, mais la façon dont tu avances.",
+			"open_en": "There are paths you don't really choose — you discover them by walking.",
+			"dev_en": "Yours has had detours, pauses, a few false starts. It's no less yours for that.",
+			"turn_en": "And maybe it's not the destination that matters, but the way you keep moving."
+		},
+		{
+			"id": "light",
+			"domain": "lumiere",
+			"open_fr": "Il y a des lumières qu'on ne remarque que lorsqu'elles s'éteignent un instant.",
+			"dev_fr": "La tienne a peut-être vacillé, ces derniers temps. Elle n'a jamais disparu.",
+			"turn_fr": "Et une lumière qui vacille reste, quand même, une lumière.",
+			"open_en": "Some lights you only notice when they briefly flicker.",
+			"dev_en": "Yours may have flickered lately. It never actually went out.",
+			"turn_en": "And a flickering light is still, after all, a light."
+		},
+		{
+			"id": "seasons",
+			"domain": "saisons",
+			"open_fr": "Il y a des saisons qu'on traverse sans les voir passer, et d'autres qu'on n'oublie jamais.",
+			"dev_fr": "Celle que tu traverses maintenant ne durera pas éternellement — aucune ne dure.",
+			"turn_fr": "Mais chaque saison laisse quelque chose derrière elle, même les plus discrètes.",
+			"open_en": "Some seasons pass without us noticing, and others we never forget.",
+			"dev_en": "The one you're in right now won't last forever — none of them do.",
+			"turn_en": "But every season leaves something behind, even the quiet ones."
+		},
+		{
+			"id": "window",
+			"domain": "fenetre",
+			"open_fr": "Il y a des jours où on regarde par la fenêtre sans vraiment rien attendre.",
+			"dev_fr": "Et puis, sans prévenir, quelque chose dehors capte enfin l'attention.",
+			"turn_fr": "C'est souvent comme ça que les bonnes surprises arrivent — sans qu'on les cherche.",
+			"open_en": "Some days, you look out the window without really expecting anything.",
+			"dev_en": "And then, without warning, something outside finally catches your attention.",
+			"turn_en": "That's often how good surprises arrive — without being looked for."
+		},
+		{
+			"id": "seeds",
+			"domain": "graines",
+			"open_fr": "Une graine plantée ne montre rien, pendant longtemps, à la surface.",
+			"dev_fr": "Ça ne veut pas dire qu'il ne se passe rien. Ça veut dire que ça prend racine.",
+			"turn_fr": "Ce que tu as semé sans t'en rendre compte est probablement déjà en train de pousser.",
+			"open_en": "A planted seed shows nothing, for a long while, on the surface.",
+			"dev_en": "That doesn't mean nothing's happening. It means it's taking root.",
+			"turn_en": "What you've planted without noticing is probably already growing."
+		},
+		{
+			"id": "stars",
+			"domain": "etoiles",
+			"open_fr": "Certaines étoiles qu'on voit ce soir ont mis des années à nous parvenir.",
+			"dev_fr": "Ce que tu ressens aujourd'hui a aussi mis du temps à arriver jusqu'ici.",
+			"turn_fr": "Ça ne le rend pas moins réel. Juste un peu plus précieux.",
+			"open_en": "Some stars we see tonight took years just to reach us.",
+			"dev_en": "What you're feeling today also took a while to get here.",
+			"turn_en": "That doesn't make it any less real. Just a little more precious."
+		}
+	],
+	"structures": [
+		{
+			"id": "observation_reversal",
+			"uses_metaphor": false,
+			"beats": [
+				"greeting",
+				"idea_obs_a",
+				"idea_obs_b",
+				"transition",
+				"idea_obs_c",
+				"personal",
+				"encouragement",
+				"encouragement2",
+				"closing",
+				"signature"
+			]
+		},
+		{
+			"id": "metaphor_journey",
+			"uses_metaphor": true,
+			"beats": [
+				"greeting",
+				"metaphor_open",
+				"metaphor_dev",
+				"metaphor_turn",
+				"personal",
+				"idea_obs_a",
+				"encouragement",
+				"idea_obs_b",
+				"closing",
+				"signature"
+			]
+		},
+		{
+			"id": "three_observations_synthesis",
+			"uses_metaphor": false,
+			"beats": [
+				"greeting",
+				"idea_obs_a",
+				"idea_obs_b",
+				"idea_obs_c",
+				"synthesis",
+				"personal",
+				"encouragement",
+				"encouragement2",
+				"closing",
+				"signature"
+			]
+		},
+		{
+			"id": "question_answer",
+			"uses_metaphor": false,
+			"beats": [
+				"greeting",
+				"question",
+				"idea_obs_a",
+				"idea_obs_b",
+				"transition",
+				"idea_obs_c",
+				"personal",
+				"encouragement",
+				"closing",
+				"signature"
+			]
+		}
+	],
+	"vocabulary": {
+		"fr": {
+			"personal": [
+				"{player_name}, je voulais que tu saches ça.",
+				"Je pense à toi plus souvent que tu ne l'imagines, {player_name}.",
+				"{player_name}, ce petit mot n'a pas besoin d'une grande occasion pour exister.",
+				"Rien de tout ça n'est un hasard, {player_name}.",
+				"{player_name}, je suis content(e) que tu sois encore là pour lire ça.",
+				"Je ne dis pas ça souvent, {player_name}, mais je le pense.",
+				"{player_name}, ce message t'attendait, à son propre rythme.",
+				"Tu n'as pas besoin de répondre à ça, {player_name}. Juste de le garder un instant."
+			],
+			"encouragement": [
+				"Continue comme ça — pas parce qu'il le faut, mais parce que ça te va bien.",
+				"Tu n'as rien à prouver à personne, et surtout pas à moi.",
+				"Prends ce que tu veux de ce message, et laisse le reste où il est.",
+				"Ce n'est pas grave d'avancer lentement, tant que tu avances.",
+				"Tu fais déjà plus que tu ne le crois.",
+				"Personne ne te demande d'être parfait(e). Juste présent(e).",
+				"Ce chapitre t'a demandé quelque chose. Tu l'as donné.",
+				"Il n'y a pas de mauvaise vitesse pour avancer.",
+				"Tu as le droit d'être fier(e) de choses que personne d'autre ne remarque.",
+				"Ce que tu traverses compte, même les jours discrets."
+			],
+			"closing": [
+				"Voilà. C'est tout ce que je voulais dire, pour cette fois.",
+				"On se retrouve au prochain chapitre — j'aurai sûrement autre chose à te dire.",
+				"Garde ce message quelque part, même juste dans un coin de ta tête.",
+				"Ce n'était pas grand-chose. Mais c'était sincère.",
+				"À bientôt pour la suite. Il y en a toujours une.",
+				"Ce message n'avait pas d'autre but que celui-là.",
+				"Je referme cette lettre, mais pas la conversation.",
+				"Rien d'autre à ajouter. Juste ça, pour l'instant.",
+				"Ce petit mot s'arrête ici. Toi, continue.",
+				"C'était court, mais c'était pour toi."
+			],
+			"signature": [
+				"— Tonton Jiee ❤️",
+				"— Tonton Jiee, toujours dans le coin.",
+				"— Avec toute mon affection, Tonton Jiee.",
+				"— Tonton Jiee 😊"
+			],
+			"question": [
+				"Tu t'es déjà demandé ce qui, dans ta journée, comptait vraiment ?",
+				"Et si les choses qui semblent petites étaient en fait les plus importantes ?",
+				"Qu'est-ce que tu retiendras de cette période, dans quelques années ?",
+				"Et si tu avais déjà toutes les réponses, sans le savoir encore ?",
+				"Tu as déjà remarqué à quel point on se sous-estime facilement ?",
+				"Et si ce que tu cherches était déjà en train de se construire ?"
+			],
+			"transition": [
+				"Et pourtant, ça ne change rien à l'essentiel.",
+				"Mais au fond, une seule chose compte vraiment.",
+				"Ce qui est certain, c'est que rien de tout ça n'est un hasard.",
+				"Ce qu'on oublie souvent, c'est que ces choses-là s'additionnent."
+			],
+			"synthesis": [
+				"Trois petites choses, une seule vérité derrière.",
+				"Prises séparément, ce ne sont que des détails. Ensemble, c'est un signe.",
+				"Rien de tout ça n'est isolé. Tout se répond, doucement.",
+				"Mis bout à bout, ces instants racontent quelque chose de plus grand."
+			]
+		},
+		"en": {
+			"personal": [
+				"{player_name}, I wanted you to know that.",
+				"I think about you more often than you'd imagine, {player_name}.",
+				"{player_name}, this little note doesn't need a big occasion to exist.",
+				"None of this is a coincidence, {player_name}.",
+				"{player_name}, I'm glad you're still here to read this.",
+				"I don't say this often, {player_name}, but I mean it.",
+				"{player_name}, this message was waiting for you, in its own time.",
+				"You don't need to answer this, {player_name}. Just hold onto it for a moment."
+			],
+			"encouragement": [
+				"Keep going — not because you have to, but because it suits you.",
+				"You have nothing to prove to anyone, least of all to me.",
+				"Take what you want from this message, and leave the rest where it is.",
+				"It's okay to move slowly, as long as you're moving.",
+				"You're already doing more than you think.",
+				"No one's asking you to be perfect. Just present.",
+				"This chapter asked something of you. You gave it.",
+				"There's no wrong speed for moving forward.",
+				"You're allowed to be proud of things no one else notices.",
+				"What you're going through matters, even on the quiet days."
+			],
+			"closing": [
+				"That's it. That's all I wanted to say, this time.",
+				"See you at the next chapter — I'll probably have something else to tell you.",
+				"Keep this message somewhere, even just in a corner of your mind.",
+				"It wasn't much. But it was sincere.",
+				"Until next time. There's always a next time.",
+				"This message had no other purpose than that one.",
+				"I'm closing this letter, but not the conversation.",
+				"Nothing else to add. Just that, for now.",
+				"This little note ends here. You, keep going.",
+				"It was short, but it was for you."
+			],
+			"signature": [
+				"— Uncle Jiee ❤️",
+				"— Uncle Jiee, always around.",
+				"— With all my affection, Uncle Jiee.",
+				"— Uncle Jiee 😊"
+			],
+			"question": [
+				"Have you ever wondered what, in your day, actually mattered?",
+				"What if the things that seem small were actually the most important?",
+				"What will you remember from this period, a few years from now?",
+				"What if you already had all the answers, without knowing it yet?",
+				"Have you noticed how easily we underestimate ourselves?",
+				"What if what you're looking for is already being built?"
+			],
+			"transition": [
+				"And yet, that doesn't change what matters most.",
+				"But deep down, only one thing really counts.",
+				"One thing is certain: none of this is a coincidence.",
+				"What we often forget is that these things add up."
+			],
+			"synthesis": [
+				"Three small things, one single truth behind them.",
+				"Taken apart, they're just details. Together, they're a sign.",
+				"None of this stands alone. It all quietly connects.",
+				"Put together, these moments tell something bigger."
+			]
+		}
+	},
+	"rare": {
+		"fr": [
+			{
+				"id": "minimal_poem_1",
+				"lines": [
+					"{player_name},",
+					"Pas de grande histoire aujourd'hui.",
+					"Juste ceci :",
+					"tu es allé(e) plus loin que prévu.",
+					"Encore une fois.",
+					"Ça compte.",
+					"Même sans bruit.",
+					"Surtout sans bruit.",
+					"Continue.",
+					"— Tonton Jiee ❤️"
+				]
+			},
+			{
+				"id": "minimal_poem_2",
+				"lines": [
+					"{player_name},",
+					"Petit mot, grande vérité :",
+					"tu tiens bon.",
+					"Depuis le début.",
+					"Sans le dire.",
+					"Sans le montrer, même.",
+					"Mais tu tiens bon.",
+					"Et ça, je le vois.",
+					"Merci d'être encore là.",
+					"— Tonton Jiee 😊"
+				]
+			}
+		],
+		"en": [
+			{
+				"id": "minimal_poem_1",
+				"lines": [
+					"{player_name},",
+					"No big story today.",
+					"Just this:",
+					"you went further than expected.",
+					"Again.",
+					"That counts.",
+					"Even without noise.",
+					"Especially without noise.",
+					"Keep going.",
+					"— Uncle Jiee ❤️"
+				]
+			},
+			{
+				"id": "minimal_poem_2",
+				"lines": [
+					"{player_name},",
+					"Small note, big truth:",
+					"you're holding on.",
+					"Since the start.",
+					"Without saying it.",
+					"Without even showing it.",
+					"But you're holding on.",
+					"And I see that.",
+					"Thanks for still being here.",
+					"— Uncle Jiee 😊"
+				]
+			}
+		]
+	}
+}

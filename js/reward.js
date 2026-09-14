@@ -200,11 +200,8 @@ const Reward = {
 
 	revealFragment(stageCard) {
 		const group = State.progress.rewardGroup;
-		const lang = State.profile.language || "fr";
-		const tone = State.progress.rewardTone;
-		const entry = State.rewardMessages.find((r) => r.language === lang && r.tone === tone);
-		const rawFragment = entry ? entry.fragments[group - 1] : "";
-		const fragmentText = rawFragment.replaceAll("{player_name}", State.profile.playerName);
+		const letter = State.progress.rewardLetter;
+		const fragmentText = letter && letter.fragments ? letter.fragments[group - 1] : "";
 
 		// Le retournement dure ~600ms (voir CSS) : le texte n'apparaît
 		// qu'une fois la face avant bien visible.
