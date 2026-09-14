@@ -201,7 +201,7 @@ const RewardEngine = {
 			}
 		};
 
-		return chosen._structure.beats.map((slot) => slotValue(slot));
+		return chosen._structure.beats.map((slot) => applyGenderMarkup(slotValue(slot), State.profile.gender));
 	},
 
 	// -----------------------------------------------------------------
@@ -218,7 +218,9 @@ const RewardEngine = {
 		if (pool.length === 0) pool = rareLetters;
 
 		const chosen = pickRandom(pool);
-		const fragments = chosen.lines.map((line) => line.replaceAll("{player_name}", playerName));
+		const fragments = chosen.lines.map((line) =>
+			applyGenderMarkup(line.replaceAll("{player_name}", playerName), State.profile.gender)
+		);
 
 		return {
 			fragments,

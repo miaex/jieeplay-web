@@ -71,7 +71,8 @@ const Game = {
 		if (table.length > 1) candidates = table.filter((m) => m !== this.lastMessage);
 		const msg = pickRandom(candidates);
 		this.lastMessage = msg;
-		return msg.replaceAll("{player_name}", State.profile.playerName || "");
+		const personalized = msg.replaceAll("{player_name}", State.profile.playerName || "");
+		return applyGenderMarkup(personalized, State.profile.gender);
 	},
 
 	// -----------------------------------------------------------------

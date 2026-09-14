@@ -20,7 +20,7 @@ const Loc = {
 		for (const k in vars) {
 			text = text.replaceAll(`{${k}}`, vars[k]);
 		}
-		return text;
+		return applyGenderMarkup(text, State.profile.gender);
 	},
 
 	/** Variante genrée : ne sert que pour les tournures qui décrivent

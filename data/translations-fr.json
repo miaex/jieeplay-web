@@ -35,7 +35,7 @@
 	"home_greeting_afternoon": "Bon après-midi, {player_name}",
 	"home_greeting_evening": "Bonsoir, {player_name}",
 	"home_subtitle_lines": [
-		"Alors, prêt(e) à te faire encore surprendre ?",
+		"Alors, {prêt|prête} à te faire encore surprendre ?",
 		"J'espère que tu as bien dormi, les mots t'attendent.",
 		"Ton cerveau est chaud ? Parfait, on va vérifier ça.",
 		"Encore toi ? Je ne vais pas m'en plaindre 😏",
@@ -89,7 +89,7 @@
 		"On dirait un pro, dis donc.",
 		"Han ! Ça, c'était propre.",
 		"Je commence à croire que tu triches 😹",
-		"Bon, ok, je l'avoue : t'es fort(e).",
+		"Bon, ok, je l'avoue : t'es {fort|forte}.",
 		"{player_name} en mode warrior aujourd'hui !",
 		"C'était trop facile, on va corser ça la prochaine fois.",
 		"Ne me dis pas que tu as deviné du premier coup…",
@@ -99,7 +99,7 @@
 		"On dirait que les mots n'ont plus de secret pour toi.",
 		"Chapeau bas 🎩 Tonton Jiee valide.",
 		"Nul doute, tu es sur la bonne voie pour débloquer ton message.",
-		"Toujours aussi doué(e), à ce que je vois."
+		"Toujours aussi {doué|douée}, à ce que je vois."
 	],
 	"level_failure_messages": [
 		"Nope 😏 Mais tu n'étais pas loin.",
@@ -112,7 +112,7 @@
 		"Hmm non. Respire un coup et retente.",
 		"C'est pas grave du tout, même les meilleurs se trompent.",
 		"Recommence, {player_name}, je sais que tu vas trouver.",
-		"Oups. Ce mot t'a eu(e), mais pas pour longtemps.",
+		"Oups. Ce mot t'a {eu|eue}, mais pas pour longtemps.",
 		"Tu chauffes, tu chauffes… mais c'est pas encore ça.",
 		"Zut ! Un petit effort de plus et c'est dans la poche.",
 		"Non, mais joli essai quand même 😹"

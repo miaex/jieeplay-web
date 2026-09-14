@@ -97,7 +97,9 @@ const Home = {
 		document.getElementById("home-greeting").textContent = Loc.t(timeKey, { player_name: name });
 
 		const lines = (Loc.tables[State.profile.language] && Loc.tables[State.profile.language].home_subtitle_lines) || [];
-		document.getElementById("home-subtitle-line").textContent = lines.length ? pickRandom(lines) : "";
+		document.getElementById("home-subtitle-line").textContent = lines.length
+			? applyGenderMarkup(pickRandom(lines), State.profile.gender)
+			: "";
 
 		const envelope = document.getElementById("btn-home-envelope");
 		envelope.classList.toggle("hidden", !State.progress.rewardActive);
@@ -154,7 +156,7 @@ const Home = {
 		document.getElementById("home-daily-title").textContent = Loc.t("home_daily_title");
 		if (lines.length) {
 			const dayIndex = Math.floor(Date.now() / 86400000) % lines.length;
-			document.getElementById("home-daily-text").textContent = lines[dayIndex];
+			document.getElementById("home-daily-text").textContent = applyGenderMarkup(lines[dayIndex], State.profile.gender);
 		}
 		document.getElementById("home-daily-cta").textContent = Loc.t("home_daily_cta");
 	},

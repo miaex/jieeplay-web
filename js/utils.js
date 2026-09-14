@@ -29,3 +29,14 @@ function el(tag, className, text) {
 	if (text !== undefined) node.textContent = text;
 	return node;
 }
+
+/** Résout la syntaxe {masculin|féminin} dans un texte selon le genre du
+ * joueur — utilisé partout où le jeu s'adresse directement au joueur,
+ * pour ne jamais afficher une forme "universelle" du type "content(e)".
+ * Sans genre connu (valeur vide ou "male" par défaut), la forme
+ * masculine est utilisée. */
+function applyGenderMarkup(text, gender) {
+	if (!text || text.indexOf("|") === -1) return text;
+	const useFeminine = gender === "female";
+	return text.replace(/\{([^{}|]+)\|([^{}|]+)\}/g, (_match, masc, fem) => (useFeminine ? fem : masc));
+}

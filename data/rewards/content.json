@@ -51,7 +51,7 @@
 			],
 			"angles_fr": [
 				"Le courage ne crie pas toujours. Parfois, il se contente de continuer.",
-				"Tu n'as pas eu besoin d'être spectaculaire pour être courageux(se). Juste constant(e).",
+				"Tu n'as pas eu besoin d'être spectaculaire pour être {courageux|courageuse}. Juste {constant|constante}.",
 				"Certaines batailles ne se voient pas. Tu en as gagné une, et je le sais."
 			],
 			"angles_en": [
@@ -129,7 +129,7 @@
 			"angles_fr": [
 				"La curiosité n'a pas besoin d'un grand mystère pour s'allumer.",
 				"Tu poses encore des questions. C'est un bon signe.",
-				"Rester curieux(se), c'est refuser que le monde devienne trop familier."
+				"Rester {curieux|curieuse}, c'est refuser que le monde devienne trop familier."
 			],
 			"angles_en": [
 				"Curiosity doesn't need a great mystery to spark.",
@@ -148,7 +148,7 @@
 			],
 			"angles_fr": [
 				"Il y a une joie discrète dans les journées qui se passent bien, sans éclat particulier.",
-				"Tu n'as pas besoin d'un grand événement pour avoir le droit d'être content(e).",
+				"Tu n'as pas besoin d'un grand événement pour avoir le droit d'être {content|contente}.",
 				"Certains bonheurs n'annoncent jamais leur arrivée."
 			],
 			"angles_en": [
@@ -208,7 +208,7 @@
 			"angles_fr": [
 				"Rire d'une mauvaise journée, ce n'est pas la fuir. C'est la rendre supportable.",
 				"Tu as ce talent rare de trouver drôle ce qui, chez d'autres, serait dramatique.",
-				"L'humour, parfois, est juste une autre façon d'être fort(e)."
+				"L'humour, parfois, est juste une autre façon d'être {fort|forte}."
 			],
 			"angles_en": [
 				"Laughing at a bad day isn't running from it. It's making it bearable.",
@@ -451,7 +451,7 @@
 				"Je pense à toi plus souvent que tu ne l'imagines, {player_name}.",
 				"{player_name}, ce petit mot n'a pas besoin d'une grande occasion pour exister.",
 				"Rien de tout ça n'est un hasard, {player_name}.",
-				"{player_name}, je suis content(e) que tu sois encore là pour lire ça.",
+				"{player_name}, je suis {content|contente} que tu sois encore là pour lire ça.",
 				"Je ne dis pas ça souvent, {player_name}, mais je le pense.",
 				"{player_name}, ce message t'attendait, à son propre rythme.",
 				"Tu n'as pas besoin de répondre à ça, {player_name}. Juste de le garder un instant."
@@ -462,10 +462,10 @@
 				"Prends ce que tu veux de ce message, et laisse le reste où il est.",
 				"Ce n'est pas grave d'avancer lentement, tant que tu avances.",
 				"Tu fais déjà plus que tu ne le crois.",
-				"Personne ne te demande d'être parfait(e). Juste présent(e).",
+				"Personne ne te demande d'être {parfait|parfaite}. Juste {présent|présente}.",
 				"Ce chapitre t'a demandé quelque chose. Tu l'as donné.",
 				"Il n'y a pas de mauvaise vitesse pour avancer.",
-				"Tu as le droit d'être fier(e) de choses que personne d'autre ne remarque.",
+				"Tu as le droit d'être {fier|fière} de choses que personne d'autre ne remarque.",
 				"Ce que tu traverses compte, même les jours discrets."
 			],
 			"closing": [
@@ -578,7 +578,7 @@
 					"{player_name},",
 					"Pas de grande histoire aujourd'hui.",
 					"Juste ceci :",
-					"tu es allé(e) plus loin que prévu.",
+					"tu es {allé|allée} plus loin que prévu.",
 					"Encore une fois.",
 					"Ça compte.",
 					"Même sans bruit.",
