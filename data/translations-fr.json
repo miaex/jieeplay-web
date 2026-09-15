@@ -68,6 +68,9 @@
 	"menu_settings": "⚙️ PARAMÈTRES",
 
 	"level_choose_category_title": "Choisis ton thème ✨",
+	"level_choose_category_eyebrow": "CHOISIS TON THÈME",
+	"level_hint_eyebrow": "INDICE",
+	"level_scramble_eyebrow": "MOT MÉLANGÉ",
 	"level_back_to_home": "RETOUR",
 	"level_clear": "EFFACER",
 	"level_validate": "VALIDER",

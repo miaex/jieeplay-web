@@ -131,19 +131,29 @@
 
 	<!-- Les écrans Jeu, Récompense, Paramètres, Parcours arrivent à l'étape suivante -->
 	<div id="view-game" class="view">
-		<div id="game-logo" class="jieeplay-logo"></div>
+		<div class="game-bg-decor"></div>
+		<button id="btn-board-back" class="board-back-btn">‹</button>
 
 		<div id="game-board" class="game-board">
-			<button id="btn-board-back" class="board-back-btn">‹</button>
+			<div id="game-logo" class="jieeplay-logo game-logo-mini"></div>
 
-			<div class="card hint-card">
-				<div class="hint-row">
-					<p id="hint-text" class="hint-text-content"></p>
-				</div>
+			<div class="game-hint-card">
+				<span class="game-eyebrow" id="hint-eyebrow"></span>
+				<p id="hint-text" class="game-hint-text"></p>
 			</div>
 
-			<div id="answer-row" class="tile-row"></div>
-			<div id="tiles-row" class="tile-row"></div>
+			<div class="game-scramble-block">
+				<span class="game-eyebrow" id="scramble-eyebrow"></span>
+				<p id="scramble-display" class="game-scramble-display"></p>
+			</div>
+
+			<div class="game-answer-block">
+				<div id="answer-row" class="tile-row answer-row"></div>
+			</div>
+
+			<div class="game-keyboard-block">
+				<div id="tiles-row" class="tile-row keyboard-row"></div>
+			</div>
 
 			<p id="game-feedback" class="feedback-text"></p>
 
@@ -167,6 +177,8 @@
 
 		<div id="category-overlay" class="category-overlay">
 			<div class="category-overlay-inner">
+				<div class="category-overlay-decor">✦</div>
+				<span class="game-eyebrow" id="category-eyebrow"></span>
 				<h2 class="title-lg" id="category-title"></h2>
 				<div id="category-grid" class="category-grid"></div>
 				<button class="btn btn-secondary" id="btn-category-back"></button>

@@ -68,6 +68,9 @@
 	"menu_settings": "⚙️ SETTINGS",
 
 	"level_choose_category_title": "Choose your theme ✨",
+	"level_choose_category_eyebrow": "CHOOSE YOUR THEME",
+	"level_hint_eyebrow": "HINT",
+	"level_scramble_eyebrow": "SCRAMBLED WORD",
 	"level_back_to_home": "BACK",
 	"level_clear": "CLEAR",
 	"level_validate": "SUBMIT",

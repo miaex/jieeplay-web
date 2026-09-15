@@ -36,6 +36,9 @@ const Game = {
 		document.getElementById("btn-validate").textContent = Loc.t("level_validate");
 		document.getElementById("btn-category-back").textContent = Loc.t("level_back_to_home");
 		document.getElementById("category-title").textContent = Loc.t("level_choose_category_title");
+		document.getElementById("category-eyebrow").textContent = Loc.t("level_choose_category_eyebrow");
+		document.getElementById("hint-eyebrow").textContent = Loc.t("level_hint_eyebrow");
+		document.getElementById("scramble-eyebrow").textContent = Loc.t("level_scramble_eyebrow");
 
 		this.refreshHintCounter();
 		this.showCategoryOverlay();
@@ -183,8 +186,34 @@ const Game = {
 
 		this.rebuildTiles();
 		this.rebuildSlots();
+		this.renderScrambleDisplay();
 		document.getElementById("btn-validate").disabled = true;
 		this.refreshHintButtonState();
+	},
+
+	/** Aperçu décoratif du mot mélangé, au-dessus du plateau — lettres
+	 * colorées façon signature JieePlay (voir logo.js), casse alternée
+	 * pour un rendu vivant type "O-r-m-b-e". Purement visuel : la vraie
+	 * interaction se fait sur le clavier plus bas. */
+	renderScrambleDisplay() {
+		const container = document.getElementById("scramble-display");
+		container.innerHTML = "";
+		const letters = shuffleArray(this.currentWord.split(""));
+
+		letters.forEach((letter, i) => {
+			if (i > 0) {
+				const dash = document.createElement("span");
+				dash.className = "scramble-dash";
+				dash.textContent = "-";
+				container.appendChild(dash);
+			}
+			const span = document.createElement("span");
+			span.className = "scramble-letter";
+			span.textContent = i % 2 === 0 ? letter.toUpperCase() : letter.toLowerCase();
+			span.style.color = LOGO_COLORS[i % LOGO_COLORS.length];
+			span.style.animationDelay = `${i * 0.05}s`;
+			container.appendChild(span);
+		});
 	},
 
 	refreshHintButtonState() {
