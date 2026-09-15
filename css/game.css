@@ -520,3 +520,33 @@
 	0%, 100% { opacity: 0.4; transform: scale(0.8); }
 	50% { opacity: 1; transform: scale(1.15); }
 }
+
+/* Feu d'artifice : fusée qui monte depuis le bas, puis éclate */
+.firework-rocket {
+	position: absolute;
+	bottom: 0;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	animation-name: firework-rise;
+	animation-timing-function: cubic-bezier(0.15, 0.6, 0.3, 1);
+	animation-fill-mode: forwards;
+}
+@keyframes firework-rise {
+	from { transform: translateY(0) scale(1); opacity: 1; }
+	to { transform: translateY(calc(-1 * var(--rise-height, 40vh))) scale(0.8); opacity: 0.9; }
+}
+
+.firework-particle {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	margin: -3px 0 0 -3px;
+	animation: firework-burst 0.9s cubic-bezier(0.2, 0.7, 0.35, 1) forwards;
+}
+@keyframes firework-burst {
+	0% { transform: translate(0, 0) scale(1); opacity: 1; }
+	65% { opacity: 1; }
+	100% { transform: translate(var(--dx, 0), var(--dy, 0)) scale(0.3); opacity: 0; }
+}

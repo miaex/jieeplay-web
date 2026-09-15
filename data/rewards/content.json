@@ -451,10 +451,16 @@
 				"Je pense à toi plus souvent que tu ne l'imagines, {player_name}.",
 				"{player_name}, ce petit mot n'a pas besoin d'une grande occasion pour exister.",
 				"Rien de tout ça n'est un hasard, {player_name}.",
-				"{player_name}, je suis {content|contente} que tu sois encore là pour lire ça.",
+				"{player_name}, je suis content que tu sois encore là pour lire ça.",
 				"Je ne dis pas ça souvent, {player_name}, mais je le pense.",
 				"{player_name}, ce message t'attendait, à son propre rythme.",
-				"Tu n'as pas besoin de répondre à ça, {player_name}. Juste de le garder un instant."
+				"Tu n'as pas besoin de répondre à ça, {player_name}. Juste de le garder un instant.",
+				"{player_name}, j'espère que cette petite pause t'a fait du bien.",
+				"Ce mot, {player_name}, je le pensais vraiment en l'écrivant.",
+				"{player_name}, entre nous, ce chapitre n'était pas si facile — et tu l'as fait quand même.",
+				"Petit aparté juste pour toi, {player_name}.",
+				"{player_name}, ce message n'a qu'un seul destinataire : toi.",
+				"Je garde une petite place pour toi à chaque chapitre, {player_name}."
 			],
 			"encouragement": [
 				"Continue comme ça — pas parce qu'il le faut, mais parce que ça te va bien.",
@@ -466,7 +472,15 @@
 				"Ce chapitre t'a demandé quelque chose. Tu l'as donné.",
 				"Il n'y a pas de mauvaise vitesse pour avancer.",
 				"Tu as le droit d'être {fier|fière} de choses que personne d'autre ne remarque.",
-				"Ce que tu traverses compte, même les jours discrets."
+				"Ce que tu traverses compte, même les jours discrets.",
+				"Avance à ta façon. Il n'y en a pas de meilleure.",
+				"Tu n'as pas besoin d'un signe extérieur pour savoir que tu progresses.",
+				"Ce que les autres ne voient pas ne rend pas ce que tu fais moins réel.",
+				"Tu as le droit de célébrer les victoires que personne n'applaudit.",
+				"Rien ne t'oblige à te justifier d'avancer à ton rythme.",
+				"Chaque chapitre laisse une trace, même invisible.",
+				"Tu tiens le coup. C'est déjà beaucoup.",
+				"Il n'y a pas de petite avancée. Juste des avancées."
 			],
 			"closing": [
 				"Voilà. C'est tout ce que je voulais dire, pour cette fois.",
@@ -478,13 +492,24 @@
 				"Je referme cette lettre, mais pas la conversation.",
 				"Rien d'autre à ajouter. Juste ça, pour l'instant.",
 				"Ce petit mot s'arrête ici. Toi, continue.",
-				"C'était court, mais c'était pour toi."
+				"C'était court, mais c'était pour toi.",
+				"Ce message se termine ici, mais toi, continue.",
+				"Prochain chapitre, prochaine lettre. C'est une promesse.",
+				"Ce n'était rien de grandiose. Juste un mot, à toi.",
+				"Fin de cette petite parenthèse. La suite t'attend.",
+				"Rien de plus à ajouter — le reste, tu le sais déjà.",
+				"On garde ça entre nous, pour l'instant.",
+				"À la prochaine récompense, alors.",
+				"Ce mot s'arrête là. Pas ce qu'il représente."
 			],
 			"signature": [
 				"— Tonton Jiee ❤️",
 				"— Tonton Jiee, toujours dans le coin.",
 				"— Avec toute mon affection, Tonton Jiee.",
-				"— Tonton Jiee 😊"
+				"— Tonton Jiee 😊",
+				"— Ton Tonton Jiee.",
+				"— Tonton Jiee, qui pense à toi.",
+				"— À bientôt, Tonton Jiee."
 			],
 			"question": [
 				"Tu t'es déjà demandé ce qui, dans ta journée, comptait vraiment ?",
@@ -516,7 +541,13 @@
 				"{player_name}, I'm glad you're still here to read this.",
 				"I don't say this often, {player_name}, but I mean it.",
 				"{player_name}, this message was waiting for you, in its own time.",
-				"You don't need to answer this, {player_name}. Just hold onto it for a moment."
+				"You don't need to answer this, {player_name}. Just hold onto it for a moment.",
+				"{player_name}, I hope this little pause did you some good.",
+				"This one, {player_name}, I really meant while writing it.",
+				"{player_name}, between us, this chapter wasn't easy — and you did it anyway.",
+				"A little aside, just for you, {player_name}.",
+				"{player_name}, this message has exactly one recipient: you.",
+				"I keep a little spot for you in every chapter, {player_name}."
 			],
 			"encouragement": [
 				"Keep going — not because you have to, but because it suits you.",
@@ -528,7 +559,15 @@
 				"This chapter asked something of you. You gave it.",
 				"There's no wrong speed for moving forward.",
 				"You're allowed to be proud of things no one else notices.",
-				"What you're going through matters, even on the quiet days."
+				"What you're going through matters, even on the quiet days.",
+				"Move your own way. There isn't a better one.",
+				"You don't need an outside sign to know you're progressing.",
+				"What others don't see doesn't make what you're doing any less real.",
+				"You're allowed to celebrate wins nobody else claps for.",
+				"Nothing requires you to justify moving at your own pace.",
+				"Every chapter leaves a mark, even an invisible one.",
+				"You're holding steady. That's already a lot.",
+				"There's no small progress. Just progress."
 			],
 			"closing": [
 				"That's it. That's all I wanted to say, this time.",
@@ -540,13 +579,24 @@
 				"I'm closing this letter, but not the conversation.",
 				"Nothing else to add. Just that, for now.",
 				"This little note ends here. You, keep going.",
-				"It was short, but it was for you."
+				"It was short, but it was for you.",
+				"This message ends here, but you, keep going.",
+				"Next chapter, next letter. That's a promise.",
+				"It wasn't anything grand. Just a word, for you.",
+				"End of this little parenthesis. What's next is waiting.",
+				"Nothing more to add — you already know the rest.",
+				"Let's keep this between us, for now.",
+				"Until the next reward, then.",
+				"This word stops here. What it means doesn't."
 			],
 			"signature": [
 				"— Uncle Jiee ❤️",
 				"— Uncle Jiee, always around.",
 				"— With all my affection, Uncle Jiee.",
-				"— Uncle Jiee 😊"
+				"— Uncle Jiee 😊",
+				"— Your Uncle Jiee.",
+				"— Uncle Jiee, thinking of you.",
+				"— See you soon, Uncle Jiee."
 			],
 			"question": [
 				"Have you ever wondered what, in your day, actually mattered?",

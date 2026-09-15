@@ -122,7 +122,12 @@ const RewardEngine = {
 		});
 		const chosen = this.pickWeightedBest(candidates);
 
-		const fragments = this.composeFragments(chosen, { language, playerName });
+		const recentVocab = new Set();
+		(history || []).slice(-3).forEach((h) => {
+			(h.usedVocab || []).forEach((v) => recentVocab.add(v));
+		});
+
+		const { fragments, usedVocab } = this.composeFragments(chosen, { language, playerName, recentVocab });
 
 		return {
 			fragments,
@@ -136,29 +141,39 @@ const RewardEngine = {
 				structureId: chosen.structureId,
 				metaphorId: chosen.metaphorId,
 				depth: chosen._idea.depth,
+				usedVocab,
 				language,
 				date: new Date().toISOString(),
 			},
 		};
 	},
 
-	composeFragments(chosen, { language, playerName }) {
+	composeFragments(chosen, { language, playerName, recentVocab }) {
 		const L = language === "en" ? "en" : "fr";
 		const V = this.content.vocabulary[L];
 		const idea = chosen._idea;
 		const angles = idea[`angles_${L}`];
 		const metaphor = chosen._metaphor;
 		const greeting = `${playerName},`;
+		const avoid = recentVocab || new Set();
+		const usedVocab = [];
 
-		const pickFrom = (bank) => pickRandom(bank);
+		/** Pioche en évitant les phrases utilisées dans les 3 dernières
+		 * récompenses de ce joueur — retombe sur la banque complète si
+		 * tout est épuisé (jamais bloqué). */
+		const pickFrom = (bank) => {
+			const pool = bank.filter((item) => !avoid.has(item));
+			const chosenLine = pickRandom(pool.length > 0 ? pool : bank);
+			usedVocab.push(chosenLine);
+			return chosenLine;
+		};
 		const pickDifferentFrom = (bank, excluded) => {
-			let candidate = pickFrom(bank);
-			let tries = 0;
-			while (candidate === excluded && tries < 6) {
-				candidate = pickFrom(bank);
-				tries++;
-			}
-			return candidate;
+			let pool = bank.filter((item) => item !== excluded && !avoid.has(item));
+			if (pool.length === 0) pool = bank.filter((item) => item !== excluded);
+			if (pool.length === 0) pool = bank;
+			const chosenLine = pickRandom(pool);
+			usedVocab.push(chosenLine);
+			return chosenLine;
 		};
 
 		let firstEncouragement = null;
@@ -201,7 +216,8 @@ const RewardEngine = {
 			}
 		};
 
-		return chosen._structure.beats.map((slot) => applyGenderMarkup(slotValue(slot), State.profile.gender));
+		const fragments = chosen._structure.beats.map((slot) => applyGenderMarkup(slotValue(slot), State.profile.gender));
+		return { fragments, usedVocab };
 	},
 
 	// -----------------------------------------------------------------

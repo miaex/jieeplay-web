@@ -439,6 +439,7 @@ const Game = {
 		requestAnimationFrame(() => overlay.classList.add("visible"));
 
 		this.spawnConfetti();
+		this.spawnFireworks();
 	},
 
 	hideWordReveal() {
@@ -510,6 +511,68 @@ const Game = {
 
 			star.appendChild(inner);
 			layer.appendChild(star);
+		}
+	},
+
+	/** Petit feu d'artifice qui part du bas de l'écran : une fusée monte,
+	 * puis éclate en une pluie de particules à son point culminant.
+	 * Se superpose aux confettis pour un effet plus spectaculaire. */
+	spawnFireworks() {
+		const layer = document.getElementById("confetti-layer");
+		const palette = ["#e79292", "#c98bb0", "#d9b06c", "#f3d9d6", "#ffffff", "#a080b3"];
+		const rocketCount = 3;
+
+		for (let i = 0; i < rocketCount; i++) {
+			const launchDelay = i * 220 + Math.random() * 120;
+
+			setTimeout(() => {
+				const xPercent = 18 + Math.random() * 64;
+				const riseHeight = 34 + Math.random() * 22;
+				const riseDuration = 0.55 + Math.random() * 0.2;
+				const color = palette[Math.floor(Math.random() * palette.length)];
+
+				const rocket = document.createElement("span");
+				rocket.className = "firework-rocket";
+				rocket.style.left = `${xPercent}%`;
+				rocket.style.background = color;
+				rocket.style.boxShadow = `0 0 8px 2px ${color}`;
+				rocket.style.setProperty("--rise-height", `${riseHeight}vh`);
+				rocket.style.animationDuration = `${riseDuration}s`;
+				layer.appendChild(rocket);
+
+				setTimeout(() => {
+					const rect = rocket.getBoundingClientRect();
+					const layerRect = layer.getBoundingClientRect();
+					const burstX = rect.left - layerRect.left + rect.width / 2;
+					const burstY = rect.top - layerRect.top + rect.height / 2;
+					rocket.remove();
+					this.burstFirework(layer, burstX, burstY, palette);
+				}, riseDuration * 1000);
+			}, launchDelay);
+		}
+	},
+
+	burstFirework(layer, x, y, palette) {
+		const particleCount = 16;
+		for (let i = 0; i < particleCount; i++) {
+			const angle = (Math.PI * 2 * i) / particleCount + Math.random() * 0.3;
+			const distance = 45 + Math.random() * 55;
+			const dx = Math.cos(angle) * distance;
+			const dy = Math.sin(angle) * distance + 18; // légère gravité vers le bas
+			const color = palette[Math.floor(Math.random() * palette.length)];
+
+			const particle = document.createElement("span");
+			particle.className = "firework-particle";
+			particle.style.left = `${x}px`;
+			particle.style.top = `${y}px`;
+			particle.style.background = color;
+			particle.style.boxShadow = `0 0 4px 1px ${color}`;
+			particle.style.setProperty("--dx", `${dx}px`);
+			particle.style.setProperty("--dy", `${dy}px`);
+			particle.style.animationDelay = `${Math.random() * 0.05}s`;
+
+			layer.appendChild(particle);
+			setTimeout(() => particle.remove(), 1100);
 		}
 	},
 
