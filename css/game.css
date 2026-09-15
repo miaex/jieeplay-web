@@ -324,8 +324,8 @@
 	z-index: 10;
 	opacity: 1;
 	transition: opacity 0.25s ease;
-	padding-top: calc(var(--safe-top) + 20px);
-	padding-bottom: 30px;
+	padding-top: calc(var(--safe-top) + 10px);
+	padding-bottom: calc(var(--safe-bottom) + var(--bottom-nav-height));
 }
 .category-overlay.hidden-overlay {
 	opacity: 0;
@@ -333,45 +333,57 @@
 }
 .category-overlay-inner {
 	position: relative;
+	flex: 1;
+	min-height: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 10px;
-	padding: 24px;
+	gap: 12px;
+	padding: 0 24px;
 	max-width: 460px;
 	width: 100%;
 }
+.category-header-group {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3px;
+}
 .category-overlay-decor {
-	font-size: 20px;
+	font-size: 18px;
 	color: var(--color-gold);
 	opacity: 0.7;
 }
-.category-overlay-inner .title-lg {
-	margin-bottom: 8px;
+.category-header-group .title-lg {
+	margin-top: 2px;
 }
 
 .category-grid {
+	flex: 1;
+	min-height: 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 14px;
+	grid-template-rows: repeat(5, 1fr);
+	gap: clamp(8px, 2.2vw, 14px);
 	width: 100%;
-	margin-top: 6px;
 }
 .category-btn {
 	position: relative;
-	min-height: 100px;
-	border-radius: 22px;
+	height: 100%;
+	min-height: 0;
+	border-radius: 20px;
 	background: linear-gradient(155deg, var(--color-rose-light), #cb7a83);
 	color: #fff;
-	font-size: 15.5px;
+	font-size: clamp(13px, 3.4vw, 15.5px);
 	font-weight: 700;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 8px;
+	gap: clamp(4px, 1.5vw, 8px);
 	box-shadow: 0 6px 16px rgba(203, 122, 131, 0.3);
-	padding: 12px;
+	padding: 6px;
 	text-align: center;
 	overflow: hidden;
 	transition: transform 0.12s ease;
@@ -387,7 +399,7 @@
 	pointer-events: none;
 }
 .category-btn .cat-emoji {
-	font-size: 27px;
+	font-size: clamp(20px, 5.5vw, 27px);
 	filter: drop-shadow(0 2px 3px rgba(0,0,0,0.15));
 }
 .category-btn:nth-child(6n+2) { background: linear-gradient(155deg, #c9a3d6, #9a72ae); box-shadow: 0 6px 16px rgba(154,114,174,0.3); }
@@ -395,6 +407,11 @@
 .category-btn:nth-child(6n+4) { background: linear-gradient(155deg, #8fb0a6, #5f8c7e); box-shadow: 0 6px 16px rgba(95,140,126,0.3); }
 .category-btn:nth-child(6n+5) { background: linear-gradient(155deg, #93a8c9, #5f79a8); box-shadow: 0 6px 16px rgba(95,121,168,0.3); }
 .category-btn:nth-child(6n+6) { background: linear-gradient(155deg, #cb7a83, var(--color-mauve-dark)); box-shadow: 0 6px 16px rgba(122,59,74,0.3); }
+
+#btn-category-back {
+	flex-shrink: 0;
+	width: 100%;
+}
 
 /* ================= RÉVÉLATION DU MOT ================= */
 .word-reveal-overlay {
