@@ -314,7 +314,7 @@
 
 /* ================= SÉLECTEUR DE THÈME ================= */
 .category-overlay {
-	position: absolute;
+	position: fixed;
 	inset: 0;
 	background: linear-gradient(to bottom, #f7ece9 0%, #fdf8f4 40%, #eee8f0 100%);
 	display: flex;
