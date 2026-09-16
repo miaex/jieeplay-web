@@ -107,10 +107,12 @@
 	background: var(--color-cream);
 	border: 2px solid rgba(217, 158, 89, 0.55);
 }
-.home-avatar svg {
+.home-avatar svg,
+.home-avatar img {
 	width: 100%;
 	height: 100%;
 	display: block;
+	object-fit: cover;
 }
 .home-header-text {
 	min-width: 0;

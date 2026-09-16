@@ -71,10 +71,12 @@
 	border: 3px solid transparent;
 	transition: border-color 0.15s ease, transform 0.15s ease;
 }
-.avatar-choice-circle svg {
+.avatar-choice-circle svg,
+.avatar-choice-circle img {
 	width: 100%;
 	height: 100%;
 	display: block;
+	object-fit: cover;
 }
 .avatar-choice.selected .avatar-choice-circle {
 	border-color: var(--color-gold);

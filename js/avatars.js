@@ -1,19 +1,9 @@
-// avatars.js — 5 avatars "nounours" au choix, obligatoire à l'inscription.
-// Chaque avatar est une petite peluche générée en SVG (couleur de fourrure
-// + accessoire distinctif), dans le même langage graphique doux que le
-// reste de JieePlay.
+// avatars.js — 5 avatars au choix, obligatoire à l'inscription, modifiable
+// ensuite depuis les Réglages. Certains sont de vraies photos de peluches
+// (assets/avatars/*.png, détourées), d'autres restent des nounours dessinés
+// en SVG tant qu'aucune photo de remplacement n'a été fournie.
 
 const AVATAR_ACCESSORIES = {
-	bow: (color) => `
-		<g fill="${color}">
-			<path d="M70 8 L81 3 L81 15 Z"/>
-			<path d="M70 8 L59 3 L59 15 Z"/>
-			<circle cx="70" cy="8" r="3.4"/>
-		</g>`,
-	star: (color) => `
-		<path d="M50 21 L53.4 29.6 L62 33 L53.4 36.4 L50 45 L46.6 36.4 L38 33 L46.6 29.6 Z" fill="${color}"/>`,
-	heart: (color) => `
-		<path d="M50 84c-9-6.5-14.5-12-14.5-18.5a7.8 7.8 0 0 1 14.5-4 7.8 7.8 0 0 1 14.5 4C64.5 72 59 77.5 50 84Z" fill="${color}"/>`,
 	flower: (color) => `
 		<g fill="${color}">
 			<circle cx="17" cy="9" r="4.2"/>
@@ -27,11 +17,11 @@ const AVATAR_ACCESSORIES = {
 };
 
 const AVATAR_LIST = [
-	{ id: "bear-rose", fur: "#f0c9c9", furDark: "#dba3a3", accessory: "bow", accessoryColor: "#c9607a" },
-	{ id: "bear-mauve", fur: "#ddd0e4", furDark: "#bba5c7", accessory: "star", accessoryColor: "#8a6aa0" },
-	{ id: "bear-caramel", fur: "#dcac72", furDark: "#bd854e", accessory: "heart", accessoryColor: "#8f3a28" },
-	{ id: "bear-ivoire", fur: "#f3ead8", furDark: "#dccbb0", accessory: "flower", accessoryColor: "#d98a9a" },
-	{ id: "bear-dore", fur: "#e9c78c", furDark: "#c9a25f", accessory: "crown", accessoryColor: "#8a5a1f" },
+	{ id: "bear-rose", type: "photo", src: "assets/avatars/bear-rose.png" },
+	{ id: "bear-mauve", type: "photo", src: "assets/avatars/bear-mauve.png" },
+	{ id: "bear-caramel", type: "photo", src: "assets/avatars/bear-caramel.png" },
+	{ id: "bear-ivoire", type: "svg", fur: "#f3ead8", furDark: "#dccbb0", accessory: "flower", accessoryColor: "#d98a9a" },
+	{ id: "bear-dore", type: "svg", fur: "#e9c78c", furDark: "#c9a25f", accessory: "crown", accessoryColor: "#8a5a1f" },
 ];
 
 function buildBearSVG(cfg) {
@@ -50,11 +40,20 @@ function buildBearSVG(cfg) {
 		</svg>`;
 }
 
-const AVATAR_SVG_CACHE = {};
+const AVATAR_MARKUP_CACHE = {};
+
+/** Retourne le HTML (photo <img> ou SVG dessiné) pour un avatar donné. */
 function getAvatarSVG(avatarId) {
 	const cfg = AVATAR_LIST.find((a) => a.id === avatarId) || AVATAR_LIST[0];
-	if (!AVATAR_SVG_CACHE[cfg.id]) AVATAR_SVG_CACHE[cfg.id] = buildBearSVG(cfg);
-	return AVATAR_SVG_CACHE[cfg.id];
+	if (AVATAR_MARKUP_CACHE[cfg.id]) return AVATAR_MARKUP_CACHE[cfg.id];
+
+	const markup =
+		cfg.type === "photo"
+			? `<img src="${cfg.src}" alt="" loading="lazy" draggable="false">`
+			: buildBearSVG(cfg);
+
+	AVATAR_MARKUP_CACHE[cfg.id] = markup;
+	return markup;
 }
 
 /** Affiche l'avatar choisi (ou le premier par défaut) dans un conteneur. */
