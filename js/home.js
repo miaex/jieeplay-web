@@ -14,6 +14,11 @@ const Home = {
 			if (State.progress.rewardActive) this.showPendingReward();
 		});
 
+		document.getElementById("btn-home-settings").addEventListener("click", () => {
+			Audio_.playClick();
+			Nav.push("settings");
+		});
+
 		document.getElementById("home-daily-card").addEventListener("click", () => {
 			Audio_.playClick();
 			Nav.push("game-category");
@@ -81,6 +86,7 @@ const Home = {
 
 		renderLogo(document.getElementById("home-logo-mini"));
 		applyDataT(document.getElementById("home-menu"));
+		document.getElementById("home-tagline").textContent = Loc.t("home_tagline");
 
 		this.renderHeader();
 		this.renderMainCard();
@@ -129,14 +135,14 @@ const Home = {
 			document.getElementById("home-main-progress-text").textContent = "";
 			progressTrack.classList.add("hidden");
 			document.getElementById("home-main-hint").textContent = Loc.t("home_reward_unlocked_subtitle");
-			document.getElementById("btn-continue").textContent = Loc.t("home_cta_open_reward");
+			document.getElementById("home-main-cta-label").textContent = Loc.t("home_cta_open_reward");
 		} else if (state === "fresh") {
 			document.getElementById("home-main-label").textContent = Loc.t("home_main_label");
 			document.getElementById("home-main-title").textContent = Loc.t("home_chapter_title", { chapter });
 			document.getElementById("home-main-progress-text").textContent = "";
 			progressTrack.classList.add("hidden");
 			document.getElementById("home-main-hint").textContent = Loc.t("home_fresh_hint");
-			document.getElementById("btn-continue").textContent = Loc.t("home_cta_start");
+			document.getElementById("home-main-cta-label").textContent = Loc.t("home_cta_start");
 		} else {
 			document.getElementById("home-main-label").textContent = Loc.t("home_main_label");
 			document.getElementById("home-main-title").textContent = Loc.t("home_chapter_title", { chapter });
@@ -147,7 +153,7 @@ const Home = {
 			const remaining = 10 - (level - 1);
 			document.getElementById("home-main-hint").textContent =
 				remaining <= 1 ? Loc.t("home_levels_left_one") : Loc.t("home_levels_left_other", { n: remaining });
-			document.getElementById("btn-continue").textContent = Loc.t("home_cta_continue");
+			document.getElementById("home-main-cta-label").textContent = Loc.t("home_cta_continue");
 		}
 	},
 

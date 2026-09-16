@@ -44,6 +44,7 @@
 	],
 
 	"home_main_label": "TON AVENTURE",
+	"home_tagline": "TON JEU. TES MOTS. TES SURPRISES.",
 	"home_chapter_title": "Chapitre {chapter}",
 	"home_level_progress": "Niveau {level} sur 10",
 	"home_levels_left_one": "Encore un niveau !",
@@ -175,6 +176,9 @@
 	"rewards_entry": "✨ Chapitre {chapter} débloqué",
 
 	"settings_title": "⚙️ Réglages",
+	"settings_label_avatar": "Avatar",
+	"settings_avatar_sublabel": "Appuie pour changer",
+	"settings_label_language": "Langue",
 	"settings_sound": "Sons",
 	"settings_music": "Musique",
 	"settings_vibration": "Vibrations",

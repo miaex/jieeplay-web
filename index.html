@@ -80,6 +80,34 @@
 		</div>
 
 		<div id="home-menu" class="screen-scroll hidden">
+			<div class="home-bg-decor">
+				<div class="home-bg-bokeh home-bg-bokeh-1"></div>
+				<div class="home-bg-bokeh home-bg-bokeh-2"></div>
+				<div class="home-bg-bokeh home-bg-bokeh-3"></div>
+				<div class="home-bg-branch">
+					<svg viewBox="0 0 220 260" fill="none">
+						<path d="M-10 10C30 30 40 70 70 90c30 20 50 10 70 40" stroke="#a9836f" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+						<path d="M20 25c10 12 8 26-2 34" stroke="#a9836f" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+						<path d="M55 55c8 14 24 16 34 8" stroke="#a9836f" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+						<g fill="#f3c4cf">
+							<circle cx="18" cy="14" r="9"/><circle cx="34" cy="10" r="9"/><circle cx="10" cy="30" r="9"/><circle cx="28" cy="30" r="9"/>
+						</g>
+						<circle cx="22" cy="20" r="5" fill="#d99e59"/>
+						<g fill="#eeb3c2">
+							<circle cx="62" cy="48" r="7"/><circle cx="75" cy="43" r="7"/><circle cx="57" cy="60" r="7"/><circle cx="72" cy="60" r="7"/>
+						</g>
+						<circle cx="67" cy="53" r="4" fill="#d99e59"/>
+						<g fill="#f3c4cf" opacity="0.85">
+							<circle cx="112" cy="82" r="6"/><circle cx="123" cy="78" r="6"/><circle cx="108" cy="92" r="6"/><circle cx="121" cy="93" r="6"/>
+						</g>
+						<circle cx="116" cy="86" r="3.4" fill="#d99e59"/>
+						<circle cx="6" cy="52" r="2.5" fill="#f3c4cf" opacity="0.7"/>
+						<circle cx="90" cy="30" r="2" fill="#f3c4cf" opacity="0.6"/>
+						<circle cx="140" cy="105" r="2.2" fill="#f3c4cf" opacity="0.6"/>
+					</svg>
+				</div>
+			</div>
+
 			<div class="home-menu-inner">
 
 				<!-- EN-TÊTE -->
@@ -91,13 +119,19 @@
 							<p id="home-subtitle-line" class="home-subtitle-line"></p>
 						</div>
 					</div>
-					<button id="btn-home-envelope" class="home-envelope hidden">
-						<span class="home-envelope-icon">💌</span>
-						<span class="home-envelope-dot"></span>
-					</button>
+					<div class="home-header-right">
+						<button id="btn-home-envelope" class="home-envelope hidden">
+							<span class="home-envelope-icon">💌</span>
+							<span class="home-envelope-dot"></span>
+						</button>
+						<button id="btn-home-settings" class="home-settings-btn" aria-label="Réglages">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 13.2c.1-.4.1-.8 0-1.2l1.6-1.3-1.5-2.6-1.9.6a4.7 4.7 0 0 0-1-.6L16.2 6h-3l-.4 2.1c-.4.1-.7.3-1 .6l-1.9-.6-1.5 2.6 1.6 1.3c-.1.4-.1.8 0 1.2L8.4 14.5l1.5 2.6 1.9-.6c.3.3.6.5 1 .6l.4 2.1h3l.4-2.1c.4-.1.7-.3 1-.6l1.9.6 1.5-2.6-1.6-1.3Z"/></svg>
+						</button>
+					</div>
 				</div>
 
 				<div id="home-logo-mini" class="jieeplay-logo home-logo-mini home-anim" style="--home-anim-delay:40ms"></div>
+				<p id="home-tagline" class="home-tagline home-anim" style="--home-anim-delay:60ms"></p>
 
 				<!-- CARTE PRINCIPALE -->
 				<div id="home-main-card" class="home-main-card home-anim" style="--home-anim-delay:80ms">
@@ -109,14 +143,22 @@
 						<div id="home-main-progress-fill" class="progress-fill"></div>
 					</div>
 					<p id="home-main-hint" class="home-main-hint"></p>
-					<button class="btn home-main-cta" id="btn-continue"></button>
+					<button class="btn home-main-cta" id="btn-continue">
+						<span id="home-main-cta-label"></span>
+						<svg class="home-main-cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+					</button>
 				</div>
 
 				<!-- CARTE DU JOUR -->
 				<button id="home-daily-card" class="home-daily-card home-anim" style="--home-anim-delay:140ms">
-					<p id="home-daily-title" class="home-daily-title"></p>
-					<p id="home-daily-text" class="home-daily-text"></p>
-					<span id="home-daily-cta" class="home-daily-cta"></span>
+					<div class="home-daily-text-block">
+						<p id="home-daily-title" class="home-daily-title"></p>
+						<p id="home-daily-text" class="home-daily-text"></p>
+						<span id="home-daily-cta" class="home-daily-cta"></span>
+					</div>
+					<div class="home-daily-flower" aria-hidden="true">
+						<svg viewBox="0 0 60 60"><g fill="none" stroke="#cb7a83" stroke-width="1.6" stroke-linecap="round"><path d="M30 54V26"/><path d="M30 34c-6-2-9-7-8-13"/><path d="M30 40c6-1 10-5 10-11"/></g><g fill="#f0b8c0"><circle cx="30" cy="14" r="6.5"/><circle cx="22" cy="18" r="5.5"/><circle cx="38" cy="18" r="5.5"/><circle cx="24" cy="9" r="5"/><circle cx="36" cy="9" r="5"/></g><circle cx="30" cy="14" r="3.4" fill="#d99e59"/></svg>
+					</div>
 				</button>
 			</div>
 		</div>
@@ -271,6 +313,22 @@
 			<div class="settings-inner">
 				<p id="settings-title" class="title-lg" style="text-align:center;"></p>
 
+				<div class="card settings-profile-row" id="btn-settings-avatar">
+					<div id="settings-avatar-preview" class="settings-avatar-preview"></div>
+					<div class="settings-profile-text">
+						<span id="settings-label-avatar" class="settings-label"></span>
+						<span id="settings-avatar-sublabel" class="settings-sublabel"></span>
+					</div>
+					<span class="settings-chevron">›</span>
+				</div>
+				<div class="card settings-profile-row" id="btn-settings-language">
+					<div class="settings-profile-text">
+						<span id="settings-label-language" class="settings-label"></span>
+						<span id="settings-language-sublabel" class="settings-sublabel"></span>
+					</div>
+					<span id="settings-language-value" class="settings-value-pill"></span>
+				</div>
+
 				<div class="card settings-row">
 					<span id="settings-label-sound" class="settings-label"></span>
 					<button id="toggle-sound" class="toggle-switch"><span class="toggle-knob"></span></button>
@@ -286,6 +344,14 @@
 
 				<button class="btn btn-secondary" id="btn-settings-howto"></button>
 				<button class="btn settings-reset-btn" id="btn-settings-reset"></button>
+			</div>
+		</div>
+
+		<div id="settings-avatar-overlay" class="settings-modal-overlay hidden">
+			<div class="settings-modal-card">
+				<p id="settings-avatar-overlay-title" class="title-lg" style="text-align:center;"></p>
+				<div id="settings-avatar-grid" class="avatar-grid"></div>
+				<button class="btn" id="btn-settings-avatar-close"></button>
 			</div>
 		</div>
 

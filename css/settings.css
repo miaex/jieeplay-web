@@ -21,6 +21,51 @@
 	color: var(--color-text);
 }
 
+/* Ligne profil (avatar / langue) */
+.settings-profile-row {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 14px 18px;
+	cursor: pointer;
+}
+.settings-avatar-preview {
+	flex-shrink: 0;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: var(--shadow-soft);
+}
+.settings-avatar-preview svg {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.settings-profile-text {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+.settings-sublabel {
+	font-size: 13px;
+	color: var(--color-text-soft);
+}
+.settings-chevron {
+	font-size: 22px;
+	color: var(--color-text-soft);
+	opacity: 0.6;
+}
+.settings-value-pill {
+	padding: 5px 14px;
+	border-radius: 999px;
+	background: var(--color-mauve-pale);
+	color: var(--color-mauve-dark);
+	font-size: 13px;
+	font-weight: 700;
+}
+
 /* Interrupteur */
 .toggle-switch {
 	position: relative;

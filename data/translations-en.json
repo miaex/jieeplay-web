@@ -44,6 +44,7 @@
 	],
 
 	"home_main_label": "YOUR ADVENTURE",
+	"home_tagline": "YOUR GAME. YOUR WORDS. YOUR SURPRISES.",
 	"home_chapter_title": "Chapter {chapter}",
 	"home_level_progress": "Level {level} of 10",
 	"home_levels_left_one": "Just one more level!",
@@ -169,6 +170,9 @@
 	"rewards_entry": "✨ Chapter {chapter} unlocked",
 
 	"settings_title": "⚙️ Settings",
+	"settings_label_avatar": "Avatar",
+	"settings_avatar_sublabel": "Tap to change",
+	"settings_label_language": "Language",
 	"settings_sound": "Sound",
 	"settings_music": "Music",
 	"settings_vibration": "Vibration",
