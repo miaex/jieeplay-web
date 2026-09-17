@@ -91,7 +91,31 @@ const Home = {
 		this.renderHeader();
 		this.renderMainCard();
 		this.renderDailyCard();
+		this.renderBackgroundPhoto();
 		this.replayEntranceAnimations();
+	},
+
+	/** Choisit la photo de fond du jour parmi celles disponibles dans le
+	 * manifeste (certains emplacements peuvent encore être vides tant que
+	 * l'image n'a pas été fournie). Change au plus 2 fois par jour
+	 * (matin/après-midi), jamais à chaque visite — effet non agressif. */
+	renderBackgroundPhoto() {
+		const layer = document.getElementById("home-bg-photo");
+		const available = (State.homeBackgrounds || []).filter((bg) => bg.file);
+		if (available.length === 0) {
+			layer.style.backgroundImage = "none";
+			return;
+		}
+
+		const now = new Date();
+		const startOfYear = new Date(now.getFullYear(), 0, 0);
+		const dayOfYear = Math.floor((now - startOfYear) / 86400000);
+		const half = now.getHours() < 12 ? 0 : 1;
+		const index = (dayOfYear * 2 + half) % available.length;
+		const chosen = available[index];
+
+		layer.style.backgroundImage = `url("${chosen.file}")`;
+		layer.style.backgroundPosition = chosen.position || "center";
 	},
 
 	renderHeader() {

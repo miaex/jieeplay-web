@@ -7,6 +7,7 @@ const State = {
 	categories: [],
 	words: [],
 	rewardEngineContent: null,
+	homeBackgrounds: [],
 
 	// --- Données du joueur (persistées) ---
 	profile: {
@@ -50,6 +51,7 @@ const State = {
 		this.categories = await fetchJSON("data/categories.json");
 		this.words = await fetchJSON("data/words.json");
 		this.rewardEngineContent = await fetchJSON("data/rewards/content.json");
+		this.homeBackgrounds = await fetchJSON("data/home-backgrounds.json");
 	},
 
 	registerCategoryChoice(categoryId) {

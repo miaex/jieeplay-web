@@ -1,0 +1,12 @@
+[
+	{ "id": "bg-01", "file": "assets/backgrounds/bg-01.jpg", "position": "center 38%" },
+	{ "id": "bg-02", "file": "assets/backgrounds/bg-02.jpg", "position": "center 42%" },
+	{ "id": "bg-03", "file": "assets/backgrounds/bg-03.jpg", "position": "center 40%" },
+	{ "id": "bg-04", "file": "assets/backgrounds/bg-04.jpg", "position": "center 36%" },
+	{ "id": "bg-05", "file": null, "position": "center 40%" },
+	{ "id": "bg-06", "file": null, "position": "center 40%" },
+	{ "id": "bg-07", "file": null, "position": "center 40%" },
+	{ "id": "bg-08", "file": null, "position": "center 40%" },
+	{ "id": "bg-09", "file": null, "position": "center 40%" },
+	{ "id": "bg-10", "file": null, "position": "center 40%" }
+]

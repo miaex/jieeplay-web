@@ -9,10 +9,28 @@
 
 #home-menu {
 	position: relative;
+	/* Dégradé de repli tant qu'aucune photo de fond n'est disponible/chargée */
 	background: linear-gradient(170deg, #f9e3dd 0%, #f7e6e9 22%, #f3e6ef 48%, #eee0ea 72%, #f4e6dc 100%);
 }
 
-/* ================= DÉCOR D'AMBIANCE ================= */
+/* ================= PHOTO DE FOND (plein écran réel, hors du padding parent) ================= */
+.home-bg-photo {
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* background-position posée dynamiquement par home.js selon l'image du jour */
+}
+.home-bg-photo::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	/* Voile très léger pour garder les cartes lisibles, sans écraser la photo */
+	background: linear-gradient(180deg, rgba(255,251,247,0.12) 0%, rgba(255,251,247,0.06) 35%, rgba(255,251,247,0.22) 75%, rgba(255,251,247,0.4) 100%);
+}
+
+/* ================= DÉCOR D'AMBIANCE (complément léger, au-dessus de la photo) ================= */
 .home-bg-decor {
 	position: absolute;
 	inset: 0;
@@ -24,7 +42,7 @@
 	position: absolute;
 	border-radius: 50%;
 	filter: blur(18px);
-	opacity: 0.5;
+	opacity: 0.28;
 }
 .home-bg-bokeh-1 {
 	width: 160px; height: 160px;
@@ -35,13 +53,13 @@
 	width: 130px; height: 130px;
 	top: 40%; right: 10%;
 	background: radial-gradient(circle, #f3c8d6, transparent 70%);
-	opacity: 0.4;
+	opacity: 0.22;
 }
 .home-bg-bokeh-3 {
 	width: 200px; height: 200px;
 	bottom: -60px; left: -50px;
 	background: radial-gradient(circle, #d9c4e0, transparent 70%);
-	opacity: 0.35;
+	opacity: 0.2;
 }
 .home-bg-branch {
 	position: absolute;
@@ -132,10 +150,10 @@
 	font-family: Georgia, "Times New Roman", serif;
 	font-style: italic;
 	font-size: 13.5px;
+	line-height: 1.3;
 	color: var(--color-text-soft);
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	white-space: normal;
+	overflow-wrap: break-word;
 }
 
 .home-header-right {
