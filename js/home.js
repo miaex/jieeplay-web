@@ -103,7 +103,7 @@ const Home = {
 		const layer = document.getElementById("home-bg-photo");
 		const available = (State.homeBackgrounds || []).filter((bg) => bg.file);
 		if (available.length === 0) {
-			layer.style.backgroundImage = "none";
+			layer.style.backgroundImage = "";
 			return;
 		}
 
