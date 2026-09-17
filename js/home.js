@@ -91,6 +91,7 @@ const Home = {
 		this.renderHeader();
 		this.renderMainCard();
 		this.renderDailyCard();
+		this.renderCalendar();
 		this.renderBackgroundPhoto();
 		this.replayEntranceAnimations();
 	},
@@ -189,6 +190,23 @@ const Home = {
 			document.getElementById("home-daily-text").textContent = applyGenderMarkup(lines[dayIndex], State.profile.gender);
 		}
 		document.getElementById("home-daily-cta").textContent = Loc.t("home_daily_cta");
+	},
+
+	/** Petit calendrier : jour + mois en gros, jour de la semaine à côté.
+	 * L'espace "message" (home-calendar-text) est prévu pour accueillir
+	 * un futur contenu dynamique — laissé vide pour l'instant. */
+	renderCalendar() {
+		const now = new Date();
+		const lang = State.profile.language === "en" ? "en-US" : "fr-FR";
+
+		document.getElementById("home-calendar-day").textContent = now.getDate();
+		document.getElementById("home-calendar-month").textContent = now
+			.toLocaleDateString(lang, { month: "short" })
+			.replace(".", "");
+
+		const weekday = now.toLocaleDateString(lang, { weekday: "long" });
+		document.getElementById("home-calendar-weekday").textContent =
+			weekday.charAt(0).toUpperCase() + weekday.slice(1);
 	},
 
 	/** Relance les animations d'entrée à chaque fois que l'accueil
