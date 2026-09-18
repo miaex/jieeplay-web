@@ -22,15 +22,32 @@ const RewardsList = {
 			emptyEl.textContent = Loc.t("rewards_empty");
 			emptyEl.classList.remove("hidden");
 			itemsEl.classList.add("hidden");
-		} else {
-			emptyEl.classList.add("hidden");
-			itemsEl.classList.remove("hidden");
-			unlocked.forEach((chapter) => {
+			return;
+		}
+
+		emptyEl.classList.add("hidden");
+		itemsEl.classList.remove("hidden");
+
+		unlocked.forEach((chapter) => {
+			const archived = State.progress.completedRewards.find((r) => r.chapter === chapter);
+
+			if (archived) {
+				const card = document.createElement("div");
+				card.className = "card rewards-message-card";
+				card.innerHTML = `
+					<span class="rewards-message-eyebrow">${Loc.t("rewards_chapter_label", { chapter })}</span>
+					<p class="rewards-message-text"></p>
+				`;
+				card.querySelector(".rewards-message-text").textContent = archived.message;
+				itemsEl.appendChild(card);
+			} else {
+				// Récompense débloquée avant l'archivage des messages complets :
+				// on retombe sur le simple badge, faute de texte à afficher.
 				const badge = document.createElement("div");
 				badge.className = "card rewards-list-badge";
 				badge.textContent = Loc.t("rewards_entry", { chapter });
 				itemsEl.appendChild(badge);
-			});
-		}
+			}
+		});
 	},
 };

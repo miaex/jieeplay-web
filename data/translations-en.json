@@ -126,7 +126,7 @@
 	"reward_continue": "CONTINUE",
 
 	"secret_title": "✨ Secret Reward ✨",
-	"secret_subtitle": "Collect 10 fragments to reveal your message",
+	"secret_subtitle": "Collect 5 fragments to reveal your message",
 	"secret_lot_label": "SET {current}/{total}",
 	"secret_choose_title": "Pick a card",
 	"secret_choose_desc": "Each card hides a different fragment. Follow your intuition.",
@@ -168,6 +168,7 @@
 	"rewards_title": "🎁 My Rewards",
 	"rewards_empty": "No rewards unlocked yet.\n\nFinish a full chapter (10 levels) to unlock one.",
 	"rewards_entry": "✨ Chapter {chapter} unlocked",
+	"rewards_chapter_label": "CHAPTER {chapter}",
 
 	"settings_title": "⚙️ Settings",
 	"settings_label_avatar": "Avatar",

@@ -1,15 +1,17 @@
 // reward.js — équivalent Reward.gd : écran "Récompense secrète",
-// système des 50 cartes (10 lots de 5 cartes façon cartes à jouer).
+// système des 25 cartes (5 lots de 5 cartes façon cartes à jouer).
 //
 // Logique (cf. spécification) :
-//   - 10 groupes, un par fragment du message final.
-//   - Chaque groupe affiche 5 cartes générées à la volée (jamais 50
+//   - 5 groupes, un par fragment du message final.
+//   - Chaque groupe affiche 5 cartes générées à la volée (jamais 25
 //     écrans codés en dur) : { variant, palette }.
 //   - Les 5 cartes d'un même groupe révèlent TOUJOURS le même fragment,
 //     mais rien dans l'interface ne le laisse jamais deviner : chaque
 //     lot a une apparence entièrement différente, et une seule carte
 //     est jamais montrée retournée à la fois. Le joueur doit croire
 //     que son choix a façonné le message qu'il reçoit.
+
+const REWARD_TOTAL_LOTS = 5;
 
 const REWARD_CARD_VARIANTS = [
 	"stars", "flower", "moon", "leaves", "heart",
@@ -89,7 +91,7 @@ const Reward = {
 		const track = document.getElementById("reward-progress-dots");
 		track.innerHTML = "";
 		const revealed = State.progress.rewardFragments.length;
-		for (let i = 0; i < 10; i++) {
+		for (let i = 0; i < REWARD_TOTAL_LOTS; i++) {
 			const dot = document.createElement("span");
 			dot.className = "reward-dot" + (i < revealed ? " filled" : "");
 			track.appendChild(dot);
@@ -108,7 +110,7 @@ const Reward = {
 		this.selecting = false;
 
 		const group = State.progress.rewardGroup;
-		document.getElementById("reward-lot-label").textContent = Loc.t("secret_lot_label", { current: group, total: 10 });
+		document.getElementById("reward-lot-label").textContent = Loc.t("secret_lot_label", { current: group, total: REWARD_TOTAL_LOTS });
 		this.renderProgressDots();
 		this.buildFan();
 	},
@@ -215,8 +217,9 @@ const Reward = {
 			// lancement affiche directement le lot suivant.
 			State.progress.rewardFragments.push(fragmentText);
 			State.progress.rewardGroup = group + 1;
-			if (State.progress.rewardGroup > 10) {
+			if (State.progress.rewardGroup > REWARD_TOTAL_LOTS) {
 				State.progress.rewardCompleted = true;
+				this.archiveCompletedReward();
 			}
 			SaveManager.save();
 
@@ -227,6 +230,22 @@ const Reward = {
 			resultEl.classList.remove("hidden");
 			requestAnimationFrame(() => resultEl.classList.add("visible"));
 		}, 420);
+	},
+
+	/** Archive le message complet dès qu'il est entièrement révélé, pour
+	 * que le joueur puisse le relire à tout moment depuis "Mes récompenses" —
+	 * indépendamment du fait qu'il ait déjà appuyé sur le bouton final. */
+	archiveCompletedReward() {
+		const letter = State.progress.rewardLetter;
+		const chapter = letter && letter.meta ? letter.meta.chapter : State.progress.currentChapter - 1;
+		if (State.progress.completedRewards.some((r) => r.chapter === chapter)) return;
+
+		State.progress.completedRewards.push({
+			chapter,
+			message: State.progress.rewardFragments.join("\n\n"),
+			language: State.profile.language,
+			date: new Date().toISOString(),
+		});
 	},
 
 	onContinuePressed() {

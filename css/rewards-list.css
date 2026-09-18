@@ -28,3 +28,22 @@
 	color: var(--color-text);
 	padding: 16px 20px;
 }
+
+.rewards-message-card {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 18px 20px;
+}
+.rewards-message-eyebrow {
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: 1.4px;
+	color: var(--color-gold);
+}
+.rewards-message-text {
+	font-size: 15px;
+	line-height: 1.6;
+	color: var(--color-text);
+	white-space: pre-wrap;
+}

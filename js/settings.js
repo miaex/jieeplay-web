@@ -155,7 +155,7 @@ const Settings = {
 		State.progress = {
 			currentChapter: 1, currentLevel: 1, unlockedRewards: [],
 			rewardActive: false, rewardCompleted: false, rewardTone: "", rewardGroup: 1, rewardFragments: [],
-			rewardLetter: null, rewardHistory: [],
+			rewardLetter: null, rewardHistory: [], completedRewards: [],
 			hintsUsedThisChapter: 0,
 		};
 		State.statistics = { successes: 0, failures: 0 };

@@ -386,12 +386,7 @@
 				"greeting",
 				"idea_obs_a",
 				"idea_obs_b",
-				"transition",
-				"idea_obs_c",
-				"personal",
 				"encouragement",
-				"encouragement2",
-				"closing",
 				"signature"
 			]
 		},
@@ -401,13 +396,8 @@
 			"beats": [
 				"greeting",
 				"metaphor_open",
-				"metaphor_dev",
 				"metaphor_turn",
-				"personal",
-				"idea_obs_a",
 				"encouragement",
-				"idea_obs_b",
-				"closing",
 				"signature"
 			]
 		},
@@ -417,13 +407,8 @@
 			"beats": [
 				"greeting",
 				"idea_obs_a",
-				"idea_obs_b",
 				"idea_obs_c",
-				"synthesis",
-				"personal",
 				"encouragement",
-				"encouragement2",
-				"closing",
 				"signature"
 			]
 		},
@@ -434,12 +419,7 @@
 				"greeting",
 				"question",
 				"idea_obs_a",
-				"idea_obs_b",
-				"transition",
-				"idea_obs_c",
-				"personal",
 				"encouragement",
-				"closing",
 				"signature"
 			]
 		}
@@ -626,30 +606,20 @@
 				"id": "minimal_poem_1",
 				"lines": [
 					"{player_name},",
-					"Pas de grande histoire aujourd'hui.",
-					"Juste ceci :",
-					"tu es {allé|allée} plus loin que prévu.",
-					"Encore une fois.",
-					"Ça compte.",
-					"Même sans bruit.",
-					"Surtout sans bruit.",
-					"Continue.",
-					"— Tonton Jiee ❤️"
+					"Pas de grande histoire aujourd'hui. Juste ceci :",
+					"tu es {allé|allée} plus loin que prévu. Encore une fois.",
+					"Ça compte. Même sans bruit. Surtout sans bruit.",
+					"Continue. — Tonton Jiee ❤️"
 				]
 			},
 			{
 				"id": "minimal_poem_2",
 				"lines": [
 					"{player_name},",
-					"Petit mot, grande vérité :",
-					"tu tiens bon.",
-					"Depuis le début.",
-					"Sans le dire.",
-					"Sans le montrer, même.",
-					"Mais tu tiens bon.",
-					"Et ça, je le vois.",
-					"Merci d'être encore là.",
-					"— Tonton Jiee 😊"
+					"Petit mot, grande vérité : tu tiens bon.",
+					"Depuis le début. Sans le dire, sans le montrer, même.",
+					"Mais tu tiens bon. Et ça, je le vois.",
+					"Merci d'être encore là. — Tonton Jiee 😊"
 				]
 			}
 		],
@@ -658,30 +628,20 @@
 				"id": "minimal_poem_1",
 				"lines": [
 					"{player_name},",
-					"No big story today.",
-					"Just this:",
-					"you went further than expected.",
-					"Again.",
-					"That counts.",
-					"Even without noise.",
-					"Especially without noise.",
-					"Keep going.",
-					"— Tonton Jiee ❤️"
+					"No big story today. Just this:",
+					"you went further than expected. Again.",
+					"That counts. Even without noise. Especially without noise.",
+					"Keep going. — Tonton Jiee ❤️"
 				]
 			},
 			{
 				"id": "minimal_poem_2",
 				"lines": [
 					"{player_name},",
-					"Small note, big truth:",
-					"you're holding on.",
-					"Since the start.",
-					"Without saying it.",
-					"Without even showing it.",
-					"But you're holding on.",
-					"And I see that.",
-					"Thanks for still being here.",
-					"— Tonton Jiee 😊"
+					"Small note, big truth: you're holding on.",
+					"Since the start. Without saying it, without even showing it.",
+					"But you're holding on. And I see that.",
+					"Thanks for still being here. — Tonton Jiee 😊"
 				]
 			}
 		]

@@ -30,6 +30,7 @@ const State = {
 		rewardFragments: [],
 		rewardLetter: null,
 		rewardHistory: [],
+		completedRewards: [],
 		hintsUsedThisChapter: 0,
 	},
 
