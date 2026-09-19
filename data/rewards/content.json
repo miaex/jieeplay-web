@@ -383,44 +383,104 @@
 			"id": "observation_reversal",
 			"uses_metaphor": false,
 			"beats": [
-				"greeting",
-				"idea_obs_a",
-				"idea_obs_b",
-				"encouragement",
-				"signature"
+				[
+					"greeting",
+					"idea_obs_a"
+				],
+				[
+					"idea_obs_b",
+					"transition"
+				],
+				[
+					"idea_obs_c",
+					"personal"
+				],
+				[
+					"encouragement",
+					"encouragement2"
+				],
+				[
+					"closing",
+					"signature"
+				]
 			]
 		},
 		{
 			"id": "metaphor_journey",
 			"uses_metaphor": true,
 			"beats": [
-				"greeting",
-				"metaphor_open",
-				"metaphor_turn",
-				"encouragement",
-				"signature"
+				[
+					"greeting",
+					"metaphor_open"
+				],
+				[
+					"metaphor_dev",
+					"metaphor_turn"
+				],
+				[
+					"personal",
+					"idea_obs_a"
+				],
+				[
+					"encouragement",
+					"idea_obs_b"
+				],
+				[
+					"closing",
+					"signature"
+				]
 			]
 		},
 		{
 			"id": "three_observations_synthesis",
 			"uses_metaphor": false,
 			"beats": [
-				"greeting",
-				"idea_obs_a",
-				"idea_obs_c",
-				"encouragement",
-				"signature"
+				[
+					"greeting",
+					"idea_obs_a"
+				],
+				[
+					"idea_obs_b",
+					"idea_obs_c"
+				],
+				[
+					"synthesis",
+					"personal"
+				],
+				[
+					"encouragement",
+					"encouragement2"
+				],
+				[
+					"closing",
+					"signature"
+				]
 			]
 		},
 		{
 			"id": "question_answer",
 			"uses_metaphor": false,
 			"beats": [
-				"greeting",
-				"question",
-				"idea_obs_a",
-				"encouragement",
-				"signature"
+				[
+					"greeting",
+					"question"
+				],
+				[
+					"idea_obs_a",
+					"idea_obs_b"
+				],
+				[
+					"transition",
+					"idea_obs_c"
+				],
+				[
+					"personal",
+					"encouragement"
+				],
+				[
+					"closing",
+					"signature"
+				]
 			]
 		}
 	],

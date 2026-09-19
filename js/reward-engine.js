@@ -216,7 +216,13 @@ const RewardEngine = {
 			}
 		};
 
-		const fragments = chosen._structure.beats.map((slot) => applyGenderMarkup(slotValue(slot), State.profile.gender));
+		// Chaque "temps" de la structure regroupe désormais 1 ou 2 éléments
+		// de contenu (ex: deux observations, ou clôture+signature) pour
+		// former un fragment plus riche — moins de cartes, même profondeur.
+		const fragments = chosen._structure.beats.map((slotGroup) => {
+			const text = slotGroup.map((slot) => slotValue(slot)).join(" ");
+			return applyGenderMarkup(text, State.profile.gender);
+		});
 		return { fragments, usedVocab };
 	},
 
