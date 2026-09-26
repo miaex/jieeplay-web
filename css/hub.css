@@ -1,0 +1,87 @@
+/* hub.css — écran "Univers JieePlay" : grille des jeux disponibles et
+ * à venir. Même fond dégradé + halos que Parcours/Récompenses, pour
+ * rester dans le même univers visuel plutôt que de créer un nouveau
+ * style "dashboard". */
+
+#view-hub {
+	position: relative;
+	background: linear-gradient(to bottom, #f7ece9 0%, #fdf8f4 42%, #eee8f0 100%);
+}
+
+.hub-inner {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	padding: 6px 24px 30px;
+	max-width: 440px;
+	margin: 0 auto;
+}
+
+.hub-subtitle {
+	margin-top: -6px;
+	color: var(--color-text-soft);
+}
+
+.hub-games-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.hub-game-card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 4px;
+	text-align: left;
+	padding: 20px 22px;
+	border-radius: 22px;
+	background: rgba(255, 251, 247, 0.7);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid rgba(217, 158, 89, 0.28);
+	box-shadow: 0 8px 20px rgba(139, 69, 92, 0.1);
+}
+.hub-game-card:active {
+	transform: scale(0.98);
+}
+.hub-game-card.soon {
+	opacity: 0.6;
+	box-shadow: none;
+}
+
+.hub-game-icon {
+	font-size: 30px;
+	margin-bottom: 4px;
+}
+.hub-game-name {
+	font-size: 17px;
+	font-weight: 800;
+	color: var(--color-mauve-dark);
+}
+.hub-game-subtitle {
+	font-size: 13px;
+	color: var(--color-text-soft);
+	line-height: 1.4;
+}
+
+.hub-game-status {
+	margin-top: 10px;
+	font-size: 10.5px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 5px 12px;
+	border-radius: 20px;
+}
+.hub-game-card.accent-gold .hub-game-status {
+	color: #fffbf8;
+	background: linear-gradient(135deg, var(--color-gold), #c97f3a);
+}
+.hub-game-card.soon .hub-game-status {
+	color: var(--color-text-soft);
+	background: rgba(75, 52, 71, 0.08);
+}

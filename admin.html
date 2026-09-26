@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tonton Jiee — Messagerie admin</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- Espace séparé de la PWA joueur : volontairement pas dans sw.js (pas
+     besoin de fonctionner hors-ligne), pas de lien depuis l'app joueur.
+     Accès protégé par Firebase Authentication (email/mot de passe) — voir
+     README section "Messagerie" pour la procédure de création du compte
+     admin et le réglage des règles Firestore. -->
+
+<div id="login-screen" class="screen">
+	<div class="login-card">
+		<h1>💬 Tonton Jiee</h1>
+		<p class="subtitle">Espace de messagerie — accès réservé</p>
+		<input id="login-email" type="email" placeholder="Email" autocomplete="username" />
+		<input id="login-password" type="password" placeholder="Mot de passe" autocomplete="current-password" />
+		<button id="btn-login">Se connecter</button>
+		<p id="login-error" class="error hidden"></p>
+	</div>
+</div>
+
+<div id="admin-screen" class="screen hidden">
+	<div class="admin-layout">
+		<aside id="conversation-list-panel" class="conversation-list-panel">
+			<div class="panel-header">
+				<h2>Conversations</h2>
+				<button id="btn-logout" title="Se déconnecter">⏻</button>
+			</div>
+			<div id="conversation-list"></div>
+		</aside>
+
+		<main id="conversation-view" class="conversation-view">
+			<div id="conversation-empty" class="conversation-empty">
+				Sélectionne une conversation à gauche.
+			</div>
+			<div id="conversation-open" class="conversation-open hidden">
+				<div class="conversation-open-header">
+					<button id="btn-back-to-list" class="mobile-only">‹</button>
+					<span id="conversation-open-name"></span>
+				</div>
+				<div id="admin-messages" class="admin-messages"></div>
+				<div class="admin-input-bar">
+					<input id="admin-input" type="text" placeholder="Répondre…" autocomplete="off" />
+					<button id="btn-admin-send">Envoyer</button>
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+
+<script type="module" src="admin.js"></script>
+</body>
+</html>

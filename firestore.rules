@@ -1,0 +1,48 @@
+rules_version = '2';
+
+// À coller dans : Firebase Console → Firestore Database → onglet "Règles".
+//
+// ⚠️ Remplacer "ADMIN_UID" ci-dessous par le uid réel du compte admin
+// (Firebase Console → Authentication → Users → colonne "User UID" du
+// compte créé pour Tonton Jiee). Tant que ce n'est pas fait, l'admin
+// n'aura ni lecture ni écriture sur les conversations.
+//
+// Logique : chaque conversation est identifiée par le uid Firebase du
+// joueur (authentification anonyme, voir js/firebase-init.js). Seuls ce
+// joueur et l'admin peuvent lire/écrire dans sa conversation — personne
+// d'autre, même connecté anonymement, ne peut accéder à celle d'un autre
+// joueur.
+
+service cloud.firestore {
+	match /databases/{database}/documents {
+
+		function isAdmin() {
+			return request.auth != null && request.auth.uid == "ADMIN_UID";
+		}
+		function isOwner(playerId) {
+			return request.auth != null && request.auth.uid == playerId;
+		}
+
+		match /conversations/{playerId} {
+			// L'admin doit pouvoir LISTER toutes les conversations (panneau
+			// admin.html) — d'où le "list" en plus de "get" pour lui seul.
+			allow get, update: if isOwner(playerId) || isAdmin();
+			allow list: if isAdmin();
+			allow create: if isOwner(playerId);
+
+			match /messages/{messageId} {
+				allow read: if isOwner(playerId) || isAdmin();
+
+				allow create: if (isOwner(playerId) || isAdmin())
+					&& request.resource.data.from in ["player", "admin"]
+					&& (isOwner(playerId) ? request.resource.data.from == "player" : request.resource.data.from == "admin");
+
+				// Suppression "pour tout le monde" : uniquement ses propres
+				// messages (un joueur ne supprime jamais un message de l'admin,
+				// et inversement).
+				allow delete: if (isOwner(playerId) && resource.data.from == "player")
+					|| (isAdmin() && resource.data.from == "admin");
+			}
+		}
+	}
+}

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#f6f4f2">
+<title>JieePlay</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon.png">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/onboarding.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/game.css">
+<link rel="stylesheet" href="css/reward.css">
+<link rel="stylesheet" href="css/settings.css">
+<link rel="stylesheet" href="css/journey.css">
+<link rel="stylesheet" href="css/rewards-list.css">
+<link rel="stylesheet" href="css/hub.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/bottom-nav.css">
+</head>
+<body>
+<div id="app">
+
+	<!-- ÉCRAN DE CHARGEMENT -->
+	<div id="view-boot" class="view active">
+		<div class="center-col">
+			<div id="boot-logo" class="jieeplay-logo"></div>
+			<div class="progress-track">
+				<div id="boot-progress-fill" class="progress-fill"></div>
+			</div>
+			<p id="boot-percent" class="subtitle">0%</p>
+			<div id="boot-error" class="boot-error hidden">
+				<p id="boot-error-text" class="subtitle"></p>
+				<button class="btn" id="btn-boot-retry"></button>
+			</div>
+		</div>
+	</div>
+
+	<!-- ONBOARDING -->
+	<div id="view-onboarding" class="view">
+		<div id="onboarding-logo" class="jieeplay-logo"></div>
+
+		<div id="step-language" class="onb-step center-col">
+			<h1 class="title-lg" data-t="onboarding_language_title"></h1>
+			<p class="subtitle" data-t="onboarding_language_subtitle"></p>
+			<button class="btn" id="btn-lang-fr">🇫🇷 Français</button>
+			<button class="btn" id="btn-lang-en">🇬🇧 English</button>
+		</div>
+
+		<div id="step-gender" class="onb-step center-col hidden">
+			<h1 class="title-lg" data-t="onboarding_gender_title"></h1>
+			<p class="subtitle" data-t="onboarding_gender_subtitle"></p>
+			<button class="btn" id="btn-gender-female" data-t="onboarding_gender_option_female"></button>
+			<button class="btn" id="btn-gender-male" data-t="onboarding_gender_option_male"></button>
+		</div>
+
+		<div id="step-avatar" class="onb-step center-col hidden">
+			<h1 class="title-lg" data-t="onboarding_avatar_title"></h1>
+			<p class="subtitle" data-t="onboarding_avatar_subtitle"></p>
+			<div id="avatar-grid" class="avatar-grid"></div>
+			<button class="btn" id="btn-avatar-continue" data-t="onboarding_avatar_button_continue" disabled></button>
+		</div>
+
+		<div id="step-name" class="onb-step center-col hidden">
+			<h1 class="title-lg" data-t="onboarding_name_title"></h1>
+			<input type="text" id="input-player-name" class="text-input" data-t-placeholder="onboarding_name_placeholder">
+			<p class="subtitle hint-text" data-t="onboarding_name_hint"></p>
+			<button class="btn" id="btn-name-continue" data-t="onboarding_name_button_continue" disabled></button>
+		</div>
+	</div>
+
+	<!-- ACCUEIL -->
+	<div id="view-home" class="view">
+		<div id="home-logo" class="jieeplay-logo"></div>
+
+		<div id="home-welcome" class="center-col hidden">
+			<p id="home-welcome-body" class="subtitle"></p>
+			<p id="home-welcome-question" class="title-lg"></p>
+			<button class="btn" id="btn-welcome-start"></button>
+		</div>
+
+		<div id="home-menu" class="screen-scroll hidden">
+			<div id="home-bg-photo" class="home-bg-photo"></div>
+			<div class="home-bg-decor">
+				<div class="home-bg-bokeh home-bg-bokeh-1"></div>
+				<div class="home-bg-bokeh home-bg-bokeh-2"></div>
+				<div class="home-bg-bokeh home-bg-bokeh-3"></div>
+				<div class="home-bg-branch">
+					<svg viewBox="0 0 220 260" fill="none">
+						<path d="M-10 10C30 30 40 70 70 90c30 20 50 10 70 40" stroke="#a9836f" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+						<path d="M20 25c10 12 8 26-2 34" stroke="#a9836f" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+						<path d="M55 55c8 14 24 16 34 8" stroke="#a9836f" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+						<g fill="#f3c4cf">
+							<circle cx="18" cy="14" r="9"/><circle cx="34" cy="10" r="9"/><circle cx="10" cy="30" r="9"/><circle cx="28" cy="30" r="9"/>
+						</g>
+						<circle cx="22" cy="20" r="5" fill="#d99e59"/>
+						<g fill="#eeb3c2">
+							<circle cx="62" cy="48" r="7"/><circle cx="75" cy="43" r="7"/><circle cx="57" cy="60" r="7"/><circle cx="72" cy="60" r="7"/>
+						</g>
+						<circle cx="67" cy="53" r="4" fill="#d99e59"/>
+						<g fill="#f3c4cf" opacity="0.85">
+							<circle cx="112" cy="82" r="6"/><circle cx="123" cy="78" r="6"/><circle cx="108" cy="92" r="6"/><circle cx="121" cy="93" r="6"/>
+						</g>
+						<circle cx="116" cy="86" r="3.4" fill="#d99e59"/>
+						<circle cx="6" cy="52" r="2.5" fill="#f3c4cf" opacity="0.7"/>
+						<circle cx="90" cy="30" r="2" fill="#f3c4cf" opacity="0.6"/>
+						<circle cx="140" cy="105" r="2.2" fill="#f3c4cf" opacity="0.6"/>
+					</svg>
+				</div>
+			</div>
+
+			<div class="home-menu-inner">
+
+				<!-- EN-TÊTE -->
+				<div class="home-header home-anim" style="--home-anim-delay:0ms">
+					<div class="home-header-left">
+						<div id="home-avatar" class="home-avatar"></div>
+						<div class="home-header-text">
+							<p id="home-greeting" class="home-greeting"></p>
+							<p id="home-subtitle-line" class="home-subtitle-line"></p>
+						</div>
+					</div>
+					<div class="home-header-right">
+						<button id="btn-home-envelope" class="home-envelope hidden">
+							<span class="home-envelope-icon">💌</span>
+							<span class="home-envelope-dot"></span>
+						</button>
+						<button id="btn-home-chat" class="home-settings-btn" aria-label="Messagerie">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v11H9.5L5 20v-3.5H4v-11Z"/><path d="M8 10h8M8 13h5"/></svg>
+							<span id="home-chat-dot" class="home-chat-dot hidden"></span>
+						</button>
+					</div>
+				</div>
+
+				<div id="home-logo-mini" class="jieeplay-logo home-logo-mini home-anim" style="--home-anim-delay:40ms"></div>
+				<p id="home-tagline" class="home-tagline home-anim" style="--home-anim-delay:60ms"></p>
+
+				<!-- CARTE PRINCIPALE -->
+				<div id="home-main-card" class="home-main-card home-anim" style="--home-anim-delay:80ms">
+					<div class="home-main-card-decor">✦</div>
+					<p id="home-main-label" class="home-main-label"></p>
+					<p id="home-main-title" class="home-main-title"></p>
+					<p id="home-main-progress-text" class="home-main-progress-text"></p>
+					<div id="home-main-progress-track" class="progress-track thin">
+						<div id="home-main-progress-fill" class="progress-fill"></div>
+					</div>
+					<p id="home-main-hint" class="home-main-hint"></p>
+					<button class="btn home-main-cta" id="btn-continue">
+						<span id="home-main-cta-label"></span>
+						<svg class="home-main-cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+					</button>
+				</div>
+
+				<!-- CARTE UNIVERS (V30) — accès aux autres jeux de l'écosystème -->
+				<button id="home-hub-card" class="home-hub-card home-anim" style="--home-anim-delay:110ms">
+					<span class="home-hub-icon">🌌</span>
+					<span class="home-hub-text-block">
+						<span id="home-hub-title" class="home-hub-title"></span>
+						<span id="home-hub-subtitle" class="home-hub-subtitle"></span>
+					</span>
+					<svg class="home-hub-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+				</button>
+
+				<!-- CARTE DU JOUR -->
+				<button id="home-daily-card" class="home-daily-card home-anim" style="--home-anim-delay:140ms">
+					<div class="home-daily-text-block">
+						<p id="home-daily-title" class="home-daily-title"></p>
+						<p id="home-daily-text" class="home-daily-text"></p>
+						<span id="home-daily-cta" class="home-daily-cta"></span>
+					</div>
+					<div class="home-daily-flower" aria-hidden="true">
+						<svg viewBox="0 0 60 60"><g fill="none" stroke="#cb7a83" stroke-width="1.6" stroke-linecap="round"><path d="M30 54V26"/><path d="M30 34c-6-2-9-7-8-13"/><path d="M30 40c6-1 10-5 10-11"/></g><g fill="#f0b8c0"><circle cx="30" cy="14" r="6.5"/><circle cx="22" cy="18" r="5.5"/><circle cx="38" cy="18" r="5.5"/><circle cx="24" cy="9" r="5"/><circle cx="36" cy="9" r="5"/></g><circle cx="30" cy="14" r="3.4" fill="#d99e59"/></svg>
+					</div>
+				</button>
+
+				<!-- CALENDRIER DU JOUR -->
+				<div class="home-calendar-card home-anim" style="--home-anim-delay:180ms">
+					<div class="home-calendar-date">
+						<span id="home-calendar-day" class="home-calendar-day"></span>
+						<span id="home-calendar-month" class="home-calendar-month"></span>
+					</div>
+					<div class="home-calendar-divider"></div>
+					<div class="home-calendar-message">
+						<p id="home-calendar-weekday" class="home-calendar-weekday"></p>
+						<p id="home-calendar-text" class="home-calendar-text"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pending-reward-overlay" class="pending-reward-overlay hidden">
+			<div class="pending-reward-card">
+				<p class="pending-reward-emoji">💌</p>
+				<p id="pending-reward-text" class="pending-reward-text"></p>
+				<button class="btn" id="btn-pending-reward-continue"></button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Les écrans Jeu, Récompense, Paramètres, Parcours arrivent à l'étape suivante -->
+	<div id="view-game" class="view">
+		<div class="game-bg-decor"></div>
+		<button id="btn-board-back" class="board-back-btn">‹</button>
+		<button id="btn-game-howto" class="board-howto-btn">
+			<span class="board-howto-icon">?</span>
+			<span class="board-howto-label" id="board-howto-label"></span>
+		</button>
+
+		<div id="game-board" class="game-board">
+			<div id="game-logo" class="jieeplay-logo game-logo-mini"></div>
+
+			<div class="game-hint-card">
+				<span class="game-eyebrow" id="hint-eyebrow"></span>
+				<p id="hint-text" class="game-hint-text"></p>
+			</div>
+
+			<div class="game-scramble-block">
+				<span class="game-eyebrow" id="scramble-eyebrow"></span>
+				<p id="scramble-display" class="game-scramble-display"></p>
+			</div>
+
+			<div class="game-answer-block">
+				<div id="answer-row" class="tile-row answer-row"></div>
+			</div>
+
+			<div class="game-keyboard-block">
+				<div id="tiles-row" class="tile-row keyboard-row"></div>
+			</div>
+
+			<p id="game-feedback" class="feedback-text"></p>
+
+			<div class="game-btn-row">
+				<button class="btn btn-secondary" id="btn-clear"></button>
+				<button class="btn" id="btn-validate" disabled></button>
+			</div>
+		</div>
+
+		<div id="word-reveal-overlay" class="word-reveal-overlay hidden">
+			<div id="confetti-layer" class="confetti-layer"></div>
+			<div class="word-reveal-content">
+				<p id="word-reveal-word" class="word-reveal-word"></p>
+				<p id="word-reveal-message" class="word-reveal-message"></p>
+				<button class="btn" id="btn-word-reveal-continue"></button>
+			</div>
+		</div>
+
+		<div id="hint-counter" class="hint-counter"></div>
+		<button id="btn-hint" class="hint-fab">💡</button>
+
+		<div id="category-overlay" class="category-overlay">
+			<div class="category-overlay-inner">
+				<div class="category-header-group">
+					<div class="category-overlay-decor">✦</div>
+					<span class="game-eyebrow" id="category-eyebrow"></span>
+					<h2 class="title-lg" id="category-title"></h2>
+				</div>
+				<div id="category-grid" class="category-grid"></div>
+				<button class="btn btn-secondary" id="btn-category-back"></button>
+			</div>
+		</div>
+	</div>
+	<div id="view-reward" class="view">
+		<div class="reward-bg-decor"></div>
+		<button id="btn-reward-back" class="board-back-btn reward-back-btn">‹</button>
+
+		<!-- SCÈNE DE RÉVÉLATION — carte choisie en grand, au premier plan -->
+		<div id="reward-stage-backdrop" class="reward-stage-backdrop hidden"></div>
+		<div id="reward-stage" class="reward-stage hidden">
+			<div id="reward-stage-card" class="reward-stage-card">
+				<div class="reward-card-inner">
+					<div class="reward-card-face reward-card-back">
+						<span class="reward-corner-mark reward-corner-tl"></span>
+						<span class="reward-corner-mark reward-corner-br"></span>
+						<div class="reward-card-symbol"></div>
+					</div>
+					<div class="reward-card-face reward-card-front">
+						<span class="reward-corner-mark reward-corner-tl"></span>
+						<span class="reward-corner-mark reward-corner-br"></span>
+						<span class="reward-card-front-label"></span>
+						<div class="reward-card-front-divider"></div>
+						<p class="reward-card-front-text"></p>
+					</div>
+				</div>
+			</div>
+			<div id="reward-stage-result" class="reward-stage-result hidden">
+				<p id="reward-result-label" class="reward-result-label"></p>
+				<button class="btn" id="btn-reward-continue"></button>
+			</div>
+		</div>
+
+		<div class="screen-scroll">
+			<div class="reward-inner">
+
+				<!-- ZONE A — EN-TÊTE -->
+				<div class="reward-header">
+					<h1 id="reward-title" class="reward-title"></h1>
+					<p id="reward-subtitle" class="reward-subtitle"></p>
+				</div>
+
+				<!-- FLUX DES LOTS (zones B, C, D, E) -->
+				<div id="reward-flow">
+					<!-- ZONE B — PROGRESSION -->
+					<div id="reward-progress-dots" class="reward-progress-dots"></div>
+
+					<!-- ZONE C — INSTRUCTION -->
+					<div class="reward-lot-capsule"><span id="reward-lot-label"></span></div>
+					<h2 id="reward-choose-title" class="reward-choose-title"></h2>
+					<p id="reward-choose-desc" class="reward-choose-desc"></p>
+
+					<!-- ZONE D — ÉVENTAIL DE CARTES -->
+					<div id="reward-fan-wrap">
+						<div id="reward-fan" class="reward-fan"></div>
+					</div>
+
+					<!-- ZONE E — INDICATION INFÉRIEURE -->
+					<div id="reward-bottom-note" class="reward-bottom-note">
+						<p id="reward-select-label" class="reward-select-label"></p>
+						<div class="reward-tip-bubble">
+							<span class="reward-tip-heart">💗</span>
+							<p id="reward-tip-text" class="reward-tip-text"></p>
+						</div>
+					</div>
+				</div>
+
+				<!-- MESSAGE FINAL -->
+				<div id="reward-final" class="reward-final hidden">
+					<div id="reward-assembling" class="reward-assembling hidden">
+						<p id="reward-assembling-text"></p>
+					</div>
+					<div id="reward-final-content" class="reward-final-content hidden">
+						<p id="reward-final-title" class="reward-final-title"></p>
+						<div id="reward-final-message" class="reward-final-message"></div>
+						<button class="btn" id="btn-reward-final-continue"></button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="view-settings" class="view">
+		<button id="btn-settings-back" class="board-back-btn">‹</button>
+		<div class="screen-scroll">
+			<div class="settings-inner">
+				<p id="settings-title" class="title-lg" style="text-align:center;"></p>
+
+				<div class="card settings-profile-row" id="btn-settings-avatar">
+					<div id="settings-avatar-preview" class="settings-avatar-preview"></div>
+					<div class="settings-profile-text">
+						<span id="settings-label-avatar" class="settings-label"></span>
+						<span id="settings-avatar-sublabel" class="settings-sublabel"></span>
+					</div>
+					<span class="settings-chevron">›</span>
+				</div>
+				<div class="card settings-profile-row" id="btn-settings-language">
+					<div class="settings-profile-text">
+						<span id="settings-label-language" class="settings-label"></span>
+						<span id="settings-language-sublabel" class="settings-sublabel"></span>
+					</div>
+					<span id="settings-language-value" class="settings-value-pill"></span>
+				</div>
+
+				<div class="card settings-row">
+					<span id="settings-label-sound" class="settings-label"></span>
+					<button id="toggle-sound" class="toggle-switch"><span class="toggle-knob"></span></button>
+				</div>
+				<div class="card settings-row">
+					<span id="settings-label-music" class="settings-label"></span>
+					<button id="toggle-music" class="toggle-switch"><span class="toggle-knob"></span></button>
+				</div>
+				<div class="card settings-row">
+					<span id="settings-label-vibration" class="settings-label"></span>
+					<button id="toggle-vibration" class="toggle-switch"><span class="toggle-knob"></span></button>
+				</div>
+
+				<button class="btn btn-secondary" id="btn-settings-howto"></button>
+				<button class="btn settings-reset-btn" id="btn-settings-reset"></button>
+			</div>
+		</div>
+
+		<div id="settings-avatar-overlay" class="settings-modal-overlay hidden">
+			<div class="settings-modal-card">
+				<p id="settings-avatar-overlay-title" class="title-lg" style="text-align:center;"></p>
+				<div id="settings-avatar-grid" class="avatar-grid"></div>
+				<button class="btn" id="btn-settings-avatar-close"></button>
+			</div>
+		</div>
+
+		<div id="reset-confirm-overlay" class="settings-modal-overlay hidden">
+			<div class="settings-modal-card">
+				<p id="reset-confirm-text" class="subtitle" style="text-align:center;"></p>
+				<div class="reset-confirm-actions">
+					<button class="btn btn-secondary" id="btn-reset-cancel"></button>
+					<button class="btn reset-confirm-danger" id="btn-reset-confirm"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="view-journey" class="view">
+		<div class="journey-bg-decor"></div>
+		<button id="btn-journey-back" class="board-back-btn">‹</button>
+		<div class="screen-scroll">
+			<div class="journey-inner">
+				<div class="journey-header">
+					<span class="game-eyebrow" id="journey-eyebrow"></span>
+					<h1 class="title-lg" id="journey-title"></h1>
+				</div>
+
+				<div class="journey-hero-card">
+					<div class="journey-hero-decor">✦</div>
+					<span class="game-eyebrow" id="journey-hero-label"></span>
+					<p id="journey-hero-chapter" class="journey-hero-chapter"></p>
+					<p id="journey-progress-label" class="journey-progress-label"></p>
+					<div class="progress-track thin"><div id="journey-progress-fill" class="progress-fill"></div></div>
+				</div>
+
+				<div class="journey-path-card">
+					<span class="journey-path-label" id="journey-path-label"></span>
+					<div class="journey-path-track" id="journey-path-track"></div>
+				</div>
+
+				<div class="journey-stats-grid">
+					<div class="journey-stat-tile">
+						<span class="journey-stat-icon">✓</span>
+						<span id="journey-stat-successes" class="journey-stat-value"></span>
+						<span id="journey-stat-successes-label" class="journey-stat-label"></span>
+					</div>
+					<div class="journey-stat-tile">
+						<span class="journey-stat-icon">✕</span>
+						<span id="journey-stat-failures" class="journey-stat-value"></span>
+						<span id="journey-stat-failures-label" class="journey-stat-label"></span>
+					</div>
+					<div class="journey-stat-tile">
+						<span class="journey-stat-icon">◆</span>
+						<span id="journey-stat-accuracy" class="journey-stat-value"></span>
+						<span id="journey-stat-accuracy-label" class="journey-stat-label"></span>
+					</div>
+					<div class="journey-stat-tile">
+						<span class="journey-stat-icon">✦</span>
+						<span id="journey-stat-rewards" class="journey-stat-value"></span>
+						<span id="journey-stat-rewards-label" class="journey-stat-label"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="view-rewards" class="view">
+		<div class="journey-bg-decor"></div>
+		<button id="btn-rewards-back" class="board-back-btn">‹</button>
+		<div class="screen-scroll">
+			<div class="rewards-list-inner">
+				<div class="journey-header">
+					<span class="game-eyebrow" id="rewards-list-eyebrow"></span>
+					<h1 id="rewards-list-title" class="title-lg"></h1>
+				</div>
+				<p id="rewards-list-empty" class="subtitle" style="text-align:center;"></p>
+				<div id="rewards-list-items" class="rewards-list-items"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Univers JieePlay (V30) — hub listant les jeux disponibles et à
+	     venir. Voir js/hub.js et data/games.json pour ajouter un jeu. -->
+	<div id="view-hub" class="view">
+		<div class="journey-bg-decor"></div>
+		<button id="btn-hub-back" class="board-back-btn">‹</button>
+		<div class="screen-scroll">
+			<div class="hub-inner">
+				<div class="journey-header">
+					<span class="game-eyebrow" id="hub-eyebrow"></span>
+					<h1 id="hub-title" class="title-lg"></h1>
+				</div>
+				<p id="hub-subtitle" class="subtitle hub-subtitle"></p>
+				<div id="hub-games-grid" class="hub-games-grid"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Messagerie (V31) — voir js/chat.js pour l'architecture (backend
+	     local en attendant un vrai backend). -->
+	<div id="view-chat" class="view">
+		<div class="chat-header">
+			<button id="btn-chat-back" class="board-back-btn" style="position:static;">‹</button>
+			<div class="chat-header-text">
+				<span class="game-eyebrow" id="chat-eyebrow"></span>
+				<h1 id="chat-title" class="title-lg" style="font-size:19px;"></h1>
+			</div>
+			<button id="btn-chat-notif" class="chat-icon-btn hidden" aria-label="Notifications" style="margin-left:auto;">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10a6 6 0 0 1 12 0c0 4 1.5 5.5 1.5 5.5h-15S6 14 6 10Z"/><path d="M10 18.5a2 2 0 0 0 4 0"/></svg>
+			</button>
+		</div>
+
+		<div id="chat-messages" class="chat-messages"></div>
+
+		<!-- Menu "supprimer" (V32) — appui long sur un message envoyé -->
+		<div id="chat-message-menu-overlay" class="chat-message-menu-overlay hidden">
+			<div class="chat-message-menu">
+				<button id="chat-message-menu-hide" class="chat-message-menu-option"></button>
+				<button id="chat-message-menu-everyone" class="chat-message-menu-option danger"></button>
+				<button id="chat-message-menu-cancel" class="chat-message-menu-option cancel"></button>
+			</div>
+		</div>
+
+		<div class="chat-input-bar">
+			<div id="chat-recording-indicator" class="chat-recording-indicator hidden"></div>
+			<div id="chat-attach-menu" class="chat-attach-menu hidden">
+				<button id="btn-chat-camera" class="chat-attach-option">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3v11H4Z"/><circle cx="12" cy="13.5" r="3.2"/></svg>
+					<span></span>
+				</button>
+				<button id="btn-chat-gallery" class="chat-attach-option">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M3.5 15.5 8 11l3 3 4-4.5 5.5 6"/><circle cx="8" cy="8.5" r="1.4" fill="currentColor" stroke="none"/></svg>
+					<span></span>
+				</button>
+			</div>
+			<button id="btn-chat-attach" class="chat-icon-btn" aria-label="Joindre">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+			</button>
+			<button id="btn-chat-mic" class="chat-icon-btn" aria-label="Message audio">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3.5" width="6" height="10" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5v3"/></svg>
+			</button>
+			<input id="chat-input" type="text" autocomplete="off" />
+			<button id="btn-chat-send" class="chat-send-btn" disabled aria-label="Envoyer">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+			</button>
+			<input type="file" id="chat-camera-input" accept="image/*" capture="environment" class="hidden" />
+			<input type="file" id="chat-gallery-input" accept="image/*" class="hidden" />
+		</div>
+	</div>
+
+	<nav id="bottom-nav" class="bottom-nav" aria-label="Navigation principale"></nav>
+
+</div>
+
+	<!-- Tutoriel "Comment jouer" — global (V29) : accessible depuis Réglages ET
+	     depuis le plateau de jeu, un seul et même contenu, jamais dupliqué.
+	     Positionné en dehors des .view pour rester au-dessus de l'écran actif
+	     quel qu'il soit (voir .global-modal-overlay en CSS). -->
+	<div id="howto-overlay" class="settings-modal-overlay global-modal-overlay hidden">
+		<div class="settings-modal-card">
+			<p id="howto-title" class="title-lg" style="text-align:center;"></p>
+			<div class="screen-scroll howto-steps-scroll">
+				<p id="howto-step-1" class="howto-step"></p>
+				<p id="howto-step-2" class="howto-step"></p>
+				<p id="howto-step-3" class="howto-step"></p>
+				<p id="howto-step-4" class="howto-step"></p>
+				<p id="howto-step-5" class="howto-step"></p>
+			</div>
+			<button class="btn" id="btn-howto-close"></button>
+		</div>
+	</div>
+
+	<script src="js/utils.js"></script>
+<script type="module" src="js/firebase-init.js"></script>
+<script src="js/reward-engine.js"></script>
+<script src="js/state.js"></script>
+<script src="js/save.js"></script>
+<script src="js/localization.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/logo.js"></script>
+<script src="js/avatars.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/onboarding.js"></script>
+<script src="js/home.js"></script>
+<script src="js/game.js"></script>
+<script src="js/reward.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/journey.js"></script>
+<script src="js/rewards-list.js"></script>
+<script src="js/hub.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/bottom-nav.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

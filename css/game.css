@@ -1,0 +1,609 @@
+/* game.css — écran de jeu (anagrammes). Design revu pour être au niveau
+ * de l'accueil et des récompenses : carte d'indice, aperçu du mot
+ * mélangé façon petite signature typographique, plateau et clavier
+ * "keycap", sélecteur de thème en cartes. */
+
+#view-game {
+	position: relative;
+	background: linear-gradient(to bottom, #f7ece9 0%, #fdf8f4 42%, #eee8f0 100%);
+}
+
+.game-bg-decor {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+	opacity: 0.85;
+	background-image:
+		radial-gradient(circle, rgba(255,255,255,0.85) 0 2px, transparent 3px),
+		radial-gradient(circle, rgba(255,255,255,0.7) 0 1.5px, transparent 2.5px),
+		radial-gradient(circle, rgba(217,158,89,0.3) 0 1.5px, transparent 2.5px),
+		radial-gradient(circle, rgba(255,255,255,0.6) 0 2px, transparent 3px);
+	background-repeat: no-repeat;
+	background-position: 14% 8%, 88% 14%, 8% 70%, 92% 82%;
+}
+
+/* Petit libellé en capitales, réutilisé pour tous les en-têtes de section */
+.game-eyebrow {
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: 1.6px;
+	color: var(--color-gold);
+	text-transform: uppercase;
+}
+
+.game-board {
+	position: relative;
+	z-index: 1;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 18px;
+	padding: 4px 24px 20px;
+	max-width: 480px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.game-logo-mini {
+	padding: 0 0 2px;
+	font-size: 20px;
+	opacity: 0.9;
+}
+
+.board-back-btn {
+	position: absolute;
+	top: calc(var(--safe-top) + 4px);
+	left: 4px;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	background: var(--color-cream);
+	border: 1px solid var(--color-border);
+	box-shadow: var(--shadow-soft);
+	font-size: 30px;
+	color: var(--color-mauve-dark);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 15;
+}
+
+/* Bouton "Comment jouer" du plateau (V29) — miroir du bouton retour,
+ * coin opposé, plus discret puisque secondaire. Le petit label dessous
+ * explique en un mot pourquoi l'icône est là, sans texte envahissant. */
+.board-howto-btn {
+	position: absolute;
+	top: calc(var(--safe-top) + 4px);
+	right: 4px;
+	z-index: 15;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+	background: transparent;
+	border: none;
+}
+.board-howto-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: var(--color-cream);
+	border: 1px solid var(--color-border);
+	box-shadow: var(--shadow-soft);
+	font-size: 17px;
+	font-weight: 800;
+	color: var(--color-gold);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.board-howto-label {
+	font-size: 9.5px;
+	font-weight: 700;
+	letter-spacing: 0.4px;
+	color: var(--color-text-soft);
+	opacity: 0.75;
+}
+
+/* ================= CARTE INDICE ================= */
+.game-hint-card {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	text-align: center;
+	padding: 18px 22px 20px;
+	border-radius: 22px;
+	background: linear-gradient(160deg, #fffaf5, #fdf1ec);
+	border: 1px solid var(--color-border);
+	box-shadow: var(--shadow-soft);
+}
+.game-hint-card::before {
+	content: "✦";
+	position: absolute;
+	top: 10px;
+	right: 16px;
+	font-size: 15px;
+	color: var(--color-gold);
+	opacity: 0.55;
+}
+.game-hint-text {
+	font-size: 17.5px;
+	line-height: 1.42;
+	color: var(--color-text);
+	font-weight: 600;
+	max-width: 360px;
+}
+
+/* ================= MOT MÉLANGÉ ================= */
+.game-scramble-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+}
+.game-scramble-display {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	font-size: clamp(22px, 7vw, 30px);
+	font-weight: 700;
+	letter-spacing: 1px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1px;
+}
+.game-scramble-display .scramble-letter {
+	display: inline-block;
+	animation: scramble-letter-in 0.35s ease both;
+}
+.game-scramble-display .scramble-dash {
+	opacity: 0.35;
+	font-style: normal;
+	padding: 0 1px;
+}
+@keyframes scramble-letter-in {
+	from { opacity: 0; transform: translateY(4px) scale(0.85); }
+	to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ================= PLATEAU (réponse) ================= */
+.game-answer-block {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.tile-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 9px;
+	width: 100%;
+	min-height: 60px;
+}
+
+.slot {
+	width: 50px;
+	height: 58px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 23px;
+	font-weight: 700;
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.55);
+	border: 2px solid rgba(217, 158, 89, 0.3);
+	border-bottom: 3px solid rgba(217, 158, 89, 0.3);
+	color: var(--color-text);
+	transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+.slot.filled {
+	background: linear-gradient(160deg, #8a6684, var(--color-mauve-dark));
+	color: #fff;
+	border-color: transparent;
+	cursor: pointer;
+	box-shadow: 0 3px 8px rgba(122, 59, 74, 0.25);
+}
+.slot.filled:active {
+	transform: translateY(1px) scale(0.97);
+}
+.slot.locked {
+	background: linear-gradient(160deg, #e9c78c, var(--color-gold));
+	color: #fff;
+	border-color: transparent;
+	box-shadow: 0 3px 8px rgba(217, 158, 89, 0.3);
+}
+.slot.pop {
+	animation: slot-pop 0.32s cubic-bezier(0.3, 1.5, 0.4, 1);
+}
+@keyframes slot-pop {
+	0% { transform: scale(0.5); }
+	60% { transform: scale(1.12); }
+	100% { transform: scale(1); }
+}
+
+/* ================= CLAVIER ================= */
+.game-keyboard-block {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 4px;
+	border-top: 1px dashed var(--color-border);
+}
+
+.tile {
+	width: 54px;
+	height: 54px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+	background: linear-gradient(160deg, #8f6c89, var(--color-mauve-dark));
+	border-radius: 14px;
+	border-bottom: 4px solid #5f4159;
+	box-shadow: 0 3px 6px rgba(75, 52, 71, 0.2);
+	transition: transform 0.1s ease, opacity 0.15s ease, box-shadow 0.1s ease;
+	cursor: pointer;
+	user-select: none;
+}
+.tile:active {
+	transform: translateY(2px);
+	border-bottom-width: 2px;
+	box-shadow: 0 1px 3px rgba(75, 52, 71, 0.2);
+}
+.tile.used {
+	opacity: 0.28;
+	pointer-events: none;
+	border-bottom-width: 4px;
+	transform: none;
+}
+.tile.pop {
+	animation: tile-pop 0.3s cubic-bezier(0.2, 1.4, 0.4, 1);
+}
+@keyframes tile-pop {
+	from { transform: scale(0.4); }
+	to { transform: scale(1); }
+}
+
+.tile-row.shake {
+	animation: shake 0.24s ease;
+}
+@keyframes shake {
+	0%, 100% { transform: translateX(0); }
+	25% { transform: translateX(-10px); }
+	50% { transform: translateX(10px); }
+	75% { transform: translateX(-6px); }
+}
+
+.feedback-text {
+	min-height: 26px;
+	font-size: 19px;
+	font-weight: 600;
+	text-align: center;
+	color: var(--color-mauve-dark);
+}
+
+.game-btn-row {
+	display: flex;
+	gap: 14px;
+	width: 100%;
+}
+.game-btn-row .btn {
+	flex: 1;
+}
+
+/* ================= INDICE (bouton flottant) ================= */
+.hint-fab {
+	position: fixed;
+	right: 26px;
+	bottom: calc(var(--safe-bottom) + var(--bottom-nav-height) + 26px);
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: linear-gradient(160deg, #f0c67e, var(--color-gold));
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 6px 16px rgba(217, 158, 89, 0.4);
+	z-index: 20;
+	animation: pulse-btn 1.8s ease-in-out infinite;
+}
+.hint-fab:disabled {
+	opacity: 0.4;
+	animation: none;
+	box-shadow: var(--shadow-soft);
+}
+
+.hint-counter {
+	position: fixed;
+	right: 26px;
+	bottom: calc(var(--safe-bottom) + var(--bottom-nav-height) + 90px);
+	min-width: 40px;
+	padding: 3px 9px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.85);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	border: 1px solid var(--color-border);
+	box-shadow: var(--shadow-soft);
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--color-mauve-dark);
+	text-align: center;
+	z-index: 20;
+}
+
+/* Plateau flouté pendant la révélation du mot */
+.game-board.blurred {
+	filter: blur(10px) brightness(0.97);
+	pointer-events: none;
+	transition: filter 0.35s ease;
+	user-select: none;
+}
+
+/* ================= SÉLECTEUR DE THÈME ================= */
+.category-overlay {
+	position: fixed;
+	inset: 0;
+	background: linear-gradient(to bottom, #f7ece9 0%, #fdf8f4 40%, #eee8f0 100%);
+	display: flex;
+	justify-content: center;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	z-index: 10;
+	opacity: 1;
+	transition: opacity 0.25s ease;
+	padding-top: calc(var(--safe-top) + 10px);
+	padding-bottom: calc(var(--safe-bottom) + var(--bottom-nav-height));
+}
+.category-overlay.hidden-overlay {
+	opacity: 0;
+	pointer-events: none;
+}
+.category-overlay-inner {
+	position: relative;
+	flex: 1;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	padding: 0 24px;
+	max-width: 460px;
+	width: 100%;
+}
+.category-header-group {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3px;
+}
+.category-overlay-decor {
+	font-size: 18px;
+	color: var(--color-gold);
+	opacity: 0.7;
+}
+.category-header-group .title-lg {
+	margin-top: 2px;
+}
+
+.category-grid {
+	flex: 1;
+	min-height: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	gap: clamp(8px, 2.2vw, 14px);
+	width: 100%;
+}
+.category-btn {
+	position: relative;
+	height: 100%;
+	min-height: 0;
+	border-radius: 20px;
+	background: linear-gradient(155deg, var(--color-rose-light), #cb7a83);
+	color: #fff;
+	font-size: clamp(13px, 3.4vw, 15.5px);
+	font-weight: 700;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: clamp(4px, 1.5vw, 8px);
+	box-shadow: 0 6px 16px rgba(203, 122, 131, 0.3);
+	padding: 6px;
+	text-align: center;
+	overflow: hidden;
+	transition: transform 0.12s ease;
+}
+.category-btn:active {
+	transform: scale(0.96);
+}
+.category-btn::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: radial-gradient(circle at 85% 12%, rgba(255,255,255,0.28), transparent 55%);
+	pointer-events: none;
+}
+.category-btn .cat-emoji {
+	font-size: clamp(20px, 5.5vw, 27px);
+	filter: drop-shadow(0 2px 3px rgba(0,0,0,0.15));
+}
+.category-btn:nth-child(6n+2) { background: linear-gradient(155deg, #c9a3d6, #9a72ae); box-shadow: 0 6px 16px rgba(154,114,174,0.3); }
+.category-btn:nth-child(6n+3) { background: linear-gradient(155deg, #e9c78c, var(--color-gold)); box-shadow: 0 6px 16px rgba(217,158,89,0.32); }
+.category-btn:nth-child(6n+4) { background: linear-gradient(155deg, #8fb0a6, #5f8c7e); box-shadow: 0 6px 16px rgba(95,140,126,0.3); }
+.category-btn:nth-child(6n+5) { background: linear-gradient(155deg, #93a8c9, #5f79a8); box-shadow: 0 6px 16px rgba(95,121,168,0.3); }
+.category-btn:nth-child(6n+6) { background: linear-gradient(155deg, #cb7a83, var(--color-mauve-dark)); box-shadow: 0 6px 16px rgba(122,59,74,0.3); }
+
+#btn-category-back {
+	flex-shrink: 0;
+	width: 100%;
+}
+
+/* ================= RÉVÉLATION DU MOT ================= */
+.word-reveal-overlay {
+	position: absolute;
+	inset: 0;
+	z-index: 40;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(253, 248, 244, 0.42);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.35s ease;
+	overflow: hidden;
+}
+.word-reveal-overlay.visible {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.word-reveal-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 28px;
+	text-align: center;
+}
+
+.word-reveal-word {
+	font-size: clamp(30px, 9vw, 48px);
+	font-weight: 800;
+	letter-spacing: 2px;
+	color: var(--color-mauve-dark);
+	text-shadow: 0 4px 16px rgba(122, 59, 74, 0.25);
+	animation: word-reveal-pop 0.45s cubic-bezier(0.3, 0.6, 0.25, 1.2) both;
+}
+@keyframes word-reveal-pop {
+	from { opacity: 0; transform: scale(0.6); }
+	to { opacity: 1; transform: scale(1); }
+}
+
+.word-reveal-message {
+	margin-top: 18px;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1.45;
+	color: var(--color-text);
+	max-width: 320px;
+	opacity: 0;
+	animation: word-reveal-fade 0.4s ease 0.15s both;
+}
+@keyframes word-reveal-fade {
+	from { opacity: 0; transform: translateY(6px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+.word-reveal-content .btn {
+	margin-top: 26px;
+	min-width: 200px;
+	opacity: 0;
+	animation: word-reveal-fade 0.4s ease 0.35s both;
+}
+
+/* Confettis */
+.confetti-layer {
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	overflow: hidden;
+	pointer-events: none;
+}
+.confetti-piece {
+	position: absolute;
+	top: -24px;
+	width: 8px;
+	height: 14px;
+	border-radius: 2px;
+	opacity: 0.95;
+	animation-name: confetti-fall;
+	animation-timing-function: cubic-bezier(0.3, 0.2, 0.7, 1);
+	animation-fill-mode: forwards;
+}
+@keyframes confetti-fall {
+	to {
+		transform: translateY(115vh) rotate(var(--confetti-rot, 360deg));
+		opacity: 0.5;
+	}
+}
+
+.confetti-star {
+	position: absolute;
+	top: -24px;
+	line-height: 1;
+	pointer-events: none;
+	animation: confetti-fall linear forwards;
+	animation-timing-function: cubic-bezier(0.3, 0.2, 0.7, 1);
+}
+.confetti-star-inner {
+	display: inline-block;
+	animation: confetti-twinkle ease-in-out infinite;
+}
+@keyframes confetti-twinkle {
+	0%, 100% { opacity: 0.4; transform: scale(0.8); }
+	50% { opacity: 1; transform: scale(1.15); }
+}
+
+/* Feu d'artifice : fusée qui monte depuis le bas, puis éclate */
+.firework-rocket {
+	position: absolute;
+	bottom: 0;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	animation-name: firework-rise;
+	animation-timing-function: cubic-bezier(0.15, 0.6, 0.3, 1);
+	animation-fill-mode: forwards;
+	z-index: 3;
+}
+@keyframes firework-rise {
+	from { transform: translateY(0) scale(1); opacity: 1; }
+	to { transform: translateY(calc(-1 * var(--rise-height, 40vh))) scale(0.85); opacity: 1; }
+}
+
+.firework-trail {
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	width: 4px;
+	height: 54px;
+	transform: translateX(-50%);
+	transform-origin: top center;
+	border-radius: 2px;
+	animation-name: firework-trail-fade;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+@keyframes firework-trail-fade {
+	from { opacity: 0.85; transform: translateX(-50%) scaleY(1); }
+	to { opacity: 0; transform: translateX(-50%) scaleY(0.35); }
+}
+
+.firework-particle {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin: -4px 0 0 -4px;
+	z-index: 3;
+	animation: firework-burst 0.9s cubic-bezier(0.2, 0.7, 0.35, 1) forwards;
+}
+@keyframes firework-burst {
+	0% { transform: translate(0, 0) scale(1); opacity: 1; }
+	65% { opacity: 1; }
+	100% { transform: translate(var(--dx, 0), var(--dy, 0)) scale(0.3); opacity: 0; }
+}

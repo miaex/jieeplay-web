@@ -1,0 +1,12 @@
+[
+	{ "id": "relations",    "emoji": "🌹", "label_fr": "Relations",       "label_en": "Relationships" },
+	{ "id": "personnalite", "emoji": "✨", "label_fr": "Personnalité",    "label_en": "Personality" },
+	{ "id": "emotions",     "emoji": "🌙", "label_fr": "Émotions",        "label_en": "Emotions" },
+	{ "id": "quotidien",    "emoji": "💄", "label_fr": "Vie quotidienne", "label_en": "Everyday life" },
+	{ "id": "esprit",       "emoji": "🧠", "label_fr": "Esprit",          "label_en": "Mind" },
+	{ "id": "aventure",     "emoji": "🌍", "label_fr": "Aventure",        "label_en": "Adventure" },
+	{ "id": "mystere",      "emoji": "🔮", "label_fr": "Mystère",         "label_en": "Mystery" },
+	{ "id": "fun",          "emoji": "😂", "label_fr": "Fun",             "label_en": "Fun" },
+	{ "id": "compliments",  "emoji": "💕", "label_fr": "Compliments",     "label_en": "Compliments" },
+	{ "id": "audace",       "emoji": "🔥", "label_fr": "Audace",          "label_en": "Boldness" }
+]

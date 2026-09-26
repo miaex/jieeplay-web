@@ -1,0 +1,106 @@
+// app.js — équivalent Boot.gd + SceneRouter.gd
+
+/** Applique Loc.t() à tous les éléments marqués data-t / data-t-placeholder
+ * à l'intérieur d'un conteneur donné. Évite de répéter le texte en dur
+ * dans le JS pour les éléments statiques du HTML. */
+function applyDataT(container) {
+	container.querySelectorAll("[data-t]").forEach((elm) => {
+		elm.textContent = Loc.t(elm.dataset.t);
+	});
+	container.querySelectorAll("[data-t-placeholder]").forEach((elm) => {
+		elm.placeholder = Loc.t(elm.dataset.tPlaceholder);
+	});
+}
+
+const App = {
+	views: ["boot", "onboarding", "home", "game", "reward", "settings", "journey", "rewards", "hub", "chat"],
+
+	goTo(viewName) {
+		this.views.forEach((v) => {
+			document.getElementById(`view-${v}`).classList.toggle("active", v === viewName);
+		});
+		BottomNav.refresh(viewName);
+
+		if (viewName === "home") Home.show();
+		if (viewName === "game") Game.show();
+		if (viewName === "reward") Reward.show();
+		if (viewName === "settings") Settings.show();
+		if (viewName === "journey") Journey.show();
+		if (viewName === "rewards") RewardsList.show();
+		if (viewName === "hub") Hub.show();
+		if (viewName === "chat") Chat.show();
+	},
+
+	async boot() {
+		renderLogo(document.getElementById("boot-logo"));
+
+		const fill = document.getElementById("boot-progress-fill");
+		const percentLabel = document.getElementById("boot-percent");
+
+		const steps = [
+			() => Loc.load(),
+			() => State.loadGameData(),
+			() => RewardEngine.load(State.rewardEngineContent),
+		];
+
+		for (let i = 0; i < steps.length; i++) {
+			await steps[i]();
+			const pct = Math.round(((i + 1) / steps.length) * 100);
+			fill.style.width = `${pct}%`;
+			percentLabel.textContent = `${pct}%`;
+			await new Promise((r) => setTimeout(r, 120));
+		}
+
+		Audio_.init();
+		SaveManager.load();
+		Nav.init();
+		Onboarding.init();
+		Home.init();
+		Game.init();
+		Reward.init();
+		Settings.init();
+		Journey.init();
+		RewardsList.init();
+		Hub.init();
+		Chat.init();
+		BottomNav.init();
+
+		Audio_.preloadMusic();
+
+		await new Promise((r) => setTimeout(r, 250));
+
+		if (SaveManager.hasSave() && State.profile.onboardingDone) {
+			if (State.progress.rewardActive) {
+				Nav.replace("reward");
+			} else {
+				Nav.replace("home");
+			}
+		} else {
+			this.goTo("onboarding");
+			renderLogo(document.getElementById("onboarding-logo"));
+			applyDataT(document.getElementById("step-language"));
+		}
+	},
+};
+
+// Beaucoup de navigateurs mobiles bloquent l'audio tant qu'aucun geste
+// utilisateur n'a eu lieu : on relance l'AudioContext au premier clic.
+document.addEventListener("click", () => Audio_.resumeIfNeeded(), { once: false });
+
+// V32 : identifiant joueur réel (uid Firebase, authentification anonyme —
+// voir js/firebase-init.js). Se déclenche dès que Firebase confirme
+// l'identité, quel que soit l'écran affiché à ce moment-là.
+window.addEventListener("firebase-ready", (e) => {
+	if (State.profile.playerId === e.detail.uid) return; // déjà à jour
+	State.profile.playerId = e.detail.uid;
+	if (typeof SaveManager !== "undefined") SaveManager.save();
+	if (typeof Chat !== "undefined" && Nav.current === "chat") Chat.show();
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+	App.boot();
+
+	if ("serviceWorker" in navigator) {
+		navigator.serviceWorker.register("sw.js").catch((e) => console.warn("SW registration failed", e));
+	}
+});
