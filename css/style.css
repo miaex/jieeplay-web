@@ -1,0 +1,171 @@
+/* JieePlay — styles de base et palette (identique à la version précédente) */
+
+:root {
+	--color-bg: #f6f4f2;
+	--color-cream: #fffbf8;
+	--color-rose: #e79292;
+	--color-rose-light: #efa9a9;
+	--color-mauve-dark: #795a73;
+	--color-mauve-pale: #e8dfe6;
+	--color-gold: #d99e59;
+	--color-border: #f0dbd4;
+	--color-text: #4b3447;
+	--color-text-soft: #795a73;
+
+	--radius-lg: 28px;
+	--radius-md: 20px;
+	--radius-sm: 14px;
+
+	--shadow-soft: 0 4px 14px rgba(139, 69, 92, 0.12);
+
+	--safe-top: env(safe-area-inset-top, 0px);
+	--safe-bottom: env(safe-area-inset-bottom, 0px);
+	--bottom-nav-height: 60px;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overscroll-behavior: none;
+	background: var(--color-bg);
+	color: var(--color-text);
+	font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#app {
+	position: fixed;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.view {
+	position: absolute;
+	inset: 0;
+	display: none;
+	flex-direction: column;
+	padding-top: calc(var(--safe-top) + 20px);
+	padding-bottom: calc(var(--safe-bottom) + var(--bottom-nav-height) + 10px);
+	opacity: 0;
+	transition: opacity 0.25s ease;
+}
+
+.view.active {
+	display: flex;
+	opacity: 1;
+}
+
+/* Écrans sans navigation basse (mise en place, avant que l'app soit prête) */
+#view-boot, #view-onboarding {
+	padding-bottom: calc(var(--safe-bottom) + 16px);
+}
+
+.screen-scroll {
+	flex: 1;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Logo JieePlay : lettres colorées (voir logo.js) */
+.jieeplay-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1px;
+	font-size: 30px;
+	font-weight: 700;
+	padding: 6px 0 18px;
+}
+.jieeplay-logo span {
+	display: inline-block;
+	opacity: 0;
+	transform: scale(0.3);
+	animation: logo-pop 0.16s ease forwards;
+}
+@keyframes logo-pop {
+	to { opacity: 1; transform: scale(1); }
+}
+
+h1, h2, h3, p {
+	margin: 0;
+}
+
+button {
+	font-family: inherit;
+	border: none;
+	cursor: pointer;
+	background: none;
+	color: inherit;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 58px;
+	padding: 14px 28px;
+	border-radius: 999px;
+	background: var(--color-rose-light);
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	box-shadow: var(--shadow-soft);
+	transition: transform 0.15s ease, filter 0.15s ease;
+}
+.btn:active {
+	transform: scale(0.97);
+	filter: brightness(0.96);
+}
+.btn:disabled {
+	background: #ddd4d8;
+	color: #b3a7ae;
+	box-shadow: none;
+}
+.btn-secondary {
+	background: var(--color-mauve-dark);
+}
+
+.card {
+	background: var(--color-cream);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	box-shadow: var(--shadow-soft);
+	padding: 20px;
+}
+
+.center-col {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding: 0 24px;
+	text-align: center;
+}
+
+.title-lg {
+	font-size: 26px;
+	font-weight: 700;
+	color: var(--color-text);
+}
+
+.subtitle {
+	font-size: 16px;
+	color: var(--color-text-soft);
+	line-height: 1.5;
+}
+
+.hidden {
+	display: none !important;
+}

@@ -1,0 +1,54 @@
+rules_version = '2';
+
+// À coller dans : Firebase Console → Firestore Database → onglet "Règles" → Publier.
+//
+// ⚠️ Remplace "ADMIN_UID" (une seule ligne, juste en dessous) par TON uid :
+// Firebase Console → Authentication → Users → colonne "User UID" de ton compte.
+//
+// Logique : chaque conversation porte le uid Firebase du joueur (connexion
+// anonyme). Seuls ce joueur et l'admin peuvent la lire/écrire — jamais un
+// autre joueur, même connecté.
+
+service cloud.firestore {
+	match /databases/{database}/documents {
+
+		function isAdmin() { return request.auth != null && request.auth.uid == "ADMIN_UID"; }
+		function isOwner(playerId) { return request.auth != null && request.auth.uid == playerId; }
+
+		match /conversations/{playerId} {
+			allow get, update: if isOwner(playerId) || isAdmin();
+			allow list, delete: if isAdmin();   // lister/supprimer les conversations : admin seulement
+			allow create: if isOwner(playerId);
+
+			match /messages/{messageId} {
+				allow read: if isOwner(playerId) || isAdmin();
+
+				allow create: if (isOwner(playerId) || isAdmin())
+					&& request.resource.data.from in ["player", "admin"]
+					&& (isOwner(playerId) ? request.resource.data.from == "player" : request.resource.data.from == "admin");
+
+				// "Supprimer pour tout le monde" (V35) : le message n'est pas retiré,
+				// il devient une pierre tombale ("Message supprimé") et son contenu
+				// (photo, audio…) est vidé. Un joueur ne peut le faire que sur SES
+				// messages ; l'admin peut le faire sur n'importe lequel (modération).
+				allow update: if (isOwner(playerId) || isAdmin())
+					&& request.resource.data.diff(resource.data).affectedKeys().hasOnly(["deleted", "content"])
+					&& request.resource.data.deleted == true
+					&& ((isOwner(playerId) && resource.data.from == "player") || isAdmin());
+
+				// Suppression définitive : nettoyage d'une conversation par l'admin.
+				allow delete: if isAdmin();
+			}
+		}
+
+		// Présence de l'admin ("en ligne") : lisible par tout joueur connecté.
+		match /admin/presence {
+			allow read: if request.auth != null;
+			allow write: if isAdmin();
+		}
+		// Token push de l'admin : privé.
+		match /admin/config {
+			allow read, write: if isAdmin();
+		}
+	}
+}

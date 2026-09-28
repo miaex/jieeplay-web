@@ -1,0 +1,32 @@
+[
+	{
+		"id": "jieeplay",
+		"emoji": "🔤",
+		"label_fr": "JieePlay",
+		"label_en": "JieePlay",
+		"subtitle_fr": "Le jeu original — mots, indices, récompenses.",
+		"subtitle_en": "The original game — words, hints, rewards.",
+		"status": "available",
+		"accent": "gold"
+	},
+	{
+		"id": "soon-1",
+		"emoji": "🧩",
+		"label_fr": "À venir",
+		"label_en": "Coming soon",
+		"subtitle_fr": "Un nouveau jeu rejoindra bientôt l'univers.",
+		"subtitle_en": "A new game will join the universe soon.",
+		"status": "soon",
+		"accent": "rose"
+	},
+	{
+		"id": "soon-2",
+		"emoji": "🌙",
+		"label_fr": "À venir",
+		"label_en": "Coming soon",
+		"subtitle_fr": "Encore une surprise en préparation.",
+		"subtitle_en": "Another surprise in the works.",
+		"status": "soon",
+		"accent": "mauve"
+	}
+]
