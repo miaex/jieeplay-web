@@ -1,0 +1,234 @@
+/* journey.css — écran "Mon parcours", même langage visuel que le reste
+ * du jeu (fond dégradé + halos, cartes en verre, libellés dorés). */
+
+/* NB : pas de position:relative ici — .view fournit déjà
+ * position:absolute + inset:0 (voir style.css), qui borne l'écran à la
+ * hauteur du viewport et permet à .screen-scroll de défiler. La
+ * surcharger cassait le défilement dès que le contenu dépassait un
+ * écran (bug V27 corrigé en V30 — voir Mes récompenses). */
+#view-journey,
+#view-rewards {
+	background: linear-gradient(to bottom, #f7ece9 0%, #fdf8f4 42%, #eee8f0 100%);
+}
+
+.journey-bg-decor {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	pointer-events: none;
+	opacity: 0.85;
+	background-image:
+		radial-gradient(circle, rgba(255,255,255,0.85) 0 2px, transparent 3px),
+		radial-gradient(circle, rgba(255,255,255,0.7) 0 1.5px, transparent 2.5px),
+		radial-gradient(circle, rgba(217,158,89,0.3) 0 1.5px, transparent 2.5px),
+		radial-gradient(circle, rgba(255,255,255,0.6) 0 2px, transparent 3px);
+	background-repeat: no-repeat;
+	background-position: 12% 8%, 88% 12%, 8% 72%, 92% 84%;
+}
+
+.journey-inner {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	padding: 6px 24px 30px;
+	max-width: 440px;
+	margin: 0 auto;
+}
+
+.journey-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+	text-align: center;
+	margin-bottom: 2px;
+}
+
+/* ================= CARTE HÉROS (chapitre en cours) ================= */
+.journey-hero-card {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 24px 22px 22px;
+	border-radius: 26px;
+	background: rgba(255, 251, 247, 0.72);
+	backdrop-filter: blur(14px);
+	-webkit-backdrop-filter: blur(14px);
+	border: 1px solid rgba(217, 158, 89, 0.4);
+	box-shadow: 0 14px 30px rgba(139, 69, 92, 0.18), inset 0 1px 0 rgba(255,255,255,0.6);
+}
+.journey-hero-decor {
+	position: absolute;
+	top: -4px;
+	right: 12px;
+	font-size: 40px;
+	color: var(--color-gold);
+	opacity: 0.22;
+	pointer-events: none;
+}
+.journey-hero-chapter {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 26px;
+	font-weight: 700;
+	color: #6e2f42;
+}
+.journey-progress-label {
+	font-size: 13.5px;
+	font-weight: 600;
+	color: var(--color-text-soft);
+	margin-top: -2px;
+}
+.journey-hero-card .progress-track {
+	margin-top: 4px;
+	background: rgba(217, 158, 89, 0.18);
+}
+.journey-hero-card .progress-fill {
+	background: linear-gradient(to right, #8a3b52, var(--color-rose));
+}
+
+/* ================= PISTE DE PROGRESSION (V28) =================
+ * Fenêtre de 5 chapitres autour du chapitre courant. Remplace la
+ * lecture "uniquement statistique" par une sensation de trajectoire :
+ * quelques chapitres faits, le chapitre en cours, quelques à venir. */
+.journey-path-card {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	padding: 18px 20px 20px;
+	border-radius: 22px;
+	background: rgba(255, 251, 247, 0.62);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(217, 158, 89, 0.28);
+	box-shadow: 0 6px 16px rgba(139, 69, 92, 0.1);
+}
+.journey-path-label {
+	font-size: 11.5px;
+	font-weight: 800;
+	letter-spacing: 1.4px;
+	color: var(--color-gold);
+	text-transform: uppercase;
+}
+
+.journey-path-track {
+	display: flex;
+	align-items: flex-start;
+	padding: 2px 2px 0;
+}
+
+.journey-path-connector {
+	flex: 1 1 auto;
+	height: 2px;
+	margin-top: 13px;
+	min-width: 8px;
+	background: rgba(217, 158, 89, 0.2);
+	border-radius: 2px;
+}
+.journey-path-connector.done {
+	background: linear-gradient(to right, #8a3b52, var(--color-rose));
+}
+
+.journey-path-node {
+	position: relative;
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	width: 30px;
+}
+.journey-path-node-dot {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	font-size: 12px;
+	line-height: 1;
+	flex-shrink: 0;
+}
+.journey-path-node-num {
+	font-size: 10.5px;
+	font-weight: 700;
+	color: var(--color-text-soft);
+	opacity: 0.75;
+}
+
+/* Chapitre terminé : plein, doré/vin, coche. */
+.journey-path-node.done .journey-path-node-dot {
+	background: linear-gradient(135deg, #8a3b52, var(--color-rose));
+	color: #fffbf8;
+	box-shadow: 0 3px 8px rgba(139, 69, 92, 0.28);
+}
+.journey-path-node.done.clickable {
+	cursor: pointer;
+}
+.journey-path-node.done.clickable:active .journey-path-node-dot {
+	transform: scale(0.92);
+}
+
+/* Chapitre en cours : anneau doré, plus grand, légèrement mis en avant. */
+.journey-path-node.current .journey-path-node-dot {
+	width: 30px;
+	height: 30px;
+	background: var(--color-cream);
+	border: 2.5px solid var(--color-gold);
+	box-shadow: 0 0 0 4px rgba(217, 158, 89, 0.18);
+}
+.journey-path-node.current .journey-path-node-num {
+	color: #6e2f42;
+	opacity: 1;
+}
+
+/* Chapitre verrouillé : contour discret, atténué. */
+.journey-path-node.locked .journey-path-node-dot {
+	background: transparent;
+	border: 2px solid rgba(217, 158, 89, 0.3);
+}
+.journey-path-node.locked .journey-path-node-num {
+	opacity: 0.4;
+}
+
+/* ================= GRILLE DE STATISTIQUES ================= */
+.journey-stats-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 14px;
+}
+.journey-stat-tile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+	padding: 18px 12px;
+	border-radius: 20px;
+	background: rgba(255, 251, 247, 0.62);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(217, 158, 89, 0.28);
+	box-shadow: 0 6px 16px rgba(139, 69, 92, 0.1);
+	text-align: center;
+}
+.journey-stat-icon {
+	font-size: 15px;
+	color: var(--color-gold);
+	margin-bottom: 2px;
+}
+.journey-stat-value {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 26px;
+	font-weight: 700;
+	color: #6e2f42;
+}
+.journey-stat-label {
+	font-size: 11.5px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+	color: var(--color-text-soft);
+	text-transform: uppercase;
+}

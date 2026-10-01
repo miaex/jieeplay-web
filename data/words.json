@@ -1,0 +1,7166 @@
+[
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "AMOUR",
+		"hint": "Quelque chose que tu mérites chaque jour."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "COMPLICE",
+		"hint": "Ce que vous êtes, sans avoir besoin de mots."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "AMITIE",
+		"hint": "Un lien qui ne demande rien en retour."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "TENDRESSE",
+		"hint": "Ce qui se glisse dans un geste simple."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "CONFIDENTE",
+		"hint": "Celle à qui on peut tout dire.",
+		"gender": "f"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "FIDELE",
+		"hint": "Ce que tu es, même quand ce n'est pas facile."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "LOVE",
+		"hint": "Something you deserve every single day."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "FRIEND",
+		"hint": "Someone who stays even when it's not convenient."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "LOYAL",
+		"hint": "What you are, even when it's not easy."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "BOND",
+		"hint": "What connects two people without needing words."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "PERSEVERANTE",
+		"hint": "Quelqu'un qui continue même quand c'est difficile.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "BRILLANTE",
+		"hint": "Ce que tu es, même quand tu ne le vois pas.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "UNIQUE",
+		"hint": "Il n'y en a qu'une comme toi."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "LUMINEUSE",
+		"hint": "Ce que tu apportes dans une pièce, sans effort.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "PRECIEUSE",
+		"hint": "Ce que tu es pour les gens qui te connaissent vraiment.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "TALENTUEUSE",
+		"hint": "Ce que tu es, plus que tu ne le penses.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "BRILLIANT",
+		"hint": "What you are, even when you don't see it."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "UNIQUE",
+		"hint": "There's only one of you."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "RADIANT",
+		"hint": "What you bring into a room, without even trying."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "TALENTED",
+		"hint": "What you are, more than you realize."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "JOIE",
+		"hint": "Ce que tu ressens dans tes meilleurs moments."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "COURAGE",
+		"hint": "Ce qu'il te faut pour avancer malgré la peur."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "CONFIANCE",
+		"hint": "Ce que tu devrais avoir en toi, plus souvent."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "APAISEMENT",
+		"hint": "Ce que tu ressens quand tout va bien, enfin."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "FIERTE",
+		"hint": "Ce que tu devrais ressentir plus souvent, pour toi-même."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "JOY",
+		"hint": "What you feel in your best moments."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "COURAGE",
+		"hint": "What it takes to move forward despite fear."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "CALM",
+		"hint": "What you feel when everything finally settles."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "PRIDE",
+		"hint": "Something you should feel about yourself, more often."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "CAFE",
+		"hint": "Ce qui t'aide à démarrer la journée."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "ROUTINE",
+		"hint": "Ce que tu fais presque sans y penser, chaque jour."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "SOUVENIR",
+		"hint": "Ce qui reste, longtemps après l'instant."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "HABITUDE",
+		"hint": "Un petit geste répété qui finit par te définir."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "COFFEE",
+		"hint": "What helps you start the day."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "HABIT",
+		"hint": "A small repeated gesture that ends up defining you."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "MEMORY",
+		"hint": "What stays, long after the moment is gone."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "LOGIQUE",
+		"hint": "Ce qui te permet de tout relier entre eux."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "INTUITION",
+		"hint": "Ce que tu ressens avant même de comprendre pourquoi."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "CURIEUSE",
+		"hint": "Ce que tu es quand une question t'obsède.",
+		"gender": "f"
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "REFLEXION",
+		"hint": "Ce moment où tout prend enfin son sens."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "LOGIC",
+		"hint": "What lets you connect everything together."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "INTUITION",
+		"hint": "What you feel before you even understand why."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "CURIOUS",
+		"hint": "What you are when a question won't let you go."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "VOYAGE",
+		"hint": "Ce qui commence dès que tu changes de décor."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "DECOUVERTE",
+		"hint": "Ce que tu cherches à chaque nouveau lieu."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "HORIZON",
+		"hint": "Ce qui recule à mesure que tu avances."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "EXPLORATRICE",
+		"hint": "Ce que tu es, dès que quelque chose t'intrigue.",
+		"gender": "f"
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "JOURNEY",
+		"hint": "What begins the moment your surroundings change."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "HORIZON",
+		"hint": "What keeps moving further as you get closer."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "EXPLORER",
+		"hint": "What you become the moment something intrigues you."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "SECRET",
+		"hint": "Quelque chose que tout le monde ne sait pas."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "INDICE",
+		"hint": "Un petit signe qui mène à la vérité."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "ENIGME",
+		"hint": "Ce qui te trotte dans la tête jusqu'à ce que tu trouves."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "CACHE",
+		"hint": "Ce qui n'attend qu'à être trouvé.",
+		"gender": "m"
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "SECRET",
+		"hint": "Something not everyone knows."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "CLUE",
+		"hint": "A small sign that leads to the truth."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "RIDDLE",
+		"hint": "What lingers in your mind until you solve it."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "RIRE",
+		"hint": "Ce qui échappe quand tu ne t'y attends pas."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "TAQUINE",
+		"hint": "Ce que tu es quand tu ne peux pas t'en empêcher.",
+		"gender": "f"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "BLAGUE",
+		"hint": "Ce qui détend l'atmosphère en une phrase."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "FARCEUSE",
+		"hint": "Celle qui prépare toujours quelque chose.",
+		"gender": "f"
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "LAUGH",
+		"hint": "What slips out when you least expect it."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "JOKE",
+		"hint": "What lightens the mood in one sentence."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "PLAYFUL",
+		"hint": "What you are when you can't help yourself."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "DEFI",
+		"hint": "Ce que tu relèves même quand tu as peur."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "COURAGEUSE",
+		"hint": "Ce que tu es quand tu oses, même en tremblant.",
+		"gender": "f"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "CULOT",
+		"hint": "Ce qu'il te faut pour dire ce que tu penses vraiment."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "RISQUE",
+		"hint": "Ce que tu prends quand tu veux vraiment quelque chose."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "BOLD",
+		"hint": "What you are when you dare, even while shaking."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "DARE",
+		"hint": "What you take on even when you're afraid."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "NERVE",
+		"hint": "What it takes to say what you really think."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "GENEREUSE",
+		"hint": "Une qualité qui se voit dans les petits gestes.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "SINCERE",
+		"hint": "Ce que tu es, sans filtre."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "DETERMINEE",
+		"hint": "Ce que tu es quand tu as décidé quelque chose.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "AUTHENTIQUE",
+		"hint": "Ce que tu es, sans avoir besoin de jouer un rôle."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "GENEROUS",
+		"hint": "A quality that shows in small gestures."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "SINCERE",
+		"hint": "What you are, without a filter."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "AUTHENTIC",
+		"hint": "What you are, without needing to play a role."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "PARTAGE",
+		"hint": "Ce qui rend une joie plus grande et une peine plus légère."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "SOUTIEN",
+		"hint": "Ce que tu offres sans même qu'on te le demande."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ECOUTE",
+		"hint": "Le plus beau cadeau qu'on puisse faire à quelqu'un."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "PROCHE",
+		"hint": "Ce que tu es devenue, sans même t'en rendre compte."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "LIEN",
+		"hint": "Ce qui se construit, jour après jour, sans bruit."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ALLIEE",
+		"hint": "Celle sur qui on peut toujours compter.",
+		"gender": "f"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "DOUCEUR",
+		"hint": "Ce qui adoucit même les journées difficiles."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "PRESENCE",
+		"hint": "Parfois, il suffit juste de ça pour rassurer quelqu'un."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ATTACHE",
+		"hint": "Ce qu'on ressent sans toujours savoir l'expliquer."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ENTENTE",
+		"hint": "Ce qui rend une relation facile, sans efforts."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "CONNIVENCE",
+		"hint": "Ce petit regard qui veut tout dire, entre vous deux."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "CHALEUR",
+		"hint": "Ce que dégage une relation qui te fait du bien."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "RESPECT",
+		"hint": "La base de tout, avant même l'amour."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "PROXIMITE",
+		"hint": "Ce que la distance n'a jamais réussi à briser."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "AFFECTION",
+		"hint": "Ce que tu inspires, souvent sans le savoir."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "DUO",
+		"hint": "Ce que vous formez, elle et toi, sans même le décider."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "RETROUVAILLES",
+		"hint": "Ce moment où tout redevient simple, d'un coup."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ENGAGEMENT",
+		"hint": "Ce qu'on choisit de donner, chaque jour, à quelqu'un."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "TRUST",
+		"hint": "What takes years to build and seconds to break."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "SUPPORT",
+		"hint": "What you offer without even being asked."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "CLOSE",
+		"hint": "What you've become, without even noticing."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "WARMTH",
+		"hint": "What a good relationship radiates."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "CARE",
+		"hint": "What you show in the smallest gestures."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "ALLY",
+		"hint": "Someone you can always count on."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "COMFORT",
+		"hint": "Sometimes, presence alone is enough to give this."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "RESPECT",
+		"hint": "The foundation of everything, even before love."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "REUNION",
+		"hint": "That moment when everything feels simple again."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "ADMIRABLE",
+		"hint": "Ce que tu es, aux yeux de ceux qui te connaissent vraiment."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "ETONNANTE",
+		"hint": "Ce que tu es, à chaque fois que tu surprends tout le monde.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "SOLAIRE",
+		"hint": "Ce que tu es, même les jours gris."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "INSPIRANTE",
+		"hint": "Ce que tu es, sans même essayer de l'être.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "REMARQUABLE",
+		"hint": "Ce que tu es, aux yeux de ceux qui prennent le temps de te voir."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "ELEGANTE",
+		"hint": "Ce que tu es, dans la façon dont tu te comportes.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "VIVE",
+		"hint": "Ce que ton esprit est, toujours un temps d'avance.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "RAYONNANTE",
+		"hint": "Ce que tu es, dès que tu souris vraiment.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "EXCEPTIONNELLE",
+		"hint": "Ce que tu es, même si tu ne le vois pas encore.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "CHARMANTE",
+		"hint": "Ce que tu es, sans effort, dès la première rencontre.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "FORTE",
+		"hint": "Ce que tu es, même dans les moments où tu doutes.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "DOUEE",
+		"hint": "Ce que tu es, dans plus de domaines que tu ne le crois.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "ATTACHANTE",
+		"hint": "Ce que tu es, dès qu'on apprend à te connaître.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "LOYALE",
+		"hint": "Ce que tu es, jusqu'au bout, sans exception.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "LEGENDAIRE",
+		"hint": "Ce que tu deviens à mes yeux, chapitre après chapitre."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "IRREMPLACABLE",
+		"hint": "Ce que tu es, pour les gens qui ont la chance de te connaître."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "MAGNETIQUE",
+		"hint": "Ce que tu es, sans même le vouloir."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "AMAZING",
+		"hint": "What you are, every time you surprise everyone."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "INSPIRING",
+		"hint": "What you are, without even trying to be."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "CHARMING",
+		"hint": "What you are, effortlessly, from the first meeting."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "STRONG",
+		"hint": "What you are, even in moments of doubt."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "GIFTED",
+		"hint": "What you are, in more ways than you realize."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "LOYAL",
+		"hint": "What you are, all the way through, no exceptions."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "GLOWING",
+		"hint": "What you become the moment you truly smile."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "RARE",
+		"hint": "What you are — genuinely one of a kind."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "WITTY",
+		"hint": "What your mind is, always one step ahead."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "MAGNETIC",
+		"hint": "What you are, without even meaning to be."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "SERENITE",
+		"hint": "Ce qu'on ressent quand tout va enfin bien."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "ESPOIR",
+		"hint": "Ce qui te fait avancer, même sans certitude."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "GRATITUDE",
+		"hint": "Ce qu'on ressent en pensant aux bonnes personnes autour de soi."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "TENDRESSE",
+		"hint": "Ce qui adoucit un simple geste du quotidien."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EMOTION",
+		"hint": "Ce que tu ressens plus souvent que tu ne le montres."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "LEGERETE",
+		"hint": "Ce qu'on ressent quand un poids s'envole enfin."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "ENTHOUSIASME",
+		"hint": "Ce qui te pousse à foncer sans réfléchir."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "NOSTALGIE",
+		"hint": "Ce doux pincement en repensant à un bon souvenir."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "SOULAGEMENT",
+		"hint": "Ce qu'on ressent quand l'inquiétude disparaît enfin."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "TENDRE",
+		"hint": "Ce que ton regard peut être, sans un mot."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EMERVEILLEMENT",
+		"hint": "Ce qu'on ressent devant quelque chose de vraiment beau."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "APAISE",
+		"hint": "Ce que tu te sens, une fois le calme retrouvé.",
+		"gender": "m"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "VIBRANTE",
+		"hint": "Ce que ton énergie est, dans tes meilleurs jours.",
+		"gender": "f"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "PASSION",
+		"hint": "Ce qui t'anime, quand un sujet te tient vraiment à coeur."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "DOUTE",
+		"hint": "Ce qu'il faut parfois traverser avant d'avancer, plus forte."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EMPATHIE",
+		"hint": "Ce que tu ressens face à la peine de quelqu'un d'autre."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "HOPE",
+		"hint": "What keeps you moving, even without certainty."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "GRATITUDE",
+		"hint": "What you feel thinking of the good people around you."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "RELIEF",
+		"hint": "What you feel when worry finally lifts."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "WONDER",
+		"hint": "What you feel in front of something truly beautiful."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "PASSION",
+		"hint": "What drives you when something truly matters to you."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "EMPATHY",
+		"hint": "What you feel facing someone else's pain."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "LIGHTNESS",
+		"hint": "What you feel when a weight finally lifts off."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "NOSTALGIA",
+		"hint": "That sweet ache when a good memory resurfaces."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "EXCITEMENT",
+		"hint": "What pushes you to jump in without thinking twice."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "TENDERNESS",
+		"hint": "What softens even the smallest everyday gesture."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "MATIN",
+		"hint": "Le moment où tout recommence, chaque jour."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "THE",
+		"hint": "Ce que tu prépares pour ralentir un instant."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "LECTURE",
+		"hint": "Ce petit moment rien qu'à toi, en fin de journée."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "MUSIQUE",
+		"hint": "Ce qui accompagne tes trajets sans même que tu y penses."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "COCON",
+		"hint": "Ce que devient ton chez-toi, les soirs tranquilles."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "RITUEL",
+		"hint": "Ce petit geste que tu répètes sans même y penser."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "PAUSE",
+		"hint": "Ce dont tu as besoin, même quelques minutes."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "PLAID",
+		"hint": "Ce sous lequel on se sent bien, un soir d'hiver."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "BALADE",
+		"hint": "Ce qui vide la tête, sans effort."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "SILENCE",
+		"hint": "Ce qu'on recherche parfois, après une journée bruyante."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "COURSES",
+		"hint": "Cette corvée qu'on repousse toujours au lendemain."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "AGENDA",
+		"hint": "Ce qui déborde toujours plus vite que prévu."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "REVEIL",
+		"hint": "Ce qui sonne toujours trop tôt, selon toi."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "CANAPE",
+		"hint": "L'endroit préféré pour ne rien faire, le dimanche."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "ODEUR",
+		"hint": "Celle du café qui réveille toute la maison."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "MORNING",
+		"hint": "The moment everything starts over, every day."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "ROUTINE",
+		"hint": "What you repeat almost without thinking about it."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "COZY",
+		"hint": "What your home becomes on quiet evenings."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "WALK",
+		"hint": "What clears your head, effortlessly."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "SILENCE",
+		"hint": "What you sometimes crave after a loud day."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "ERRANDS",
+		"hint": "That chore you always push to tomorrow."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "ALARM",
+		"hint": "What always rings too early, according to you."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "COUCH",
+		"hint": "The favorite spot for doing nothing on a Sunday."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "AROMA",
+		"hint": "What coffee has, that wakes up the whole house."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "BREAK",
+		"hint": "What you need, even just for a few minutes."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "ANALYSE",
+		"hint": "Ce que ton cerveau fait avant même que tu le décides."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "MEMOIRE",
+		"hint": "Ce qui garde en toi tout ce qui compte vraiment."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "CONCENTRATION",
+		"hint": "Ce qu'il te faut pour aller au bout d'une idée."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "IMAGINATION",
+		"hint": "Ce qui te fait voir plus loin que les autres."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "PERSPICACE",
+		"hint": "Ce que tu es, quand tu comprends avant qu'on t'explique."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "RAISONNEMENT",
+		"hint": "Ce fil que ton esprit suit, sans jamais le perdre."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "CLARTE",
+		"hint": "Ce que tu ressens, une fois qu'une idée devient enfin nette."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "OBSERVATRICE",
+		"hint": "Ce que tu es, tu remarques toujours ce que les autres ratent.",
+		"gender": "f"
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "ASTUCIEUSE",
+		"hint": "Ce que tu es, quand tu trouves une solution inattendue.",
+		"gender": "f"
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "VISION",
+		"hint": "Ce que tu as, quand les autres ne voient pas encore."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "DEDUCTION",
+		"hint": "Ce que ton esprit fait, pièce par pièce, jusqu'à la solution."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "PERSPECTIVE",
+		"hint": "Ce qui change tout, une fois qu'on prend du recul."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "EVEILLEE",
+		"hint": "Ce que ton esprit est, même quand ton corps est fatigué.",
+		"gender": "f"
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "PROFONDE",
+		"hint": "Ce que tes pensées sont, plus qu'on ne le croit.",
+		"gender": "f"
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "INSIGHT",
+		"hint": "What you have, when others don't see it yet."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "MEMORY",
+		"hint": "What holds onto everything that truly matters to you."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "FOCUS",
+		"hint": "What it takes to see an idea through to the end."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "CLARITY",
+		"hint": "What you feel once an idea finally becomes clear."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "SHARP",
+		"hint": "What you are, when you understand before it's explained."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "CLEVER",
+		"hint": "What you are, when you find an unexpected solution."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "AWARE",
+		"hint": "What you are, noticing what others tend to miss."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "DEPTH",
+		"hint": "What your thoughts have, more than people realize."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "VISION",
+		"hint": "What you have, when others can't see it yet."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "ROUTE",
+		"hint": "Ce qui s'ouvre devant toi, à chaque nouveau départ."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "BOUSSOLE",
+		"hint": "Ce qui te guide, même quand tu ne sais pas où tu vas."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "INCONNU",
+		"hint": "Ce qui fait un peu peur, et beaucoup vivre."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "CARTE",
+		"hint": "Ce qu'on déplie avant de partir à l'aventure."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "SOMMET",
+		"hint": "Ce qu'on atteint, après l'effort."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "ESCAPADE",
+		"hint": "Ce petit départ improvisé qui fait tant de bien."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "EVASION",
+		"hint": "Ce dont on a besoin, de temps en temps."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "VALISE",
+		"hint": "Ce qu'on prépare, le coeur déjà ailleurs."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "DEPART",
+		"hint": "Ce moment excitant juste avant un nouveau chapitre."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "DESTINATION",
+		"hint": "Ce qui compte parfois moins que le chemin pour y arriver."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "PERIPLE",
+		"hint": "Ce long voyage qui change une personne pour toujours."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "INTREPIDE",
+		"hint": "Ce que tu es, quand tu pars sans tout savoir à l'avance."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "LARGUE",
+		"hint": "Ce que tu es, quand tu laisses tout derrière pour partir."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "ROAD",
+		"hint": "What opens ahead of you, with every new start."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "COMPASS",
+		"hint": "What guides you, even when you don't know where you're going."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "UNKNOWN",
+		"hint": "What's a little scary, and makes you feel truly alive."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "SUMMIT",
+		"hint": "What you reach, after the effort."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "ESCAPE",
+		"hint": "What you sometimes just need."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "FEARLESS",
+		"hint": "What you are, when you leave without knowing it all."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "DEPARTURE",
+		"hint": "That exciting moment right before a new chapter."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "EXPEDITION",
+		"hint": "A journey that demands real courage."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "WANDER",
+		"hint": "What you do best, without needing a plan."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "MYSTERE",
+		"hint": "Ce que ce jeu garde encore pour plus tard."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "DEVINETTE",
+		"hint": "Ce petit défi qui titille la curiosité."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "OMBRE",
+		"hint": "Ce qui cache une partie de la vérité."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "CHUCHOTEMENT",
+		"hint": "Ce qu'on entend, sans être sûr de qui parlait."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "INTRIGUE",
+		"hint": "Ce qui te tient en haleine jusqu'au bout."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "SUSPENSE",
+		"hint": "Ce qui rend l'attente presque aussi bonne que la réponse."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "VOILE",
+		"hint": "Ce qu'il faut lever, pour découvrir la vérité."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "CODE",
+		"hint": "Ce qu'il faut déchiffrer, patiemment."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "DISSIMULE",
+		"hint": "Ce que quelque chose est, tant que tu ne l'as pas trouvé.",
+		"gender": "m"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "REVELATION",
+		"hint": "Ce moment où tout devient enfin clair."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "LABYRINTHE",
+		"hint": "Ce dans lequel on avance, un indice à la fois."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "CRYPTIQUE",
+		"hint": "Ce qu'un message peut être, volontairement."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "MYSTERY",
+		"hint": "What this game is still keeping for later."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "WHISPER",
+		"hint": "What you hear, without being sure who spoke."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "INTRIGUE",
+		"hint": "What keeps you hooked until the very end."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "SUSPENSE",
+		"hint": "What makes the wait almost as good as the answer."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "CIPHER",
+		"hint": "What needs patient decoding."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "HIDDEN",
+		"hint": "What something is, until you finally find it."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "REVEAL",
+		"hint": "That moment when everything finally makes sense."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "MAZE",
+		"hint": "What you move through, one clue at a time."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "CRYPTIC",
+		"hint": "What a message can be, on purpose."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "SHADOW",
+		"hint": "What hides part of the truth."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "SOURIRE",
+		"hint": "Ce qui échappe, souvent sans prévenir."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "HILARANT",
+		"hint": "Ce qui déclenche un rire qu'on ne peut plus arrêter."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "COMPLICITE",
+		"hint": "Ce petit clin d'oeil qui n'appartient qu'à vous deux."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "LEGER",
+		"hint": "Ce que ton humeur devient, dans les meilleurs moments."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "GAFFE",
+		"hint": "Ce qu'on fait, et qui devient une bonne histoire à raconter."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "SURPRISE",
+		"hint": "Ce qui met un peu de piment dans une journée banale."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "JOYEUSE",
+		"hint": "Ce que tu es, dès qu'on te fait rire.",
+		"gender": "f"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "COMPLICE",
+		"hint": "Ce petit regard qui veut tout dire, entre vous deux."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "DELIRE",
+		"hint": "Ce moment où plus rien n'a besoin d'être sérieux."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "CHAMBRAGE",
+		"hint": "Ce petit jeu affectueux entre gens qui s'aiment bien."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "FARCE",
+		"hint": "Ce petit tour qu'on prépare avec un sourire en coin."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "PETILLANTE",
+		"hint": "Ce que ton énergie est, dans tes meilleurs moments.",
+		"gender": "f"
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "GIGGLE",
+		"hint": "What slips out, often without warning."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "BANTER",
+		"hint": "That playful little game between people who like each other."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "WINK",
+		"hint": "That small gesture that says everything, between close friends."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "SILLY",
+		"hint": "What you're allowed to be, once in a while."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "SPARKLE",
+		"hint": "What your energy has, on your best days."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "PRANK",
+		"hint": "That little trick you plan with a sneaky smile."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "LAUGHTER",
+		"hint": "What you can't stop, once it gets going."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "QUIRKY",
+		"hint": "What makes you memorable, in the best way."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "MISCHIEF",
+		"hint": "What you're up to, with that look on your face."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "CONFIANCE",
+		"hint": "Ce qu'il te faut, avant même le courage."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "ELAN",
+		"hint": "Ce qui te pousse à sauter, sans trop réfléchir."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "TEMERAIRE",
+		"hint": "Ce que tu es, quand la prudence passe après l'envie."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "INITIATIVE",
+		"hint": "Ce que tu prends, quand personne d'autre ne le fait."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "FRANCHISE",
+		"hint": "Ce qu'il faut, pour dire les choses telles qu'elles sont."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "PANACHE",
+		"hint": "Ce petit supplément qui rend une audace élégante."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "AMBITIEUSE",
+		"hint": "Ce que tu es, quand viser haut ne te fait pas peur.",
+		"gender": "f"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "ASSUMEE",
+		"hint": "Ce que tu es, dans tes choix, même les plus risqués.",
+		"gender": "f"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "CRAN",
+		"hint": "Ce qu'il faut, pour avancer malgré la peur au ventre."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "INTREPIDITE",
+		"hint": "Ce qui te pousse à dire oui, avant même d'avoir réfléchi."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "OSEE",
+		"hint": "Ce que tu es, quand jouer la sécurité ne te ressemble plus.",
+		"gender": "f"
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "CONFIDENCE",
+		"hint": "What you need, even before courage."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "DARING",
+		"hint": "What you are, when caution comes second to desire."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "INITIATIVE",
+		"hint": "What you take, when no one else will."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "FRANKNESS",
+		"hint": "What it takes, to say things exactly as they are."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "AMBITIOUS",
+		"hint": "What you are, when aiming high doesn't scare you."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "GUTSY",
+		"hint": "What it takes, to move forward despite the fear."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "FEARLESSNESS",
+		"hint": "What pushes you to say yes before overthinking it."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "GUMPTION",
+		"hint": "What it takes to stand out and speak up."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "CARACTERE",
+		"hint": "Ce que tu as, et qu'on remarque tout de suite."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "HUMILITE",
+		"hint": "Ce que tu gardes, malgré tout ce que tu accomplis."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "PATIENCE",
+		"hint": "Ce qu'il te faut, plus que tu ne le penses parfois."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "INTEGRITE",
+		"hint": "Ce que tu gardes intact, même quand ce n'est pas facile."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "OPTIMISTE",
+		"hint": "Ce que tu restes, même les jours compliqués."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "RESILIENTE",
+		"hint": "Ce que tu es, après chaque obstacle traversé.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "BIENVEILLANTE",
+		"hint": "Ce que tu es, avec ceux qui en ont besoin.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "VOLONTAIRE",
+		"hint": "Ce que tu es, une fois une idée bien en tête."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "EQUILIBREE",
+		"hint": "Ce que tu es devenue, avec le temps.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "SPONTANEE",
+		"hint": "Ce que tu es, quand tu n'as pas le temps de trop réfléchir.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "DISCRETE",
+		"hint": "Ce que tu es, même quand tu mérites qu'on te remarque.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "ATTENTIONNEE",
+		"hint": "Ce que tu es, dans les petits détails que personne ne voit.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "INDEPENDANTE",
+		"hint": "Ce que tu es devenue, à ta façon, avec le temps.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "VRAIE",
+		"hint": "Ce que tu es, sans jamais chercher à être quelqu'un d'autre.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "HUMBLE",
+		"hint": "What you remain, despite everything you achieve."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "PATIENT",
+		"hint": "What you need, more than you sometimes think."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "RESILIENT",
+		"hint": "What you are, after every obstacle you've crossed."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "KIND",
+		"hint": "What you are, with those who need it most."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "BALANCED",
+		"hint": "What you've become, over time."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "GENUINE",
+		"hint": "What you are, without ever trying to be someone else."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "THOUGHTFUL",
+		"hint": "What you are, in the small details no one else notices."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "INDEPENDENT",
+		"hint": "What you've become, in your own way, over time."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "OPTIMISTIC",
+		"hint": "What you remain, even on complicated days."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "INTEGRITY",
+		"hint": "What you keep intact, even when it's not easy."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "AMBITIEUX",
+		"hint": "Ce que tu es quand tu vises toujours plus haut.",
+		"gender": "m"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "ASSUME",
+		"hint": "Ce que tu es quand tu n'as plus besoin de te justifier.",
+		"gender": "m"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "COURAGEUX",
+		"hint": "Ce qu'il faut être pour foncer sans filet.",
+		"gender": "m"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "OSE",
+		"hint": "Ce que tu es quand tu dis ce que les autres pensent tout bas.",
+		"gender": "m"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "AUDACIEUSE",
+		"hint": "Celle qui n'a jamais froid aux yeux.",
+		"gender": "f"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "AUDACIEUX",
+		"hint": "Celui qui n'a jamais froid aux yeux.",
+		"gender": "m"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "TOUPET",
+		"hint": "Ce qu'il faut avoir pour dire les choses en face."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "APLOMB",
+		"hint": "Cette assurance qui ne tremble jamais."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "BRAVERY",
+		"hint": "What it takes to walk in without a safety net."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "GRIT",
+		"hint": "The quiet stubbornness that keeps you going."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "SPUNK",
+		"hint": "That fiery little something you clearly don't lack."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "VALOR",
+		"hint": "Courage, dressed in its finest clothes."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "BRAZEN",
+		"hint": "What you are when you stop asking permission."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "RECKLESS",
+		"hint": "What caution looks like when it takes a day off."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "BOLDNESS",
+		"hint": "The opposite of playing it safe."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "FEISTY",
+		"hint": "Small in size, huge in nerve."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "EXPLORATEUR",
+		"hint": "Celui qui préfère les cartes non terminées.",
+		"gender": "m"
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "ITINERAIRE",
+		"hint": "Ce qu'on trace avant de s'autoriser à le changer."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "BAGAGE",
+		"hint": "Ce qu'on referme juste avant l'excitation du départ."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "FRONTIERE",
+		"hint": "Cette ligne qui n'a jamais fait peur à personne de curieux."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "VAGABONDE",
+		"hint": "Celle qui n'a jamais vraiment de point final.",
+		"gender": "f"
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "VAGABOND",
+		"hint": "Celui qui n'a jamais vraiment de point final.",
+		"gender": "m"
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "PIONNIERE",
+		"hint": "Celle qui ouvre la voie avant tout le monde.",
+		"gender": "f"
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "PIONNIER",
+		"hint": "Celui qui ouvre la voie avant tout le monde.",
+		"gender": "m"
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "WANDERLUST",
+		"hint": "That itch in your feet that maps can't cure."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "TRAILBLAZER",
+		"hint": "The one who leaves the path better marked."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "NOMAD",
+		"hint": "Someone whose address keeps changing on purpose."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "PIONEER",
+		"hint": "The first footprint in the snow."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "FRONTIER",
+		"hint": "The edge of the map, and the start of the story."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "VOYAGER",
+		"hint": "One who treats every ticket like an invitation."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "TERRAIN",
+		"hint": "What you cross when the road stops being a road."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "OUTPOST",
+		"hint": "The last familiar thing before the unknown begins."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "ATTACHANT",
+		"hint": "Ce qu'on devient sans même faire d'effort.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "BRILLANT",
+		"hint": "Ce que tu es, même les jours où tu en doutes.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "CHARMANT",
+		"hint": "Ce que tu dégages sans même le vouloir.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "DOUE",
+		"hint": "Ce que tu es, que tu le reconnaisses ou non.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "ELEGANT",
+		"hint": "Ce que tu es, dans le fond comme dans la forme.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "ETONNANT",
+		"hint": "Ce que tu es à chaque fois que tu me surprends.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "EXCEPTIONNEL",
+		"hint": "Ce que tu es, tout simplement.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "FORT",
+		"hint": "Ce que tu es, même dans tes moments de doute.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "INSPIRANT",
+		"hint": "Ce que tu es pour ceux qui t'observent.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "LOYAL",
+		"hint": "Ce qu'on peut toujours attendre de toi.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "LUMINEUX",
+		"hint": "Ce que tu es, même les jours sans soleil.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "PERSEVERANT",
+		"hint": "Ce que tu es, même quand tout devient difficile.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "PRECIEUX",
+		"hint": "Ce que tu es pour les personnes qui te connaissent.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "RAYONNANT",
+		"hint": "Ce que tu deviens dès que tu souris.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "TALENTUEUX",
+		"hint": "Ce que tu es, sans même y penser.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "VIF",
+		"hint": "Ce que ton esprit est, à chaque instant.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "DAZZLING",
+		"hint": "What you are without even trying."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "STELLAR",
+		"hint": "What your best days look like from far away."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "OUTSTANDING",
+		"hint": "What you are, no exaggeration needed."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "DEVOTED",
+		"hint": "What you are to the people lucky enough to know you."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "VIBRANT",
+		"hint": "What you bring into any room you walk into."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "CAPTIVATING",
+		"hint": "What you are without even realizing it."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "EXTRAORDINARY",
+		"hint": "The opposite of what you think you are, some days."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "ADORABLE",
+		"hint": "What you are, whether you admit it or not."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "VIBRANT",
+		"hint": "Ce que ton coeur est, dans les grands moments.",
+		"gender": "m"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "APAISEE",
+		"hint": "Ce que tu deviens, une fois le calme revenu.",
+		"gender": "f"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "MELANCOLIE",
+		"hint": "Cette douceur un peu triste des souvenirs anciens."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EUPHORIE",
+		"hint": "Ce sommet qu'on atteint sans même s'en rendre compte."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "VULNERABILITE",
+		"hint": "Ce qu'il faut de courage pour la montrer."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "COMPASSION",
+		"hint": "Ce qu'on ressent quand la peine de l'autre devient un peu la nôtre."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "IMPATIENCE",
+		"hint": "Ce qui grandit juste avant une bonne nouvelle."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "ADMIRATION",
+		"hint": "Ce qu'on ressent, sans oser toujours le dire."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "EUPHORIA",
+		"hint": "That peak you reach without even noticing the climb."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "MELANCHOLY",
+		"hint": "A soft kind of sadness, wrapped in old memories."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "VULNERABILITY",
+		"hint": "What it takes courage to actually show."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "COMPASSION",
+		"hint": "What you feel when someone else's pain becomes a little bit yours."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "LONGING",
+		"hint": "That quiet ache for something just out of reach."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "SERENITY",
+		"hint": "What's left once the noise finally settles."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "ADMIRATION",
+		"hint": "What you feel but don't always say out loud."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "BUTTERFLIES",
+		"hint": "What shows up in your stomach right before something good."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "ASTUCIEUX",
+		"hint": "Ce que tu es quand tu trouves la faille en un regard.",
+		"gender": "m"
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "CURIEUX",
+		"hint": "Ce que tu es, dès qu'un mystère se présente.",
+		"gender": "m"
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "EVEILLE",
+		"hint": "Ce que ton esprit est, même quand ton corps est fatigué.",
+		"gender": "m"
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "OBSERVATEUR",
+		"hint": "Celui qui remarque ce que personne d'autre ne voit.",
+		"gender": "m"
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "PROFOND",
+		"hint": "Ce que tes pensées sont, bien plus qu'il n'y paraît.",
+		"gender": "m"
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "PERCEPTION",
+		"hint": "Cette faculté qui capte ce qui ne se dit pas."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "LUCIDITE",
+		"hint": "Voir les choses telles qu'elles sont, sans se raconter d'histoires."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "DISCERNEMENT",
+		"hint": "Ce qui permet de choisir juste, même dans le doute."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "PERCEPTIVE",
+		"hint": "What you are when nothing gets past you."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "LUCID",
+		"hint": "Seeing things exactly as they are, no filter."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "DISCERNMENT",
+		"hint": "What lets you choose right, even in the grey areas."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "WISDOM",
+		"hint": "What experience leaves behind, if you were paying attention."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "REASONING",
+		"hint": "The quiet machinery behind every good decision."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "ANALYTICAL",
+		"hint": "What you are when puzzles feel like an invitation."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "ASTUTE",
+		"hint": "Sharp enough to notice what others miss entirely."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "MINDFUL",
+		"hint": "Fully here, fully now, nowhere else."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "FARCEUR",
+		"hint": "Celui qui prépare toujours quelque chose.",
+		"gender": "m"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "TAQUIN",
+		"hint": "Ce que tu es quand tu ne peux pas t'en empêcher.",
+		"gender": "m"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "JOYEUX",
+		"hint": "Ce que tu es, dès qu'on te fait rire.",
+		"gender": "m"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "PETILLANT",
+		"hint": "Ce que ton énergie est, dans tes meilleurs moments.",
+		"gender": "m"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "BLAGUEUR",
+		"hint": "Celui qui a toujours une réplique prête.",
+		"gender": "m"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "BLAGUEUSE",
+		"hint": "Celle qui a toujours une réplique prête.",
+		"gender": "f"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "RIGOLO",
+		"hint": "Ce que tu es, même quand tu ne le fais pas exprès.",
+		"gender": "m"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "RIGOLOTE",
+		"hint": "Ce que tu es, même quand tu ne le fais pas exprès.",
+		"gender": "f"
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "CHUCKLE",
+		"hint": "The small laugh that escapes before the big one."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "GOOFY",
+		"hint": "What you are when dignity takes a backseat."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "WHIMSY",
+		"hint": "A little sprinkle of nonsense, on purpose."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "TEASE",
+		"hint": "What you do to the people you actually like."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "SNICKER",
+		"hint": "The laugh you try, and fail, to hold in."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "JESTER",
+		"hint": "The one whose whole job is your smile."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "AMUSEMENT",
+		"hint": "What good company turns an ordinary evening into."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "LIGHTHEARTED",
+		"hint": "What a mood feels like with all the weight removed."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "CACHEE",
+		"hint": "Ce qui reste invisible, jusqu'au bon moment.",
+		"gender": "f"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "DISSIMULEE",
+		"hint": "Ce qui se tient juste sous la surface.",
+		"gender": "f"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "ENIGMATIQUE",
+		"hint": "Ce qu'on ne perce jamais du premier regard."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "PENOMBRE",
+		"hint": "Cette lumière incertaine où tout devient possible."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "DEVOILEMENT",
+		"hint": "Le moment précis où le secret cesse d'en être un."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "CLANDESTINE",
+		"hint": "Ce qui se déroule loin des regards.",
+		"gender": "f"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "CLANDESTIN",
+		"hint": "Ce qui se déroule loin des regards.",
+		"gender": "m"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "OCCULTE",
+		"hint": "Ce que la lumière n'a pas encore atteint."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "ENIGMATIC",
+		"hint": "What you can never quite figure out at first glance."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "CONCEALED",
+		"hint": "Hidden, but not forever."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "UNCOVER",
+		"hint": "What curiosity refuses to stop doing."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "PUZZLE",
+		"hint": "Something your mind refuses to let go of."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "VEILED",
+		"hint": "Just barely out of clear sight."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "CLANDESTINE",
+		"hint": "What happens far from prying eyes."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "TWILIGHT",
+		"hint": "That in-between light where secrets feel safe."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "UNSOLVED",
+		"hint": "The question that keeps you up at night."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "FENETRE",
+		"hint": "Ce cadre par lequel la journée commence vraiment."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "CUISINE",
+		"hint": "Le vrai coeur de la maison, avoue-le."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "PLAYLIST",
+		"hint": "Ce qui accompagne chaque trajet, chaque humeur."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "BOUGIE",
+		"hint": "Ce petit rituel qui rend une soirée plus douce."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "ORDINATEUR",
+		"hint": "Cette fenêtre sur le monde, posée sur un bureau."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "TELEPHONE",
+		"hint": "Ce petit objet qu'on cherche dès le réveil."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "JARDIN",
+		"hint": "Ce coin de verdure où le temps ralentit."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "BALCON",
+		"hint": "Ce petit bout d'extérieur, juste assez pour respirer."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "KETTLE",
+		"hint": "What clicks off right before the good part of the morning."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "BLANKET",
+		"hint": "The reason getting out of bed is a personal sacrifice."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "PLAYLIST",
+		"hint": "The soundtrack to every mood you've ever had."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "WINDOW",
+		"hint": "The frame the day actually starts through."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "KITCHEN",
+		"hint": "The real heart of the house, be honest."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "CANDLE",
+		"hint": "The tiny ritual that makes an evening feel softer."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "GARDEN",
+		"hint": "The patch of green where time slows down."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "LAPTOP",
+		"hint": "The little window to the whole world, sitting on a desk."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ALLIE",
+		"hint": "Celui sur qui on peut toujours compter.",
+		"gender": "m"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "CONFIDENT",
+		"hint": "Celui à qui on peut tout dire, sans jamais craindre le jugement.",
+		"gender": "m"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "HARMONIE",
+		"hint": "Ce qui règne quand tout s'accorde, sans effort."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "FRATERNITE",
+		"hint": "Ce lien qui unit sans avoir besoin d'explications."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "SINCERITE",
+		"hint": "Ce qui rend une relation vraie, même quand c'est difficile à dire."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "BIENVEILLANCE",
+		"hint": "Cette douceur qu'on choisit d'offrir, sans rien attendre en retour."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "RECIPROCITE",
+		"hint": "Ce qui fait qu'un lien tient, dans les deux sens."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ATTACHEMENT",
+		"hint": "Ce fil invisible qui ne se coupe jamais vraiment."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "EMPATHY",
+		"hint": "What lets you feel what someone else is carrying."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "HARMONY",
+		"hint": "What it feels like when everything just fits."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "SINCERITY",
+		"hint": "What makes a bond real, even when it's hard to say."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "KINSHIP",
+		"hint": "That connection that needs no explanation."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "DEVOTION",
+		"hint": "What loyalty looks like over the long run."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "RECIPROCITY",
+		"hint": "What keeps a bond fair, in both directions."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "COMPANIONSHIP",
+		"hint": "What makes the ordinary moments feel less ordinary."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "INTIMACY",
+		"hint": "The closeness that only trust can build."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "ATTENTIONNE",
+		"hint": "Ce que tu es, sans même qu'on ait besoin de le demander.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "BIENVEILLANT",
+		"hint": "Ce regard doux que tu poses sur les autres.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "DETERMINE",
+		"hint": "Ce que tu es quand rien ne peut te faire changer d'avis.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "DISCRET",
+		"hint": "Ce que tu es, même quand tu mérites les projecteurs.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "EQUILIBRE",
+		"hint": "Ce que tu restes, même dans la tempête.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "GENEREUX",
+		"hint": "Ce que tu es, sans même y penser.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "INDEPENDANT",
+		"hint": "Ce que tu es, sans jamais couper les liens qui comptent.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "SPONTANE",
+		"hint": "Ce que tu es quand tu suis ton instinct.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "VRAI",
+		"hint": "Ce que tu es, sans filtre ni artifice.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "RESILIENT",
+		"hint": "Ce que tu deviens après chaque épreuve.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "TRUSTWORTHY",
+		"hint": "What you are when your word is enough."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "RELIABLE",
+		"hint": "What people count on you to be, every time."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "GROUNDED",
+		"hint": "What you stay, even when things get chaotic."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "COMPASSIONATE",
+		"hint": "What you are, especially when it's not convenient."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "HONEST",
+		"hint": "What you are, even when it costs you something."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "ADAPTABLE",
+		"hint": "What you become when the plan falls apart."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "STEADY",
+		"hint": "What you stay, even in the middle of a storm."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "EASYGOING",
+		"hint": "What makes you so simple to be around."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "HARDIESSE",
+		"hint": "Ce supplément de courage qui pousse à agir malgré tout."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "INSOLENCE",
+		"hint": "Ce petit grain de culot qui dérange autant qu'il impressionne."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "TENACITE",
+		"hint": "Ce qui fait qu'on ne lâche jamais vraiment."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "VOLONTE",
+		"hint": "Ce moteur intérieur qui refuse de s'éteindre."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "FOUGUE",
+		"hint": "Cette énergie brute qui ne demande qu'à s'exprimer."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "VAILLANCE",
+		"hint": "Cette force tranquille qui ne recule devant rien."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "BRAVOURE",
+		"hint": "Ce qu'on reconnaît chez quelqu'un, longtemps après l'exploit."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "PERSEVERANCE",
+		"hint": "Ce qui continue, même quand l'envie a disparu."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "DEFIANCE",
+		"hint": "Ce regard qu'on lance à ce qui semble impossible."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "AMBITION",
+		"hint": "Ce feu qui pousse à viser plus loin."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "PROVOCANT",
+		"hint": "Ce que tu es quand tu aimes bousculer un peu.",
+		"gender": "m"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "PROVOCANTE",
+		"hint": "Ce que tu es quand tu aimes bousculer un peu.",
+		"gender": "f"
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "TENACITY",
+		"hint": "What keeps you from ever truly letting go."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "DETERMINATION",
+		"hint": "The inner engine that refuses to switch off."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "WILLPOWER",
+		"hint": "What's left standing after motivation walks away."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "VIGOR",
+		"hint": "The raw energy behind every bold move."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "VALIANT",
+		"hint": "What you are when retreat was never an option."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "PROVOCATIVE",
+		"hint": "What you are when you enjoy shaking things up."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "DEFIANT",
+		"hint": "The look you give to 'impossible'."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "AMBITION",
+		"hint": "The fire that pushes you to aim further."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "PERSEVERANCE",
+		"hint": "What keeps going after the excitement is gone."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "ZEAL",
+		"hint": "Enthusiasm with its sleeves rolled up."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "PLUCK",
+		"hint": "Spirited courage, in a single small word."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "MOXIE",
+		"hint": "That fearless spark some people just have."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "RANDONNEE",
+		"hint": "Ce qu'on fait quand la route se parcourt à pied."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "TRAVERSEE",
+		"hint": "Ce moment suspendu entre un point de départ et un point d'arrivée."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "EXPEDITION",
+		"hint": "Ce voyage qu'on prépare bien avant d'y penser vraiment."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "ALTITUDE",
+		"hint": "Ce qu'on gagne à chaque pas vers le sommet."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "PASSEPORT",
+		"hint": "Ce petit carnet qui ouvre toutes les frontières."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "EMBARQUEMENT",
+		"hint": "Ce moment précis où l'aventure devient réelle."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "TERRITOIRE",
+		"hint": "Cet espace qu'on découvre un peu plus à chaque pas."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "EQUIPEE",
+		"hint": "Cette sortie qu'on n'avait pas vraiment planifiée."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "PERIL",
+		"hint": "Ce risque qui rend l'histoire plus vivante."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "BIVOUAC",
+		"hint": "Ce campement improvisé sous un ciel qu'on n'oubliera pas."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "SENTIER",
+		"hint": "Ce chemin étroit qui promet toujours une surprise."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "ESCALE",
+		"hint": "Cette pause qui n'est jamais tout à fait la destination."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "PASSPORT",
+		"hint": "The little book that opens every border."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "HIKE",
+		"hint": "What you do when the road is best explored on foot."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "CROSSING",
+		"hint": "That suspended moment between departure and arrival."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "ALTITUDE",
+		"hint": "What you gain with every step toward the summit."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "CAMPSITE",
+		"hint": "Wherever you unroll your sleeping bag under a sky worth remembering."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "TRAIL",
+		"hint": "The narrow path that always promises a surprise."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "VENTURE",
+		"hint": "A step forward into something not fully planned."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "ODYSSEY",
+		"hint": "A journey long enough to become a story."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "QUEST",
+		"hint": "A journey with a purpose stitched right into it."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "EMBARK",
+		"hint": "The exact moment an adventure becomes real."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "DRIFTER",
+		"hint": "Someone who lets the road decide."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "BACKPACK",
+		"hint": "Everything you need, carried on your own shoulders."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "EBLOUISSANT",
+		"hint": "Ce que tu es, au point d'en éblouir les autres.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "EBLOUISSANTE",
+		"hint": "Ce que tu es, au point d'en éblouir les autres.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "MERVEILLEUX",
+		"hint": "Ce que tu es, sans même chercher à l'être.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "MERVEILLEUSE",
+		"hint": "Ce que tu es, sans même chercher à l'être.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "FASCINANT",
+		"hint": "Ce que tu es dès qu'on prend le temps de te connaître.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "FASCINANTE",
+		"hint": "Ce que tu es dès qu'on prend le temps de te connaître.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "SPLENDIDE",
+		"hint": "Ce que tu es, sous toutes les lumières."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "GENIAL",
+		"hint": "Ce que tu es, tout simplement.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "GENIALE",
+		"hint": "Ce que tu es, tout simplement.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "SUBLIME",
+		"hint": "Ce que tu es, au-delà des mots."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "MARVELOUS",
+		"hint": "What you are without even trying."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "FASCINATING",
+		"hint": "What you become the moment someone takes time to know you."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "SPLENDID",
+		"hint": "What you are, under any light."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "PHENOMENAL",
+		"hint": "What you are, no exaggeration needed."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "SUBLIME",
+		"hint": "What you are, beyond words."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "ENCHANTING",
+		"hint": "What you are without ever needing to try."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "IMPRESSIVE",
+		"hint": "What you are, whether you notice it or not."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "FABULOUS",
+		"hint": "What you are, on your best and worst days alike."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "SPECTACULAR",
+		"hint": "What you are when you finally stop underselling yourself."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "WONDROUS",
+		"hint": "What you are, plain and simple."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EXALTATION",
+		"hint": "Ce sommet d'émotion qu'on atteint sans prévenir."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "ATTENDRISSEMENT",
+		"hint": "Cette petite vague de tendresse qui surprend toujours."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "INQUIETUDE",
+		"hint": "Ce doute qui s'installe sans qu'on l'ait invité."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "CONTENTEMENT",
+		"hint": "Cette satisfaction tranquille qui ne cherche rien de plus."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EXTASE",
+		"hint": "Ce sommet d'émotion, juste avant le silence."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "PLENITUDE",
+		"hint": "Ce sentiment de ne plus rien avoir à chercher."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "APAISANT",
+		"hint": "Ce que tu es quand tout redevient calme autour de toi.",
+		"gender": "m"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "APAISANTE",
+		"hint": "Ce que tu es quand tout redevient calme autour de toi.",
+		"gender": "f"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "RESSENTI",
+		"hint": "Ce que tu portes en toi, avant même de le nommer."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EMOI",
+		"hint": "Ce petit trouble qu'on ressent sans trop savoir pourquoi."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "EXALTATION",
+		"hint": "That peak of emotion that arrives without warning."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "FONDNESS",
+		"hint": "A small warm wave of affection that always surprises."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "UNEASE",
+		"hint": "A doubt that settles in uninvited."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "CONTENTMENT",
+		"hint": "A quiet satisfaction that isn't chasing anything more."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "ECSTASY",
+		"hint": "That peak of feeling, right before the silence."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "STILLNESS",
+		"hint": "The feeling of having nothing left to search for."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "YEARNING",
+		"hint": "A quiet ache for something just out of reach."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "THRILL",
+		"hint": "That sudden jolt of feeling fully alive."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "AWE",
+		"hint": "What silences you before you can say why."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "WARMTH",
+		"hint": "What settles in your chest on the good days."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "PENSEE",
+		"hint": "Ce qui traverse l'esprit avant même qu'on l'invite."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "RAISON",
+		"hint": "Ce guide silencieux qui pèse le pour et le contre."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "SAGESSE",
+		"hint": "Ce que le temps t'a appris sans que tu le remarques."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "ACUITE",
+		"hint": "Cette précision du regard qui ne laisse rien passer."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "VIVACITE",
+		"hint": "Cette rapidité d'esprit qui surprend à chaque fois."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "DISCIPLINE",
+		"hint": "Ce cadre qu'on se donne pour avancer, même sans envie."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "METHODE",
+		"hint": "Cette façon bien à toi d'organiser le chaos."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "RIGUEUR",
+		"hint": "Cette exigence qu'on garde, même quand personne ne regarde."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "INGENIOSITE",
+		"hint": "Cette capacité à trouver une solution là où il n'y en avait pas."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "PRESCIENCE",
+		"hint": "Ce sentiment étrange de savoir avant de comprendre pourquoi."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "THOUGHT",
+		"hint": "What crosses the mind before it's even invited."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "REASON",
+		"hint": "The quiet guide weighing every side."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "KNOWLEDGE",
+		"hint": "What stays after the learning is long forgotten."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "SHARPNESS",
+		"hint": "The kind of focus that lets nothing slip by."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "DISCIPLINE",
+		"hint": "The structure you give yourself when motivation runs out."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "METHOD",
+		"hint": "Your very own way of organizing the chaos."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "RIGOR",
+		"hint": "The standard you keep, even when no one's watching."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "INGENUITY",
+		"hint": "The knack for finding a way where there wasn't one."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "ACUMEN",
+		"hint": "Sharp judgment, quietly at work."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "FORESIGHT",
+		"hint": "That strange sense of knowing before understanding why."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "FOLIE",
+		"hint": "Ce petit grain de déraison qui rend tout plus drôle."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "CANULAR",
+		"hint": "Ce coup monté qui fait rire tout le monde, même la victime."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "PLAISANTERIE",
+		"hint": "Ce petit mensonge assumé, juste pour le sourire qu'il déclenche."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "AMUSANT",
+		"hint": "Ce que tu es, même quand tu n'essaies pas.",
+		"gender": "m"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "AMUSANTE",
+		"hint": "Ce que tu es, même quand tu n'essaies pas.",
+		"gender": "f"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "ESPIEGLE",
+		"hint": "Ce regard malicieux qui annonce déjà une bêtise."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "ECLAT",
+		"hint": "Ce rire qui part tout seul, sans prévenir."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "GAIETE",
+		"hint": "Cette bonne humeur qui se propage sans effort."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "CHAHUT",
+		"hint": "Ce joyeux désordre qu'on adore provoquer."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "ANECDOTE",
+		"hint": "Cette petite histoire qu'on raconte pour le plaisir de la revivre."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "FOLLY",
+		"hint": "That little bit of nonsense that makes everything funnier."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "HOAX",
+		"hint": "A setup so good even the victim ends up laughing."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "JEST",
+		"hint": "A little lie, fully owned, just for the smile it gets."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "AMUSING",
+		"hint": "What you are, even when you're not trying."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "IMPISH",
+		"hint": "That mischievous look that already gives away the joke."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "CHEER",
+		"hint": "The good mood that spreads without even trying."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "RUCKUS",
+		"hint": "The joyful chaos you love starting."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "ANECDOTE",
+		"hint": "The little story you tell just to relive it."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "HILARITY",
+		"hint": "Laughter that refuses to stay contained."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "SPARK",
+		"hint": "That little something that turns a moment fun."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "ABYSSE",
+		"hint": "Ce gouffre insondable qui garde tous ses secrets."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "INSONDABLE",
+		"hint": "Ce que personne n'a jamais réussi à percer entièrement."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "ARCANE",
+		"hint": "Ce savoir secret réservé à ceux qui savent chercher."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "TENEBRES",
+		"hint": "Cette obscurité où tout devient possible."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "FURTIF",
+		"hint": "Ce que tu es quand personne ne te voit passer.",
+		"gender": "m"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "FURTIVE",
+		"hint": "Ce que tu es quand personne ne te voit passer.",
+		"gender": "f"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "MASQUE",
+		"hint": "Ce qu'on porte pour ne jamais tout dévoiler."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "DEDALE",
+		"hint": "Ce réseau de chemins qui ne mène nulle part de simple."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "MYSTIFICATION",
+		"hint": "Ce petit jeu où rien n'est vraiment ce qu'il semble être."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "INEXPLIQUE",
+		"hint": "Ce qui reste sans réponse, et c'est presque mieux ainsi."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "ABYSS",
+		"hint": "A depth so unknowable it keeps every secret."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "UNFATHOMABLE",
+		"hint": "What no one has ever fully worked out."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "ARCANE",
+		"hint": "Secret knowledge, reserved for those who know how to look."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "DARKNESS",
+		"hint": "The place where anything becomes possible."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "FURTIVE",
+		"hint": "What you are when no one sees you slip by."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "MASK",
+		"hint": "What you wear to never reveal everything."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "LABYRINTH",
+		"hint": "A network of paths that never leads anywhere simple."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "MYSTIFY",
+		"hint": "To leave someone with more questions than answers."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "UNEXPLAINED",
+		"hint": "What stays without an answer, and is almost better for it."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "OBSCURE",
+		"hint": "Just hard enough to see that it stays interesting."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "FIABLE",
+		"hint": "Ce qu'on peut toujours attendre de toi, sans exception."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "LOYAUTE",
+		"hint": "Ce lien qu'on ne trahit jamais, même quand ce serait plus simple."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "MODESTIE",
+		"hint": "Cette discrétion qu'on garde, même face au succès."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "CONSTANCE",
+		"hint": "Ce que tu es, aujourd'hui comme hier."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "RESPECTUEUX",
+		"hint": "Ce que tu es envers les autres, sans même y penser.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "RESPECTUEUSE",
+		"hint": "Ce que tu es envers les autres, sans même y penser.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "TOLERANT",
+		"hint": "Ce que tu es face à ce qui te dépasse un peu.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "TOLERANTE",
+		"hint": "Ce que tu es face à ce qui te dépasse un peu.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "EMPATHIQUE",
+		"hint": "Ce que tu es quand la peine des autres devient un peu la tienne."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "SOLIDE",
+		"hint": "Ce que tu restes, même quand tout vacille autour."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "DEPENDABLE",
+		"hint": "What people can always count on you to be."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "LOYALTY",
+		"hint": "A bond you never betray, even when it would be easier to."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "MODESTY",
+		"hint": "The quiet you keep, even in the face of success."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "CONSISTENCY",
+		"hint": "What you are, today just as much as yesterday."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "RESPECTFUL",
+		"hint": "What you are toward others, without even thinking about it."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "TOLERANT",
+		"hint": "What you are in the face of what you don't quite understand."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "EMPATHETIC",
+		"hint": "What you are when someone else's pain becomes a little bit yours."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "STEADFAST",
+		"hint": "What you remain, even when everything else wobbles."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "PRINCIPLED",
+		"hint": "What you are when no one's checking."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "WARMHEARTED",
+		"hint": "What you are, from the very first hello."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "DOUCHE",
+		"hint": "Ce petit rituel qui réveille en douceur, ou en sursaut."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "ESCALIER",
+		"hint": "Ce chemin qu'on monte sans même y penser."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "PARAPLUIE",
+		"hint": "Ce compagnon qu'on oublie toujours, sauf le jour de pluie."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "CLE",
+		"hint": "Ce petit objet qu'on cherche toujours au mauvais moment."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "SAC",
+		"hint": "Ce compagnon fidèle de chaque sortie."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "MIROIR",
+		"hint": "Ce témoin silencieux de chaque matin."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "ARMOIRE",
+		"hint": "Ce grand meuble qui garde tous les secrets vestimentaires."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "TAPIS",
+		"hint": "Ce petit coin doux sous les pieds, le matin."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "COUSSIN",
+		"hint": "Ce petit confort qu'on ajuste sans même y penser."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "LAMPE",
+		"hint": "Cette lumière qui rend la soirée plus douce."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "SHOWER",
+		"hint": "The little ritual that wakes you gently, or with a jolt."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "STAIRS",
+		"hint": "The path you climb without even thinking about it."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "UMBRELLA",
+		"hint": "The companion you always forget, except on the rainy day."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "MIRROR",
+		"hint": "The silent witness to every single morning."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "CLOSET",
+		"hint": "The place keeping every clothing secret you own."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "RUG",
+		"hint": "That soft little patch underfoot in the morning."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "PILLOW",
+		"hint": "The small comfort you adjust without even noticing."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "LAMP",
+		"hint": "The light that makes an evening feel softer."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "DOORMAT",
+		"hint": "The first small welcome, right before you're really home."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "THERMOS",
+		"hint": "What keeps your coffee warm long after you forgot about it."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "CAMARADERIE",
+		"hint": "Cette complicité simple qui n'a pas besoin de grands mots."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ALLIANCE",
+		"hint": "Ce pacte silencieux entre deux personnes qui se soutiennent."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "PARTENAIRE",
+		"hint": "Celui ou celle avec qui on avance, à deux."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "RENCONTRE",
+		"hint": "Ce moment où tout commence, sans qu'on le sache encore."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "GENEROSITE",
+		"hint": "Ce qu'on donne sans compter, juste parce que c'est toi."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "UNION",
+		"hint": "Ce qui rend deux histoires plus fortes qu'une seule."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ENTRAIDE",
+		"hint": "Ce réflexe de tendre la main, sans même qu'on demande."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "DEVOUEMENT",
+		"hint": "Ce qu'on donne à quelqu'un, sans rien attendre en retour."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ATTENTION",
+		"hint": "Ce petit geste qui montre qu'on a pensé à l'autre."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ACCUEIL",
+		"hint": "Cette chaleur qu'on ressent dès qu'on franchit la porte."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "CAMARADERIE",
+		"hint": "That easy closeness that never needs big words."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "ALLIANCE",
+		"hint": "A quiet pact between two people who have each other's back."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "PARTNER",
+		"hint": "The one you move forward with, side by side."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "ENCOUNTER",
+		"hint": "The moment everything begins, before you even know it."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "GENEROSITY",
+		"hint": "What you give without counting, just because it's you."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "UNION",
+		"hint": "What makes two stories stronger than one."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "TEAMWORK",
+		"hint": "The reflex to lend a hand before anyone even asks."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "COMMITMENT",
+		"hint": "What you give someone, expecting nothing back."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "ATTENTIVENESS",
+		"hint": "The small gesture that shows you were thinking of them."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "WELCOME",
+		"hint": "The warmth you feel the moment you walk through the door."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "IMPETUEUX",
+		"hint": "Ce que tu es quand rien ne peut ralentir ton élan.",
+		"gender": "m"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "IMPETUEUSE",
+		"hint": "Ce que tu es quand rien ne peut ralentir ton élan.",
+		"gender": "f"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "HARDI",
+		"hint": "Ce que tu es quand personne d'autre n'ose.",
+		"gender": "m"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "HARDIE",
+		"hint": "Ce que tu es quand personne d'autre n'ose.",
+		"gender": "f"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "TEMERITE",
+		"hint": "Ce petit excès de courage qui frôle l'inconscience."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "INTREPIDE",
+		"hint": "Ce que tu es face à ce qui ferait fuir les autres."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "ENERGIE",
+		"hint": "Ce carburant invisible qui ne s'épuise jamais vraiment."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "PUGNACITE",
+		"hint": "Cette combativité qui refuse de rendre les armes."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "COMBATIVITE",
+		"hint": "Cet instinct qui pousse à se battre pour ce qui compte."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "ASSURANCE",
+		"hint": "Cette certitude tranquille qui ne cherche pas à convaincre."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "AUDACITY",
+		"hint": "The nerve to do what everyone else hesitates to."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "FORTITUDE",
+		"hint": "Quiet strength that outlasts every storm."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "METTLE",
+		"hint": "What gets tested, and proven, under pressure."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "VIM",
+		"hint": "Energy with a little extra spark."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "DRIVE",
+		"hint": "The engine behind every bold move."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "ASSERTIVE",
+		"hint": "What you are when you stop asking permission."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "DYNAMISM",
+		"hint": "Energy that refuses to sit still."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "RESOLVE",
+		"hint": "The decision that doesn't waver once made."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "TENACIOUS",
+		"hint": "What you are when quitting was never an option."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "IMPETUOUS",
+		"hint": "What you are when hesitation just isn't your style."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "CARAVANE",
+		"hint": "Cette petite caravane de voyageurs qui avance ensemble."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "BALUCHON",
+		"hint": "Ce petit sac noué qu'on jette sur l'épaule avant de partir."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "GLOBETROTTEUR",
+		"hint": "Celui pour qui une seule carte du monde ne suffit jamais."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "CAP",
+		"hint": "Cette direction qu'on garde, même quand le vent tourne."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "CIME",
+		"hint": "Ce sommet qu'on regarde d'en bas avant de le regarder d'en haut."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "FALAISE",
+		"hint": "Ce bord vertigineux qui donne envie de regarder plus loin."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "DECOUVREUR",
+		"hint": "Celui qui ne se contente jamais de la carte donnée.",
+		"gender": "m"
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "DECOUVREUSE",
+		"hint": "Celle qui ne se contente jamais de la carte donnée.",
+		"gender": "f"
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "ESCARPEMENT",
+		"hint": "Ce passage raide qui sépare les curieux des autres."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "MONTAGNE",
+		"hint": "Cet obstacle qu'on regarde différemment une fois en haut."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "CARAVAN",
+		"hint": "A small band of travelers, moving forward together."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "SATCHEL",
+		"hint": "The small bag slung over a shoulder before setting off."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "GLOBETROTTER",
+		"hint": "Someone for whom one map of the world is never enough."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "BEARING",
+		"hint": "The direction you hold, even when the wind shifts."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "PEAK",
+		"hint": "The summit you looked up at before looking down from it."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "CLIFF",
+		"hint": "The dizzying edge that makes you want to look further."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "DISCOVERER",
+		"hint": "Someone who never settles for the map they were given."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "RIDGE",
+		"hint": "The steep line that separates the curious from the rest."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "MOUNTAIN",
+		"hint": "The obstacle that looks different once you're on top of it."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "ISLAND",
+		"hint": "A whole world, surrounded on every side by more of it."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "EXQUIS",
+		"hint": "Ce que tu es, dans les moindres détails.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "EXQUISE",
+		"hint": "Ce que tu es, dans les moindres détails.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "RESPLENDISSANT",
+		"hint": "Ce que tu es, même sans essayer de briller.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "RESPLENDISSANTE",
+		"hint": "Ce que tu es, même sans essayer de briller.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "EPATANT",
+		"hint": "Ce que tu es, à chaque fois que tu me surprends encore.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "EPATANTE",
+		"hint": "Ce que tu es, à chaque fois que tu me surprends encore.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "SENSATIONNEL",
+		"hint": "Ce que tu es, sans même chercher l'effet.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "SENSATIONNELLE",
+		"hint": "Ce que tu es, sans même chercher l'effet.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "DIVIN",
+		"hint": "Ce que tu es, tout simplement, aujourd'hui.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "DIVINE",
+		"hint": "Ce que tu es, tout simplement, aujourd'hui.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "EXQUISITE",
+		"hint": "What you are, down to the smallest detail."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "RESPLENDENT",
+		"hint": "What you are, without even trying to shine."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "DELIGHTFUL",
+		"hint": "What you are, every single time you surprise me."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "SENSATIONAL",
+		"hint": "What you are, without even chasing the effect."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "DIVINE",
+		"hint": "What you are, plain and simple, today."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "MESMERIZING",
+		"hint": "What you are, whether you notice it or not."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "STUNNING",
+		"hint": "What you are, in the most ordinary moments too."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "GLORIOUS",
+		"hint": "What you are, on your loudest and quietest days alike."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "PRECIOUS",
+		"hint": "What you are to the people who really know you."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "TREASURED",
+		"hint": "What you are, whether you say it out loud or not."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "ALLEGRESSE",
+		"hint": "Cette joie qui déborde un peu, sans qu'on la retienne."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "BEATITUDE",
+		"hint": "Ce bonheur calme qui n'a plus rien à demander."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "NOSTALGIQUE",
+		"hint": "Ce que tu deviens face à une chanson d'un autre temps."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EFFERVESCENCE",
+		"hint": "Cette agitation joyeuse qui précède les bonnes nouvelles."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "ATTACHEMENT",
+		"hint": "Ce lien qu'on ne choisit pas toujours, mais qu'on chérit."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "RAVISSEMENT",
+		"hint": "Ce plaisir soudain qui coupe presque le souffle."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EMERVEILLE",
+		"hint": "Ce que tu es devant ce qui devrait pourtant être banal.",
+		"gender": "m"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EMERVEILLEE",
+		"hint": "Ce que tu es devant ce qui devrait pourtant être banal.",
+		"gender": "f"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "ELAN",
+		"hint": "Cette poussée intérieure qui précède chaque bonne décision."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "DOUCEUR",
+		"hint": "Cette tendresse discrète qui adoucit toute une journée."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "BLISS",
+		"hint": "Happiness so complete it needs nothing more."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "RAPTURE",
+		"hint": "A joy so sudden it almost takes your breath away."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "EFFERVESCENCE",
+		"hint": "The joyful buzz that shows up right before good news."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "ATTACHMENT",
+		"hint": "A bond you don't always choose, but always treasure."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "DELIGHT",
+		"hint": "A sudden pleasure that catches you off guard."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "AMAZED",
+		"hint": "What you are in front of something that should feel ordinary."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "SOFTNESS",
+		"hint": "The quiet tenderness that smooths out a whole day."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "FERVOR",
+		"hint": "The inner push behind every good decision."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "ELATION",
+		"hint": "Joy that lifts you clean off the ground."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "POIGNANCY",
+		"hint": "The bittersweet ache behind a beautiful memory."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "SUBTILITE",
+		"hint": "Cette délicatesse qui remarque ce que d'autres manquent."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "PENETRANT",
+		"hint": "Ce regard qui va droit au fond des choses.",
+		"gender": "m"
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "PENETRANTE",
+		"hint": "Ce regard qui va droit au fond des choses.",
+		"gender": "f"
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "PERSPICACITE",
+		"hint": "Cette capacité à voir clair là où tout semble flou."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "REFLEXE",
+		"hint": "Cette réponse rapide que l'esprit trouve avant même d'y penser."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "ADRESSE",
+		"hint": "Cette habileté qui rend les choses difficiles plus simples."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "FINESSE",
+		"hint": "Cette délicatesse d'esprit qui évite les gros sabots."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "SAGACITE",
+		"hint": "Cette intelligence pratique qui va droit au but."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "COHERENCE",
+		"hint": "Ce fil invisible qui relie toutes tes décisions entre elles."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "VIGILANCE",
+		"hint": "Cette attention qui ne relâche jamais tout à fait."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "SUBTLETY",
+		"hint": "The quiet delicacy that notices what others miss."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "SAGACITY",
+		"hint": "Practical wisdom that cuts straight to the point."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "FINESSE",
+		"hint": "The delicate touch that avoids every heavy hand."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "COHERENCE",
+		"hint": "The invisible thread tying all your choices together."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "VIGILANCE",
+		"hint": "Attention that never quite lets its guard down."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "SKILL",
+		"hint": "Practice, quietly turned into ability."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "SHREWD",
+		"hint": "What you are when nothing gets past you."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "ASTUTENESS",
+		"hint": "Sharp judgment, working quietly in the background."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "PENETRATING",
+		"hint": "A look that goes straight to the heart of things."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "REFLEX",
+		"hint": "The quick answer your mind finds before you even ask."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "COCASSE",
+		"hint": "Ce que tu trouves à chaque fois que la vie déraille un peu."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "LOUFOQUE",
+		"hint": "Ce genre d'idée qui ne devrait pas marcher, et qui marche."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "CLOWNERIE",
+		"hint": "Cette pitrerie qu'on assume à cent pour cent."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "PITRERIE",
+		"hint": "Cette bêtise qu'on fait juste pour le sourire qu'elle déclenche."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "EXCENTRIQUE",
+		"hint": "Ce que tu es quand la norme t'ennuie un peu trop."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "BADINAGE",
+		"hint": "Ce jeu léger de mots qu'on échange sans jamais rien risquer."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "CABRIOLE",
+		"hint": "Ce petit saut joyeux qu'on fait sans raison précise."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "MALICE",
+		"hint": "Cette petite étincelle dans le regard avant une blague."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "FARFELU",
+		"hint": "Ce que tu es quand ton idée surprend tout le monde.",
+		"gender": "m"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "FARFELUE",
+		"hint": "Ce que tu es quand ton idée surprend tout le monde.",
+		"gender": "f"
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "QUIRKINESS",
+		"hint": "The charming weirdness that makes you, you."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "ECCENTRIC",
+		"hint": "What you are when normal just isn't for you."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "CLOWNERY",
+		"hint": "Full, unapologetic commitment to being silly."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "REPARTEE",
+		"hint": "That quick, playful back-and-forth between people who click."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "CAPER",
+		"hint": "A joyful little jump, for absolutely no reason."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "ZANY",
+		"hint": "What an idea is right before it somehow works."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "WACKY",
+		"hint": "What you are when the rulebook gets thrown out."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "GAG",
+		"hint": "The small trick that lands the biggest laugh."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "SHENANIGAN",
+		"hint": "Mischief, dressed up as harmless fun."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "MALICE",
+		"hint": "The little spark in the eyes right before a joke."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "INSAISISSABLE",
+		"hint": "Ce qu'on n'arrive jamais tout à fait à retenir."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "NEBULEUX",
+		"hint": "Ce qui reste flou, même après qu'on l'a expliqué.",
+		"gender": "m"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "NEBULEUSE",
+		"hint": "Ce qui reste flou, même après qu'on l'a expliqué.",
+		"gender": "f"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "CRYPTE",
+		"hint": "Ce lieu caché qui garde ses secrets sous la surface."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "OPAQUE",
+		"hint": "Ce qu'on ne peut pas voir à travers, même en essayant fort."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "SIBYLLIN",
+		"hint": "Ce que tu dis quand tu ne veux pas vraiment répondre.",
+		"gender": "m"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "SIBYLLINE",
+		"hint": "Ce que tu dis quand tu ne veux pas vraiment répondre.",
+		"gender": "f"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "PISTE",
+		"hint": "Ce petit indice qui mène vers la suite de l'histoire."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "TRAME",
+		"hint": "Cette histoire qui se tisse doucement en arrière-plan."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "CLE",
+		"hint": "Ce qui, une fois trouvé, ouvre tout le reste."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "ELUSIVE",
+		"hint": "What you can never quite manage to hold onto."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "NEBULOUS",
+		"hint": "What stays blurry, even after it's been explained."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "CRYPT",
+		"hint": "A hidden place that keeps its secrets underground."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "OPAQUE",
+		"hint": "What you can't see through, no matter how hard you try."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "SIBYLLINE",
+		"hint": "What you say when you don't really want to answer."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "TRAIL",
+		"hint": "The small clue that leads toward the rest of the story."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "PLOT",
+		"hint": "The story quietly weaving itself in the background."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "KEY",
+		"hint": "The one thing that, once found, unlocks all the rest."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "MURKY",
+		"hint": "Waters too clouded to see the bottom of."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "VAGUE",
+		"hint": "Just unclear enough to keep you wondering."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "SAGE",
+		"hint": "Ce que tu es devenu(e), sans même viser ce titre."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "PONDERE",
+		"hint": "Ce calme que tu gardes même quand tout s'agite.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "PONDEREE",
+		"hint": "Ce calme que tu gardes même quand tout s'agite.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "FRANC",
+		"hint": "Ce que tu es, même quand la vérité dérange.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "FRANCHE",
+		"hint": "Ce que tu es, même quand la vérité dérange.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "SOBRE",
+		"hint": "Ce que tu restes, même dans les grandes occasions."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "NOBLE",
+		"hint": "Ce que tu es dans tes actes, pas seulement dans tes mots."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "DIGNE",
+		"hint": "Ce que tu restes, même dans les moments difficiles."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "GENTIL",
+		"hint": "Ce que tu es, sans jamais t'en vanter.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "GENTILLE",
+		"hint": "Ce que tu es, sans jamais t'en vanter.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "WISE",
+		"hint": "What you've become, without even aiming for the title."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "LEVELHEADED",
+		"hint": "The calm you keep, even when everything else is loud."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "FRANK",
+		"hint": "What you are, even when the truth is uncomfortable."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "SOBER",
+		"hint": "What you stay, even on the biggest occasions."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "NOBLE",
+		"hint": "What you are in your actions, not just your words."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "DIGNIFIED",
+		"hint": "What you remain, even in the hardest moments."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "GENTLE",
+		"hint": "What you are, without ever needing to prove it."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "GRACIOUS",
+		"hint": "What you are, even when you didn't have to be."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "UPRIGHT",
+		"hint": "What you stay, when no one's checking."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "SELFLESS",
+		"hint": "What you are, more often than you realize."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "ETAGERE",
+		"hint": "Ce petit meuble qui garde tout ce qu'on n'utilise pas tous les jours."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "PLACARD",
+		"hint": "Ce recoin qui garde tous les petits secrets du quotidien."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "TABLIER",
+		"hint": "Ce vêtement qu'on enfile juste avant que ça devienne intéressant."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "VAISSELLE",
+		"hint": "Cette petite corvée qu'on remet toujours à plus tard."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "CHAUSSETTES",
+		"hint": "Ce duo qui finit toujours dépareillé, sans qu'on sache pourquoi."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "PANTOUFLE",
+		"hint": "Ce petit confort qu'on enfile dès qu'on rentre."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "BOUGEOIR",
+		"hint": "Ce petit support qui attend patiemment la prochaine soirée calme."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "CARNET",
+		"hint": "Ce petit compagnon qui garde tout ce qu'on n'ose pas oublier."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "STYLO",
+		"hint": "Ce petit objet qu'on cherche toujours au pire moment."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "NAPPE",
+		"hint": "Ce tissu qui rend même un repas simple un peu plus doux."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "SHELF",
+		"hint": "The small piece of furniture holding what you don't use daily."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "CUPBOARD",
+		"hint": "The little corner keeping every everyday secret."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "APRON",
+		"hint": "What you put on right before things get interesting."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "DISHES",
+		"hint": "The small chore that always gets pushed to later."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "SLIPPERS",
+		"hint": "The small comfort waiting right by the door."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "CANDLESTICK",
+		"hint": "The little holder patiently waiting for a quiet evening."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "NOTEBOOK",
+		"hint": "The small companion holding everything you don't dare forget."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "PEN",
+		"hint": "The small object you always need and can never find."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "TABLECLOTH",
+		"hint": "The fabric that makes even a simple meal feel softer."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "ARMCHAIR",
+		"hint": "The one seat in the house that's quietly always yours."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "FIDELITE",
+		"hint": "Ce qu'on garde intact, même quand personne ne vérifie."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "CONFIANCE",
+		"hint": "Ce qu'on construit doucement, et qu'on protège ensuite."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "SORORITE",
+		"hint": "Ce lien de sœurs, choisi ou non, mais toujours solide."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "FRATERNEL",
+		"hint": "Ce lien qui ressemble à celui d'un frère, même sans l'être.",
+		"gender": "m"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "FRATERNELLE",
+		"hint": "Ce lien qui ressemble à celui d'une sœur, même sans l'être.",
+		"gender": "f"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "INTIMITE",
+		"hint": "Cet espace partagé où l'on peut enfin baisser la garde."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "APPARTENANCE",
+		"hint": "Ce sentiment d'avoir enfin trouvé sa place, quelque part."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "SOLIDARITE",
+		"hint": "Ce réflexe de rester, surtout quand ça devient difficile."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "COMPAGNONNAGE",
+		"hint": "Ce chemin qu'on parcourt mieux à deux que seul."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "CONVIVIALITE",
+		"hint": "Cette chaleur simple qui rend une soirée mémorable."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "FIDELITY",
+		"hint": "What you keep intact, even when no one's checking."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "SISTERHOOD",
+		"hint": "That bond between sisters, chosen or not, but always solid."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "FRATERNAL",
+		"hint": "The kind of bond that feels like family, even without the title."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "CLOSENESS",
+		"hint": "The shared space where you can finally let your guard down."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "BELONGING",
+		"hint": "The feeling of finally having found your place, somewhere."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "SOLIDARITY",
+		"hint": "The instinct to stay, especially when it gets hard."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "FELLOWSHIP",
+		"hint": "A path that's better walked together than alone."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "CONVIVIALITY",
+		"hint": "The simple warmth that makes an evening memorable."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "RAPPORT",
+		"hint": "That easy connection that doesn't need explaining."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "CONFIDANT",
+		"hint": "The one person you can tell absolutely anything to."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "FAMILLE",
+		"hint": "Les gens pour qui tu ferais n'importe quoi."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "TRIBU",
+		"hint": "Ceux qui te comprennent sans explication."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "REFUGE",
+		"hint": "L'endroit où tu te sens vraiment toi-même."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "PILIER",
+		"hint": "Ce que tu es pour ceux qui t'entourent."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ANCRAGE",
+		"hint": "Ce qui te garde stable quand tout bouge."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ENTOURAGE",
+		"hint": "Les gens qui font que tu n'es jamais vraiment seul."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "CONFIDENCE",
+		"hint": "Ce qu'on te partage parce qu'on te fait confiance."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "BINOME",
+		"hint": "Ce que vous formez, naturellement."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "EQUIPE",
+		"hint": "Ce que vous êtes, même dans les silences."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ACCOLADE",
+		"hint": "Ce que les retrouvailles méritent toujours."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "CARESSE",
+		"hint": "Un geste doux qui en dit plus que des mots."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "REFLET",
+		"hint": "Ce que les vraies amitiés te renvoient de toi."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "COMPLEMENT",
+		"hint": "Ce que vous êtes, l'un pour l'autre."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "NID",
+		"hint": "L'endroit que vous avez construit ensemble."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "CONFIANT",
+		"hint": "Ce que tu deviens, avec les bonnes personnes.",
+		"gender": "m"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "CONFIANTE",
+		"hint": "Ce que tu deviens, avec les bonnes personnes.",
+		"gender": "f"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ATTENTIF",
+		"hint": "Ce que tu es, avec les gens qui comptent.",
+		"gender": "m"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "ATTENTIVE",
+		"hint": "Ce que tu es, avec les gens qui comptent.",
+		"gender": "f"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "PRESENT",
+		"hint": "Ce que tu es, même à distance.",
+		"gender": "m"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "PRESENTE",
+		"hint": "Ce que tu es, même à distance.",
+		"gender": "f"
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "INDEFECTIBLE",
+		"hint": "Ce que ton soutien est, quoi qu'il arrive."
+	},
+	{
+		"category": "relations",
+		"language": "fr",
+		"word": "RACINE",
+		"hint": "Ce qui vous relie, même loin l'un de l'autre."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "INTEGRE",
+		"hint": "Ce que tu es, même quand personne ne regarde.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "INTEGRE",
+		"hint": "Ce que tu es, même quand personne ne regarde.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "LUCIDE",
+		"hint": "Ce que tu es face à toi-même."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "ENDURANT",
+		"hint": "Ce que tu deviens, face à ce qui dure.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "ENDURANTE",
+		"hint": "Ce que tu deviens, face à ce qui dure.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "POSITIF",
+		"hint": "Ce que ton regard sur la vie est, même les jours gris.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "POSITIVE",
+		"hint": "Ce que ton regard sur la vie est, même les jours gris.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "AUTONOME",
+		"hint": "Ce que tu es devenu, sans jamais oublier d'où tu viens."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "EQUANIME",
+		"hint": "Ce que ton calme est, même sous pression."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "BIENVEILLANCE",
+		"hint": "Ce que tu offres, sans même y penser."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "HUMANITE",
+		"hint": "Ce qui transparaît dans chacun de tes gestes."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "CONSTANT",
+		"hint": "Ce que tu es, jour après jour.",
+		"gender": "m"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "CONSTANTE",
+		"hint": "Ce que tu es, jour après jour.",
+		"gender": "f"
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "SIMPLICITE",
+		"hint": "Ce qui rend ta grandeur encore plus belle."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "DROITURE",
+		"hint": "Ce qui guide chacun de tes choix."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "MATURITE",
+		"hint": "Ce que tu montres, même dans les moments difficiles."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "OUVERTURE",
+		"hint": "Ce que ton esprit garde, face à ce qu'il ne connaît pas."
+	},
+	{
+		"category": "personnalite",
+		"language": "fr",
+		"word": "PROFONDEUR",
+		"hint": "Ce qu'on découvre, en apprenant vraiment à te connaître."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EFFROI",
+		"hint": "Ce que l'inconnu peut provoquer, avant le courage."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "VERTIGE",
+		"hint": "Ce que ressent un cœur qui s'autorise à espérer."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "CHALEUR",
+		"hint": "Ce que certaines présences apportent, sans un mot."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "IVRESSE",
+		"hint": "Ce que provoque un bonheur trop grand pour tenir en place."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "CONSOLATION",
+		"hint": "Ce que tu ressens quand quelqu'un comprend enfin."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "EBLOUISSEMENT",
+		"hint": "Ce que provoque une joie qu'on n'attendait pas."
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "SOULAGE",
+		"hint": "Ce que tu te sens, une fois le poids retombé.",
+		"gender": "m"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "SOULAGEE",
+		"hint": "Ce que tu te sens, une fois le poids retombé.",
+		"gender": "f"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "COMBLE",
+		"hint": "Ce que tu es, quand plus rien ne manque.",
+		"gender": "m"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "COMBLEE",
+		"hint": "Ce que tu es, quand plus rien ne manque.",
+		"gender": "f"
+	},
+	{
+		"category": "emotions",
+		"language": "fr",
+		"word": "RECONNAISSANCE",
+		"hint": "Ce que tu ressens envers ceux qui t'ont porté."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "CHOCOLAT",
+		"hint": "Ce petit plaisir qui rend une pause meilleure."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "COUVERTURE",
+		"hint": "Ce sous lequel on se sent immédiatement mieux."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "MESSAGE",
+		"hint": "Ce qu'on aime recevoir sans s'y attendre."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "PLAISIR",
+		"hint": "Ce qu'un petit rien du quotidien peut offrir."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "CONFORT",
+		"hint": "Ce que ta maison t'offre, à la fin d'une longue journée."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "SOIREE",
+		"hint": "Ce moment où le rythme ralentit enfin."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "WEEKEND",
+		"hint": "Ce que tout le monde attend, dès le lundi."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "PANIER",
+		"hint": "Ce qu'on remplit, sans vraiment suivre la liste."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "ORDRE",
+		"hint": "Ce qu'on rétablit, pour mieux respirer."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "DETENTE",
+		"hint": "Ce qu'on cherche, après une journée bien remplie."
+	},
+	{
+		"category": "quotidien",
+		"language": "fr",
+		"word": "LUMIERE",
+		"hint": "Ce qui change tout, dans une pièce."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "INTELLIGENCE",
+		"hint": "Ce que tu utilises, sans même t'en vanter."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "CREATIVITE",
+		"hint": "Ce qui te permet de voir ce que les autres ne voient pas."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "PRUDENCE",
+		"hint": "Ce qui accompagne ta lucidité."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "APTITUDE",
+		"hint": "Ce que tu développes, avec la pratique."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "INSTINCT",
+		"hint": "Ce à quoi tu fais confiance, même sans preuve."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "STRATEGIE",
+		"hint": "Ce que tu construis, patiemment, dans ta tête."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "OBSERVATION",
+		"hint": "Ce que tu fais, avant même de parler."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "JUGEMENT",
+		"hint": "Ce que ton bon sens t'offre, dans les moments décisifs."
+	},
+	{
+		"category": "esprit",
+		"language": "fr",
+		"word": "EVIDENCE",
+		"hint": "Ce que certaines vérités deviennent, une fois que tu les as comprises."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "CHEMIN",
+		"hint": "Ce que tu traces, à ta propre façon."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "RIVAGE",
+		"hint": "Ce qu'on aperçoit, après une longue traversée."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "REFUGE",
+		"hint": "L'endroit où l'on souffle, entre deux sommets."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "EQUIPEMENT",
+		"hint": "Ce qu'on emporte, pour ne rien laisser au hasard."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "EXPLORATION",
+		"hint": "Ce que ta curiosité te pousse toujours à faire."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "TENACITE",
+		"hint": "Ce qu'il faut, pour aller jusqu'au sommet."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "EMBARCATION",
+		"hint": "Ce qui t'emmène là où la route s'arrête."
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "DEFRICHEUR",
+		"hint": "Celui qui ouvre un chemin que personne n'a encore vu.",
+		"gender": "m"
+	},
+	{
+		"category": "aventure",
+		"language": "fr",
+		"word": "DEFRICHEUSE",
+		"hint": "Celle qui ouvre un chemin que personne n'a encore vu.",
+		"gender": "f"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "OMBRAGE",
+		"hint": "Ce qui entoure ce qu'on ne comprend pas encore."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "CACHOTTERIE",
+		"hint": "Ce que tu gardes, avec un petit sourire."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "INSOUPCONNE",
+		"hint": "Ce que personne n'aurait deviné sur toi.",
+		"gender": "m"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "INSOUPCONNEE",
+		"hint": "Ce que personne n'aurait deviné sur toi.",
+		"gender": "f"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "TRESOR",
+		"hint": "Ce qui attend d'être découvert."
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "INTUITIF",
+		"hint": "Ce que tu es, face à ce que les mots ne disent pas.",
+		"gender": "m"
+	},
+	{
+		"category": "mystere",
+		"language": "fr",
+		"word": "INTUITIVE",
+		"hint": "Ce que tu es, face à ce que les mots ne disent pas.",
+		"gender": "f"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "GAG",
+		"hint": "Ce que tu improvises, sans même le préparer."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "ESPIEGLERIE",
+		"hint": "Ce petit brin de malice qu'on te connaît bien."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "JOVIAL",
+		"hint": "Ce que ton humeur est, la plupart du temps.",
+		"gender": "m"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "JOVIALE",
+		"hint": "Ce que ton humeur est, la plupart du temps.",
+		"gender": "f"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "PLAISANTIN",
+		"hint": "Celui qui ne peut jamais rester sérieux longtemps.",
+		"gender": "m"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "PLAISANTINE",
+		"hint": "Celle qui ne peut jamais rester sérieuse longtemps.",
+		"gender": "f"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "CHATOUILLE",
+		"hint": "Ce qui déclenche un vrai fou rire."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "BOUFFONNERIE",
+		"hint": "Ce que tu assumes, pour faire sourire les autres."
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "GAMIN",
+		"hint": "Ce que tu redeviens, dès qu'on te chatouille l'humour.",
+		"gender": "m"
+	},
+	{
+		"category": "fun",
+		"language": "fr",
+		"word": "GAMINE",
+		"hint": "Ce que tu redeviens, dès qu'on te chatouille l'humour.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "MAGNIFIQUE",
+		"hint": "Ce que tu es, sous tous les angles."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "ETINCELANT",
+		"hint": "Ce que ton regard devient, quand tu es heureux.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "ETINCELANTE",
+		"hint": "Ce que ton regard devient, quand tu es heureuse.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "IRRESISTIBLE",
+		"hint": "Ce que ton sourire est, tout simplement."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "EXTRAORDINAIRE",
+		"hint": "Ce que tu es, même dans les jours ordinaires."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "RAFFINE",
+		"hint": "Ce que ton goût pour les belles choses révèle.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "RAFFINEE",
+		"hint": "Ce que ton goût pour les belles choses révèle.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "EXCELLENT",
+		"hint": "Ce que tu es, dans tout ce que tu entreprends.",
+		"gender": "m"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "EXCELLENTE",
+		"hint": "Ce que tu es, dans tout ce que tu entreprends.",
+		"gender": "f"
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "INOUBLIABLE",
+		"hint": "Ce que tu es, pour tous ceux qui te connaissent."
+	},
+	{
+		"category": "compliments",
+		"language": "fr",
+		"word": "MEMORABLE",
+		"hint": "Ce que chaque instant passé avec toi devient."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "DECISION",
+		"hint": "Ce que tu prends, même quand c'est difficile."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "CONQUERANT",
+		"hint": "Ce que tu deviens, une fois lancé.",
+		"gender": "m"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "CONQUERANTE",
+		"hint": "Ce que tu deviens, une fois lancée.",
+		"gender": "f"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "INDOMPTABLE",
+		"hint": "Ce que ton énergie reste, malgré les obstacles."
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "VAILLANT",
+		"hint": "Ce que tu es, face à l'adversité.",
+		"gender": "m"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "VAILLANTE",
+		"hint": "Ce que tu es, face à l'adversité.",
+		"gender": "f"
+	},
+	{
+		"category": "audace",
+		"language": "fr",
+		"word": "PUGNACE",
+		"hint": "Ce que tu deviens, quand on doute de toi."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "FAMILY",
+		"hint": "The people you'd do anything for."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "REFUGE",
+		"hint": "The place where you feel most yourself."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "ANCHOR",
+		"hint": "What keeps you steady when everything shifts."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "CIRCLE",
+		"hint": "The people who make sure you're never truly alone."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "HUG",
+		"hint": "What says more than words ever could."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "MIRROR",
+		"hint": "What real friendship reflects back at you."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "NEST",
+		"hint": "The place you've built together."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "GRATITUDE",
+		"hint": "What you feel, thinking of the people who show up."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "ATTENTIVE",
+		"hint": "What you are, with the people who matter."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "STEADFAST",
+		"hint": "What your support is, no matter what."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "ROOTS",
+		"hint": "What ties you together, even from far away."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "TOGETHERNESS",
+		"hint": "What makes ordinary moments feel like home."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "LUCID",
+		"hint": "What you are about yourself, even when it's hard."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "OPENNESS",
+		"hint": "What your mind keeps, toward what it doesn't know yet."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "MATURITY",
+		"hint": "What you show, even in the hardest moments."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "DEPTH",
+		"hint": "What people discover, once they truly know you."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "POSITIVE",
+		"hint": "What your outlook stays, even on gray days."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "CONSTANCY",
+		"hint": "What people can always count on from you."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "SIMPLICITY",
+		"hint": "What makes your kind of greatness even more beautiful."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "HUMANITY",
+		"hint": "What shows in every small thing you do."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "BALANCE",
+		"hint": "What you keep, even when everything else shakes."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "SINCERITY",
+		"hint": "What makes people trust you instantly."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "COMFORT",
+		"hint": "What you feel, once someone finally understands."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "FULFILLMENT",
+		"hint": "What you feel, when nothing else is missing."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "GRATEFUL",
+		"hint": "What you feel, thinking of the people who lifted you."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "CONTENT",
+		"hint": "What you are, when nothing more is needed."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "OVERWHELMED",
+		"hint": "What you feel, when joy is too big to hold."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "CHOCOLATE",
+		"hint": "The small pleasure that makes any break better."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "TEXT",
+		"hint": "What you love getting when you least expect it."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "STROLL",
+		"hint": "What clears your head, every single time."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "COZINESS",
+		"hint": "What your home gives you, after a long day."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "RITUAL",
+		"hint": "The small habit you'd never trade for anything."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "EVENING",
+		"hint": "The moment the pace finally slows down."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "WEEKEND",
+		"hint": "What everyone's counting down to, since Monday."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "COMFORT",
+		"hint": "What your favorite corner of the house gives you."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "SUNLIGHT",
+		"hint": "What changes everything, in any room."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "UNWIND",
+		"hint": "What you finally do, after a full day."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "REFLECTION",
+		"hint": "What you take the time to do, before acting."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "CREATIVITY",
+		"hint": "What lets you see what others miss."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "INSTINCT",
+		"hint": "What you trust, even without proof."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "STRATEGY",
+		"hint": "What you quietly build, step by step."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "JUDGMENT",
+		"hint": "What your common sense gives you, when it matters most."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "OBSERVATION",
+		"hint": "What you do, before you even speak."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "BRILLIANCE",
+		"hint": "What shows, the moment you truly focus."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "PRUDENCE",
+		"hint": "What walks hand in hand with your clarity."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "APTITUDE",
+		"hint": "What you build, with every bit of practice."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "EVIDENCE",
+		"hint": "What some truths become, once you finally see them."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "PATHWAY",
+		"hint": "What you carve, in your own way."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "SHORE",
+		"hint": "What comes into view, after a long crossing."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "GEAR",
+		"hint": "What you pack, to leave nothing to chance."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "TENACITY",
+		"hint": "What it takes, to reach the summit."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "VESSEL",
+		"hint": "What takes you where the road ends."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "CURIOSITY",
+		"hint": "What always pushes you to explore further."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "LANDMARK",
+		"hint": "What tells you you're finally getting somewhere."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "VOYAGE",
+		"hint": "What turns distance into a story."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "UNSPOKEN",
+		"hint": "What some truths stay, until they're ready."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "UNDISCLOSED",
+		"hint": "What you keep, with a small smile."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "UNGUESSED",
+		"hint": "What no one would have guessed about you."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "TREASURE",
+		"hint": "What's waiting to be discovered."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "INTUITIVE",
+		"hint": "What you are, facing what words don't say."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "UNFATHOMED",
+		"hint": "What certain gazes stay, no matter how close you get."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "UNVEILING",
+		"hint": "What a secret becomes, once finally told."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "GIGGLES",
+		"hint": "What you can't hold back, once it starts."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "JOLLY",
+		"hint": "What your mood usually is."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "JOKESTER",
+		"hint": "The one who can never stay serious for long."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "TICKLE",
+		"hint": "What triggers a real, uncontrollable laugh."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "CLOWNING",
+		"hint": "What you're not afraid to do, to make someone smile."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "PLAYFULNESS",
+		"hint": "What comes back the moment someone tickles your humor."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "MAGNIFICENT",
+		"hint": "What you are, from every angle."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "SPARKLING",
+		"hint": "What your eyes become, when you're happy."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "IRRESISTIBLE",
+		"hint": "What your smile simply is."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "REMARKABLE",
+		"hint": "What you are, in the way you keep moving forward."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "REFINED",
+		"hint": "What your taste for beautiful things reveals."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "EXCELLENT",
+		"hint": "What you are, in everything you take on."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "UNFORGETTABLE",
+		"hint": "What you are, to everyone who knows you."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "MEMORABLE",
+		"hint": "What every moment spent with you becomes."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "LUMINOUS",
+		"hint": "What you become, the moment you truly open up."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "FEARLESS",
+		"hint": "What you become, once you decide to move."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "CONQUEROR",
+		"hint": "What you become, once you finally leap."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "UNTAMED",
+		"hint": "What your energy stays, despite every obstacle."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "PERSISTENCE",
+		"hint": "What you become, when people doubt you."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "DECISIVE",
+		"hint": "What you are, even when it's hard."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "COURAGEOUS",
+		"hint": "What you are, every time you choose truth over comfort."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "ADVENTUROUS",
+		"hint": "What your spirit is, when the safe choice isn't enough."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "UNSTOPPABLE",
+		"hint": "What you become, once you've made up your mind."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "PIONEERING",
+		"hint": "What your way of thinking often is."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "SPIRITED",
+		"hint": "What you bring into every room you enter."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "UNAFRAID",
+		"hint": "What you choose to be, even when fear makes sense."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "FORCEFUL",
+		"hint": "What your presence becomes, when something truly matters to you."
+	},
+	{
+		"category": "audace",
+		"language": "en",
+		"word": "OUTSPOKEN",
+		"hint": "What you are, when silence would be easier."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "WAYFARER",
+		"hint": "Someone who finds meaning in the road itself."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "BASECAMP",
+		"hint": "Where every big adventure quietly begins."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "UNCHARTED",
+		"hint": "What the best stories usually start as."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "MILESTONE",
+		"hint": "What tells you you've truly come far."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "EXPLORATION",
+		"hint": "What your curiosity always leads you back to."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "DRIFTWOOD",
+		"hint": "What the tide brings back, from somewhere far away."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "CAMPFIRE",
+		"hint": "Where the best adventure stories get told."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "ROUTE",
+		"hint": "What you choose, even when it isn't the obvious one."
+	},
+	{
+		"category": "aventure",
+		"language": "en",
+		"word": "DARING",
+		"hint": "What it takes, to leave what's familiar behind."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "WONDERFUL",
+		"hint": "What you are, in the simplest and truest sense."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "CHARISMATIC",
+		"hint": "What draws people to you, without you trying."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "GRACEFUL",
+		"hint": "What you are, even when things get hard."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "ENDEARING",
+		"hint": "What makes people fond of you instantly."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "EXEMPLARY",
+		"hint": "What your way of showing up for others is."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "TIMELESS",
+		"hint": "What certain kinds of beauty simply are."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "WARMHEARTED",
+		"hint": "What people feel, the moment they meet you."
+	},
+	{
+		"category": "compliments",
+		"language": "en",
+		"word": "PRICELESS",
+		"hint": "What your friendship is, to the people who have it."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "HEARTWARMING",
+		"hint": "What certain small gestures always are."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "TRANQUILITY",
+		"hint": "What settles in, once your mind finally rests."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "EXHILARATION",
+		"hint": "What you feel, right after doing something brave."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "HEALING",
+		"hint": "What time quietly does, even when you can't feel it."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "BITTERSWEET",
+		"hint": "What certain goodbyes always are."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "EMPOWERED",
+		"hint": "What you feel, once you finally trust yourself."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "SOOTHED",
+		"hint": "What you feel, once someone finally understands."
+	},
+	{
+		"category": "emotions",
+		"language": "en",
+		"word": "BELONGING",
+		"hint": "What you feel, the moment you stop performing."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "INSIGHTFUL",
+		"hint": "What you are, when others only see the surface."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "RESOURCEFUL",
+		"hint": "What you become, when the obvious path is blocked."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "DISCERNING",
+		"hint": "What lets you tell what truly matters from what doesn't."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "METHODICAL",
+		"hint": "What your mind becomes, when it's time to solve something."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "PERCEPTION",
+		"hint": "What lets you notice what others walk right past."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "COMPOSURE",
+		"hint": "What you keep, even when everything speeds up."
+	},
+	{
+		"category": "esprit",
+		"language": "en",
+		"word": "INTELLECT",
+		"hint": "What you rarely brag about, but always carry."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "DELIGHTFUL",
+		"hint": "What your sense of humor simply is."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "LIVELY",
+		"hint": "What a room becomes, the moment you walk in."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "WITTY",
+		"hint": "What your comebacks always somehow are."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "SPONTANEOUS",
+		"hint": "What your best ideas usually are."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "CHEEKY",
+		"hint": "What your smile gets, right before a good joke."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "ENTERTAINER",
+		"hint": "The one who can turn a dull evening around."
+	},
+	{
+		"category": "fun",
+		"language": "en",
+		"word": "UPBEAT",
+		"hint": "What your energy is, more often than you realize."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "ENIGMA",
+		"hint": "What some people remain, no matter how close you get."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "INTRIGUING",
+		"hint": "What makes people want to know you better."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "SHROUDED",
+		"hint": "What certain truths stay, until the right moment."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "DEPTHS",
+		"hint": "What lies beneath, in people who never show everything."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "UNTOLD",
+		"hint": "What some of your best stories still are."
+	},
+	{
+		"category": "mystere",
+		"language": "en",
+		"word": "GLIMMER",
+		"hint": "What you catch, right before a mystery unravels."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "RESILIENCE",
+		"hint": "What lets you rebuild, every single time."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "COMPASSION",
+		"hint": "What you offer, without ever being asked to."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "FAIRNESS",
+		"hint": "What guides you, even when it's inconvenient."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "EQUANIMITY",
+		"hint": "What your calm remains, even under pressure."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "VULNERABLE",
+		"hint": "What you're allowed to be, even when you'd rather not."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "STEADFASTNESS",
+		"hint": "What people have learned to count on, in you."
+	},
+	{
+		"category": "personnalite",
+		"language": "en",
+		"word": "EMPATHY",
+		"hint": "What lets you feel what others go through."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "DOORSTEP",
+		"hint": "Where small everyday moments quietly happen."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "SUNSET",
+		"hint": "What ends most ordinary days beautifully."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "GROCERY",
+		"hint": "What somehow always takes longer than planned."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "DOODLE",
+		"hint": "What your hand does, while your mind wanders."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "NEIGHBORHOOD",
+		"hint": "Where familiar faces make ordinary days warmer."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "SNOOZE",
+		"hint": "What almost everyone secretly wants, some mornings."
+	},
+	{
+		"category": "quotidien",
+		"language": "en",
+		"word": "LEFTOVERS",
+		"hint": "What somehow always tastes better the next day."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "CONFIDANTE",
+		"hint": "Someone you can tell absolutely anything to."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "EMBRACE",
+		"hint": "What says more than any goodbye speech could."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "HOMECOMING",
+		"hint": "What it feels like, seeing someone you've truly missed."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "TENDERNESS",
+		"hint": "What certain relationships never seem to run out of."
+	},
+	{
+		"category": "relations",
+		"language": "en",
+		"word": "BRIDGE",
+		"hint": "What some people become, between two worlds you never thought would meet."
+	}
+]

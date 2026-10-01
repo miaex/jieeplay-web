@@ -1,0 +1,206 @@
+[
+	{
+		"id": "reward_affectionate_fr",
+		"language": "fr",
+		"tone": "affectionate",
+		"fragments": [
+			"{player_name},",
+			"il y a quelque chose que je voulais te dire depuis longtemps, et ce jeu m'a enfin donné l'occasion de le faire.",
+			"Tu ne le sais peut-être pas, mais tu comptes énormément pour moi — bien plus que je ne saurais l'exprimer dans une conversation normale.",
+			"Il y a dans la façon dont tu avances, dont tu te relèves après chaque difficulté, quelque chose qui force l'admiration.",
+			"Je t'ai vue douter de toi plus de fois que tu ne l'imagines, et à chaque fois, tu as fini par prouver que tu avais tort de douter.",
+			"Ce jeu n'est qu'un prétexte, en réalité. Un moyen détourné de te rappeler, mot après mot, à quel point tu es précieuse.",
+			"Peu importe ce que la vie te réserve encore, sache qu'il y aura toujours quelqu'un qui croit en toi, sans condition.",
+			"Ce quelqu'un, c'est moi.",
+			"Continue d'avancer à ta façon, avec ta douceur et ta force tranquille — c'est exactement comme ça que tu dois être.",
+			"Et sache que je serai toujours là pour te le rappeler, chapitre après chapitre. Avec tout mon coeur. ❤️"
+		]
+	},
+	{
+		"id": "reward_admiring_fr",
+		"language": "fr",
+		"tone": "admiring",
+		"fragments": [
+			"{player_name},",
+			"je voulais prendre un moment pour te dire quelque chose que je pense depuis un moment déjà.",
+			"Je t'observe avancer, dans ce jeu comme dans la vie, et il y a chez toi une détermination qui ne cesse de m'impressionner.",
+			"Tu ne recules devant rien, même quand les choses semblent compliquées. Tu trouves toujours un moyen d'avancer.",
+			"Ce genre de force tranquille, ce n'est pas donné à tout le monde. Toi, tu l'as, naturellement.",
+			"Chaque obstacle que tu franchis, chaque mot que tu trouves ici, n'est qu'un reflet minuscule de ce que tu accomplis vraiment, au quotidien.",
+			"Je ne compte plus les fois où tu m'as surpris par ta capacité à rebondir, à apprendre, à grandir.",
+			"Et le plus beau dans tout ça, c'est que tu le fais sans jamais chercher la reconnaissance.",
+			"Alors laisse-moi te la donner, cette reconnaissance, une bonne fois pour toutes : je suis fier de qui tu es devenue.",
+			"Continue. Le monde a besoin de plus de gens comme toi. ✨"
+		]
+	},
+	{
+		"id": "reward_playful_fr",
+		"language": "fr",
+		"tone": "playful",
+		"fragments": [
+			"{player_name},",
+			"bon, il faut que je t'avoue quelque chose : je ne m'attendais clairement pas à ce que tu ailles aussi loin dans ce jeu.",
+			"Chapitre après chapitre, tu enchaînes les mots comme si c'était une évidence, et je commence sincèrement à me poser des questions.",
+			"Tu ne tricherais pas un peu, des fois ? Je plaisante — quoique.",
+			"Plus sérieusement, j'adore te voir revenir ici, curieuse de savoir ce que je te prépare cette fois.",
+			"Ça me fait sourire, à chaque fois, de t'imaginer en train de froncer les sourcils devant un mot un peu coriace.",
+			"Et je dois dire que j'ai un malin plaisir à choisir des indices qui te feront réfléchir un peu plus que prévu.",
+			"Mais entre nous, même quand tu galères, tu t'en sors toujours avec le sourire. Et ça, ça n'a pas de prix.",
+			"Alors continue de jouer le jeu — au sens propre comme au figuré.",
+			"Je prépare déjà la suite, et crois-moi, j'ai plus d'un tour dans mon sac. 😏"
+		]
+	},
+	{
+		"id": "reward_comforting_fr",
+		"language": "fr",
+		"tone": "comforting",
+		"fragments": [
+			"{player_name},",
+			"si tu es en train de lire ça, c'est que tu as pris un moment pour toi aujourd'hui. Et ça, c'est déjà beaucoup.",
+			"Je ne sais pas quelle journée tu as eue, ni ce qui t'a pesé sur les épaules ces derniers temps.",
+			"Mais je sais une chose : tu fais de ton mieux, avec ce que tu as, et c'est amplement suffisant.",
+			"Tu n'as pas besoin d'être parfaite. Tu n'as même pas besoin d'aller bien tous les jours.",
+			"Tu as juste besoin d'être toi, avec tes hauts et tes bas, et ça suffit largement à mes yeux.",
+			"Alors si aujourd'hui a été difficile, laisse ce petit moment être une parenthèse douce, rien qu'à toi.",
+			"Respire. Pose les épaules. Tu as le droit de souffler, ne serait-ce qu'un instant.",
+			"Et rappelle-toi : peu importe ce qui se passe dehors, il y a toujours un endroit où quelqu'un pense à toi avec tendresse.",
+			"Cet endroit, c'est ici. Prends soin de toi. 💛"
+		]
+	},
+	{
+		"id": "reward_mysterious_fr",
+		"language": "fr",
+		"tone": "mysterious",
+		"fragments": [
+			"{player_name},",
+			"je ne sais pas si tu l'as remarqué, mais depuis le début de ce jeu, je distille des indices, petit à petit.",
+			"Rien n'est laissé au hasard : ni les mots, ni les catégories, ni même l'ordre dans lequel tu découvres tout ça.",
+			"Il y a un fil, une intention derrière chaque chapitre — et tu n'en vois encore qu'une infime partie.",
+			"Ce message que tu es en train d'assembler n'est qu'un des nombreux secrets que ce jeu te réserve.",
+			"Je prends plaisir à observer ta progression, à deviner ce que tu penses en découvrant chaque fragment.",
+			"Et crois-moi, ce que tu as découvert jusqu'ici n'est qu'un avant-goût de ce qui t'attend encore.",
+			"Certaines surprises se méritent. D'autres se révèlent seulement à ceux qui prennent le temps de vraiment chercher.",
+			"Toi, tu as pris ce temps. Et ça ne passe pas inaperçu.",
+			"La suite arrive. Patience. 🔮"
+		]
+	},
+	{
+		"id": "reward_warm_fr",
+		"language": "fr",
+		"tone": "warm",
+		"fragments": [
+			"{player_name},",
+			"il y a quelque chose de particulier dans ce petit rituel qu'on a fini par créer, toi et moi, à travers ce jeu.",
+			"Chaque fois que tu ouvres l'application, même pour quelques minutes, j'aime à penser que c'est un peu comme si on se retrouvait.",
+			"Pas besoin de grands mots ni de grandes occasions. Juste ce moment simple, entre deux journées bien remplies.",
+			"C'est dans les petites habitudes comme celle-ci que se construisent les liens les plus solides, je crois.",
+			"Et honnêtement, je ne me lasse pas de voir combien de mots tu trouves, combien de chapitres tu traverses.",
+			"Ça me rappelle, à chaque fois, que tu penses à moi autant que je pense à toi.",
+			"Merci de faire vivre ce petit jeu. Merci de lui donner un peu de ta journée, encore et encore.",
+			"C'est un cadeau bien plus grand que tu ne le penses.",
+			"À très vite pour la suite. 🤍"
+		]
+	},
+	{
+		"id": "reward_affectionate_en",
+		"language": "en",
+		"tone": "affectionate",
+		"fragments": [
+			"{player_name},",
+			"there's something I've wanted to tell you for a while, and this game finally gave me the chance.",
+			"You might not realize it, but you matter to me more than I could ever say in an ordinary conversation.",
+			"There's something about the way you keep going, the way you get back up after every hard moment, that I deeply admire.",
+			"I've seen you doubt yourself more times than you'd think — and every single time, you proved that doubt wrong.",
+			"This game is really just an excuse. A roundabout way of reminding you, word by word, how precious you are.",
+			"Whatever life still has in store, know this: someone believes in you, unconditionally.",
+			"That someone is me.",
+			"Keep moving forward your way, with your softness and your quiet strength — exactly as you are.",
+			"And know I'll always be here to remind you, chapter after chapter. With all my heart. ❤️"
+		]
+	},
+	{
+		"id": "reward_admiring_en",
+		"language": "en",
+		"tone": "admiring",
+		"fragments": [
+			"{player_name},",
+			"I wanted to take a moment to tell you something I've been thinking for a while now.",
+			"I watch you move forward, in this game and in life, and there's a determination in you that keeps impressing me.",
+			"You don't back down, even when things get complicated. You always find a way through.",
+			"That kind of quiet strength isn't given to everyone. You have it, naturally.",
+			"Every obstacle you clear here is just a tiny reflection of what you actually pull off, day after day.",
+			"I've lost count of the times you've surprised me with how you bounce back, learn, and grow.",
+			"And the most beautiful part is that you do it without ever seeking recognition for it.",
+			"So let me give it to you, once and for all: I'm proud of who you've become.",
+			"Keep going. The world needs more people like you. ✨"
+		]
+	},
+	{
+		"id": "reward_playful_en",
+		"language": "en",
+		"tone": "playful",
+		"fragments": [
+			"{player_name},",
+			"okay, I have to admit something: I genuinely didn't expect you to get this far in this game.",
+			"Chapter after chapter, you breeze through words like it's nothing, and I'm starting to seriously wonder.",
+			"You're not cheating a little, are you? I'm kidding — mostly.",
+			"More seriously, I love seeing you come back here, curious about what I've cooked up this time.",
+			"It makes me smile every time, picturing you frowning at a particularly stubborn word.",
+			"And I'll admit I take a little too much pleasure in picking hints that make you think harder than expected.",
+			"But between us, even when you struggle, you always pull through with a smile. That's worth everything.",
+			"So keep playing the game — in every sense of the word.",
+			"I'm already cooking up what's next, and trust me, I've got more than one trick left. 😏"
+		]
+	},
+	{
+		"id": "reward_comforting_en",
+		"language": "en",
+		"tone": "comforting",
+		"fragments": [
+			"{player_name},",
+			"if you're reading this, it means you took a moment for yourself today. And that already means a lot.",
+			"I don't know what kind of day you've had, or what's been weighing on you lately.",
+			"But I know one thing: you're doing your best with what you have, and that's more than enough.",
+			"You don't need to be perfect. You don't even need to be okay every single day.",
+			"You just need to be you, ups and downs included, and that's plenty as far as I'm concerned.",
+			"So if today was hard, let this small moment be a gentle pause, just for you.",
+			"Breathe. Let your shoulders drop. You're allowed to rest, even just for a minute.",
+			"And remember: whatever's happening out there, there's always a place where someone thinks of you fondly.",
+			"That place is here. Take care of yourself. 💛"
+		]
+	},
+	{
+		"id": "reward_mysterious_en",
+		"language": "en",
+		"tone": "mysterious",
+		"fragments": [
+			"{player_name},",
+			"I don't know if you've noticed, but since this game began, I've been dropping clues, little by little.",
+			"Nothing is left to chance — not the words, not the categories, not even the order you discover them in.",
+			"There's a thread, an intention behind every chapter — and you're only seeing a small part of it so far.",
+			"This message you're piecing together is just one of many secrets this game is holding for you.",
+			"I take real pleasure in watching your progress, guessing what you're thinking as each fragment appears.",
+			"And trust me, what you've found so far is only a preview of what's still coming.",
+			"Some surprises need to be earned. Others only reveal themselves to those who truly take the time to look.",
+			"You took that time. And it hasn't gone unnoticed.",
+			"More is coming. Patience. 🔮"
+		]
+	},
+	{
+		"id": "reward_warm_en",
+		"language": "en",
+		"tone": "warm",
+		"fragments": [
+			"{player_name},",
+			"there's something special about this little ritual we've built, you and me, through this game.",
+			"Every time you open the app, even for a few minutes, I like to think it's a little like we're catching up.",
+			"No need for big words or big occasions. Just this simple moment, between two busy days.",
+			"I believe it's small habits like this one that build the strongest bonds.",
+			"And honestly, I never get tired of seeing how many words you solve, how many chapters you get through.",
+			"It reminds me, every time, that you think of me as much as I think of you.",
+			"Thank you for keeping this little game alive. For giving it a piece of your day, again and again.",
+			"It's a bigger gift than you probably realize.",
+			"See you soon for what's next. 🤍"
+		]
+	}
+]

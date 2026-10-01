@@ -1,0 +1,33 @@
+/* chat.css — en-tête et cadre de l'écran Messagerie côté joueur (V35).
+ * Le contenu (bulles, saisie…) est dans chat-ui.css, partagé avec l'admin. */
+
+/* NB : pas de position:relative ici — .view fournit déjà position:absolute
+ * + inset:0. La surcharger a déjà cassé 3 écrans (voir README, V30). */
+#view-chat {
+	padding: 0 !important;
+	background: #fbf5f0;
+	overflow: hidden;
+}
+.chat-header {
+	flex: none; display: flex; align-items: center; gap: 10px;
+	padding: calc(var(--safe-top) + 8px) 12px 10px 6px;
+	background: linear-gradient(135deg, #8a3b52, #a84e66 70%, #b95f72);
+	color: #fffbf8; box-shadow: 0 3px 14px rgba(110, 47, 66, .28); z-index: 5;
+}
+.chat-back, .chat-notif {
+	flex: none; width: 40px; height: 40px; padding: 9px; border: 0; border-radius: 50%;
+	background: transparent; color: #fffbf8; display: flex; align-items: center; justify-content: center;
+}
+.chat-back:active, .chat-notif:active { background: rgba(255, 255, 255, .16); }
+.chat-back svg, .chat-notif svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.chat-notif.active { background: rgba(255, 255, 255, .22); }
+.chat-avatar {
+	flex: none; width: 42px; height: 42px; border-radius: 50%; object-fit: cover;
+	background: #f6e9e6; border: 2px solid rgba(255, 255, 255, .55);
+}
+.chat-header-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.chat-name { font-size: 16.5px; font-weight: 800; letter-spacing: .1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chat-status { min-height: 15px; font-size: 12px; opacity: .85; }
+.chat-status.online { color: #c9f3d4; opacity: 1; }
+.chat-status.typing { color: #ffe3a6; opacity: 1; font-style: italic; }
+.chat-thread { flex: 1; min-height: 0; display: flex; flex-direction: column; }
